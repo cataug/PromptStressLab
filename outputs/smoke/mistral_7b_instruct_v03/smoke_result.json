@@ -1,0 +1,70 @@
+{
+  "model_key": "mistral_7b_instruct_v03",
+  "model_path": "/home/tahiti/TimeBound/models/mistralai__Mistral-7B-Instruct-v0.3",
+  "architecture": "mistral",
+  "status": "ok",
+  "gpu_before": {
+    "cuda_available": true,
+    "device": "NVIDIA A100-PCIE-40GB",
+    "free_gib": 14.705,
+    "total_gib": 39.381,
+    "allocated_gib": 0.0,
+    "reserved_gib": 0.0
+  },
+  "record_id": "X96-1059",
+  "prompt_characters": 1692,
+  "prompt_tokens": 426,
+  "tokenizer_seconds": 0.3449,
+  "model_load_seconds": 3.17,
+  "generation_seconds": 19.8042,
+  "output_tokens": 111,
+  "raw_output": "{\n  \"Task\": [\"Multi-lingual Evaluation Task for Japanese text\"],\n  \"Method\": [\"Amorph morphological analyzer\"],\n  \"Metric\": [],\n  \"Material\": [],\n  \"OtherScientificTerm\": [\"MET\", \"morphological analysis\", \"information extraction\"],\n  \"Generic\": [\"proper nouns\", \"named entity items\", \"dictionary lookup\", \"rule application\", \"segmentation\", \"tagging\", \"Japanese character strings\"]\n}",
+  "extracted_json_text": "{\n  \"Task\": [\"Multi-lingual Evaluation Task for Japanese text\"],\n  \"Method\": [\"Amorph morphological analyzer\"],\n  \"Metric\": [],\n  \"Material\": [],\n  \"OtherScientificTerm\": [\"MET\", \"morphological analysis\", \"information extraction\"],\n  \"Generic\": [\"proper nouns\", \"named entity items\", \"dictionary lookup\", \"rule application\", \"segmentation\", \"tagging\", \"Japanese character strings\"]\n}",
+  "parsed_output": {
+    "Task": [
+      "Multi-lingual Evaluation Task for Japanese text"
+    ],
+    "Method": [
+      "Amorph morphological analyzer"
+    ],
+    "Metric": [],
+    "Material": [],
+    "OtherScientificTerm": [
+      "MET",
+      "morphological analysis",
+      "information extraction"
+    ],
+    "Generic": [
+      "proper nouns",
+      "named entity items",
+      "dictionary lookup",
+      "rule application",
+      "segmentation",
+      "tagging",
+      "Japanese character strings"
+    ]
+  },
+  "validation": {
+    "json_valid": true,
+    "exact_keys": true,
+    "all_values_lists": true,
+    "missing_keys": [],
+    "extra_keys": []
+  },
+  "gpu_after_load": {
+    "cuda_available": true,
+    "device": "NVIDIA A100-PCIE-40GB",
+    "free_gib": 2.262,
+    "total_gib": 39.381,
+    "allocated_gib": 12.438,
+    "reserved_gib": 12.443
+  },
+  "gpu_after_generation": {
+    "cuda_available": true,
+    "device": "NVIDIA A100-PCIE-40GB",
+    "free_gib": 1.838,
+    "total_gib": 39.381,
+    "allocated_gib": 12.446,
+    "reserved_gib": 12.775
+  }
+}

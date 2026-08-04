@@ -1,0 +1,26 @@
+=== PromptStressLab manifest builder ===
+root=/home/tahiti/PromptStressLab
+
+[SciERC] root=/home/tahiti/PromptStressLab/data/raw/scierc
+[SciERC_ROWS] 0
+[SciERC_ELIGIBLE] 0
+
+[EBM-NLP] root=/home/tahiti/PromptStressLab/data/raw/ebm_nlp/v2_00
+[EBM-NLP_ROWS] 9986
+[EBM-NLP_ELIGIBLE] 9986
+
+[SciER] root=/home/tahiti/PromptStressLab/data/raw/scier/SciER
+[SciER_ROWS] 7722
+[SciER_ELIGIBLE] 0
+
+=== MANIFEST OUTPUTS ===
+[WROTE] /home/tahiti/PromptStressLab/manifests/scierc_manifest.csv (245 bytes)
+[WROTE] /home/tahiti/PromptStressLab/manifests/ebm_nlp_manifest.csv (18172244 bytes)
+[WROTE] /home/tahiti/PromptStressLab/manifests/scier_manifest.csv (872118 bytes)
+[WROTE] /home/tahiti/PromptStressLab/manifests/unified_manifest.csv (19044117 bytes)
+[WROTE] /home/tahiti/PromptStressLab/manifests/manifest_summary.csv (373 bytes)
+[WROTE] /home/tahiti/PromptStressLab/manifests/manifest_validation.csv (348 bytes)
+[WROTE] /home/tahiti/PromptStressLab/manifests/duplicate_texts.csv (57 bytes)
+[WROTE] /home/tahiti/PromptStressLab/manifests/label_inventory.csv (111 bytes)
+[TOTAL_ROWS] 17708
+=== MANIFEST_BUILD_FINISHED ===

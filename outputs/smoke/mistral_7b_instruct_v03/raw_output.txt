@@ -1,0 +1,8 @@
+{
+  "Task": ["Multi-lingual Evaluation Task for Japanese text"],
+  "Method": ["Amorph morphological analyzer"],
+  "Metric": [],
+  "Material": [],
+  "OtherScientificTerm": ["MET", "morphological analysis", "information extraction"],
+  "Generic": ["proper nouns", "named entity items", "dictionary lookup", "rule application", "segmentation", "tagging", "Japanese character strings"]
+}

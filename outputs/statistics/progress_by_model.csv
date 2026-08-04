@@ -1,0 +1,4 @@
+model_id,expected_jobs,predictions,unresolved_errors,remaining_without_prediction,completion_percent,json_valid_rate,schema_valid_rate,mean_seconds_per_item,projected_remaining_compute_hours
+gemma_3_12b_it,2842,2842,0,0,100.0,1.0,0.9180154820548909,40.8682938486981,0.0
+mistral_7b_instruct_v03,2842,2842,0,0,100.0,1.0,0.8599577762139339,65.58854306192822,0.0
+qwen3_8b,2842,2842,0,0,100.0,1.0,0.8831808585503167,12.135779587966221,0.0

@@ -1,0 +1,8 @@
+{
+  "Task": ["Recognition of proper nouns in Japanese text", "Multi-lingual Evaluation Task"],
+  "Method": ["morphological analysis", "dictionary lookup", "rule application"],
+  "Metric": [],
+  "Material": ["Amorph"],
+  "OtherScientificTerm": ["Named Entity", "NE"],
+  "Generic": []
+}

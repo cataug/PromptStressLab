@@ -1,0 +1,65 @@
+=== MODEL EXPERIMENT WORKER ===
+[MODEL_ID] gemma_3_12b_it
+[MODEL_PATH] /home/tahiti/RIFT/models/Gemma-3-12B-it
+[GPU_PHYSICAL_ID] 0
+[PYTHON] /home/tahiti/Forensics/.venv_forensics/bin/python
+[TORCH] 2.6.0+cu124
+[TRANSFORMERS] 5.12.0
+[TOTAL_JOBS] 2842
+[ALREADY_SUCCESSFUL] 8
+[SKIPPED_ERRORS] 0
+[PENDING] 2834
+[GPU_BEFORE_LOAD] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 38.955, "total_gib": 39.381, "allocated_gib": 0.0, "reserved_gib": 0.0, "max_allocated_gib": 0.0}
+[LOAD_TOKENIZER]
+[TOKENIZER_OK] 2.257s
+[LOAD_MODEL]
+[DEVICE_MAP] auto
+
+Loading weights:   0%|          | 0/1065 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/1065 [00:00<03:26,  5.15it/s]
+Loading weights:   2%|▏         | 17/1065 [00:00<00:15, 65.51it/s]
+Loading weights:   3%|▎         | 36/1065 [00:00<00:09, 109.80it/s]
+Loading weights:   5%|▌         | 55/1065 [00:00<00:07, 130.36it/s]
+Loading weights:   7%|▋         | 70/1065 [00:00<00:07, 128.72it/s]
+Loading weights:   9%|▉         | 94/1065 [00:00<00:06, 155.54it/s]
+Loading weights:  10%|█         | 111/1065 [00:00<00:06, 150.71it/s]
+Loading weights:  12%|█▏        | 133/1065 [00:00<00:05, 162.68it/s]
+Loading weights:  14%|█▍        | 150/1065 [00:01<00:06, 150.98it/s]
+Loading weights:  16%|█▌        | 169/1065 [00:01<00:05, 159.34it/s]
+Loading weights:  17%|█▋        | 186/1065 [00:01<00:05, 150.11it/s]
+Loading weights:  19%|█▉        | 206/1065 [00:01<00:05, 161.20it/s]
+Loading weights:  21%|██        | 224/1065 [00:01<00:05, 159.44it/s]
+Loading weights:  23%|██▎       | 241/1065 [00:01<00:05, 150.92it/s]
+Loading weights:  25%|██▍       | 262/1065 [00:01<00:04, 166.52it/s]
+Loading weights:  26%|██▋       | 280/1065 [00:01<00:05, 150.90it/s]
+Loading weights:  28%|██▊       | 302/1065 [00:02<00:04, 161.12it/s]
+Loading weights:  30%|██▉       | 319/1065 [00:02<00:04, 151.40it/s]
+Loading weights:  32%|███▏      | 341/1065 [00:02<00:04, 163.80it/s]
+Loading weights:  34%|███▎      | 358/1065 [00:02<00:04, 154.44it/s]
+Loading weights:  36%|███▌      | 380/1065 [00:02<00:04, 164.01it/s]
+Loading weights:  37%|███▋      | 397/1065 [00:02<00:04, 158.65it/s]
+Loading weights:  39%|███▉      | 417/1065 [00:02<00:03, 168.61it/s]
+Loading weights:  41%|████      | 435/1065 [00:02<00:04, 154.00it/s]
+Loading weights:  43%|████▎     | 456/1065 [00:03<00:03, 167.22it/s]
+Loading weights:  45%|████▍     | 474/1065 [00:03<00:04, 147.41it/s]
+Loading weights:  47%|████▋     | 497/1065 [00:03<00:03, 160.95it/s]
+Loading weights:  48%|████▊     | 514/1065 [00:03<00:03, 156.28it/s]
+Loading weights:  50%|█████     | 536/1065 [00:03<00:03, 164.48it/s]
+Loading weights:  52%|█████▏    | 553/1065 [00:03<00:03, 156.49it/s]
+Loading weights:  54%|█████▍    | 575/1065 [00:03<00:02, 166.26it/s]
+Loading weights:  56%|█████▌    | 592/1065 [00:03<00:03, 152.83it/s]
+Loading weights:  57%|█████▋    | 608/1065 [00:04<00:02, 154.51it/s]
+Loading weights:  61%|██████▏   | 653/1065 [00:04<00:01, 233.01it/s]
+Loading weights:  83%|████████▎ | 880/1065 [00:04<00:00, 794.70it/s]
+Loading weights: 100%|██████████| 1065/1065 [00:04<00:00, 247.58it/s]
+[MODEL_OK] 5.937s
+[GPU_AFTER_LOAD] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 16.162, "total_gib": 39.381, "allocated_gib": 22.701, "reserved_gib": 22.719, "max_allocated_gib": 22.701}
+[MAX_BATCH_SIZE] 2
+[TOKEN_BUDGET] 7000
+[MODEL_CONTEXT] 1024
+[PREPARATION_ERRORS] 2834
+[BATCHES] 0
+=== MODEL WORKER FINISHED ===
+[FINAL_SUCCESSFUL_OR_INVALID] 8/2842
+[FINAL_ERRORS] 2834
+[GPU_AFTER_CLEANUP] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 38.881, "total_gib": 39.381, "allocated_gib": 0.0, "reserved_gib": 0.0, "max_allocated_gib": 22.701}

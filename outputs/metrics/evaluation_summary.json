@@ -1,0 +1,12 @@
+{
+  "physical_jobs_expected": 8526,
+  "physical_predictions_found": 8526,
+  "aliases_materialized": 1200,
+  "logical_rows": 9726,
+  "logical_rows_expected_when_complete": 9726,
+  "prediction_files": [
+    "/home/tahiti/PromptStressLab/outputs/generations/gemma_3_12b_it/predictions.jsonl",
+    "/home/tahiti/PromptStressLab/outputs/generations/mistral_7b_instruct_v03/predictions.jsonl",
+    "/home/tahiti/PromptStressLab/outputs/generations/qwen3_8b/predictions.jsonl"
+  ]
+}

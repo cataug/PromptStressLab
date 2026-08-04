@@ -1,0 +1,83 @@
+=== EXPERIMENT MANIFEST BUILT ===
+{
+  "physical_jobs": 8526,
+  "logical_results_after_A0_A1_aliases": 9726,
+  "main_documents": 307,
+  "ablation_documents": 200,
+  "models": [
+    "qwen3_8b",
+    "mistral_7b_instruct_v03",
+    "gemma_3_12b_it"
+  ],
+  "by_model": {
+    "gemma_3_12b_it": 2842,
+    "mistral_7b_instruct_v03": 2842,
+    "qwen3_8b": 2842
+  },
+  "by_phase": {
+    "ablation": 3000,
+    "main": 5526
+  },
+  "by_dataset": {
+    "EBM-NLP": 4698,
+    "SciER": 528,
+    "SciERC": 3300
+  },
+  "by_condition": {
+    "A2": 600,
+    "A3": 600,
+    "A4": 600,
+    "A5": 600,
+    "A6": 600,
+    "P1": 921,
+    "P2": 921,
+    "P3": 921,
+    "P4": 921,
+    "P5": 921,
+    "P6": 921
+  },
+  "main_conditions": [
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5",
+    "P6"
+  ],
+  "new_ablation_conditions": [
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6"
+  ],
+  "alias_policy": {
+    "A0": "P3",
+    "A1": "P4"
+  },
+  "relation_types": {
+    "SciERC": [
+      "Compare",
+      "Conjunction",
+      "Evaluate-for",
+      "Used-for",
+      "Feature-of",
+      "Part-of",
+      "Hyponym-of"
+    ],
+    "EBM-NLP": [],
+    "SciER": [
+      "Benchmark-For",
+      "Compare-With",
+      "Evaluated-With",
+      "Part-Of",
+      "SubClass-Of",
+      "SubTask-Of",
+      "Synonym-Of",
+      "Trained-With",
+      "Used-For"
+    ]
+  }
+}
+[WROTE] /home/tahiti/PromptStressLab/manifests/experiment_jobs.jsonl
+[PASS] physical_jobs=8526

@@ -1,0 +1,20 @@
+{
+  "root": "/home/tahiti/PromptStressLab",
+  "builder": "build_manifests_v2.py",
+  "rows": 606,
+  "datasets": {
+    "SciERC": 500,
+    "EBM-NLP": 0,
+    "SciER": 106
+  },
+  "eligible": {
+    "SciERC": 500,
+    "EBM-NLP": 0,
+    "SciER": 106
+  },
+  "expected": {
+    "SciERC": 500,
+    "EBM-NLP": 4993,
+    "SciER": 106
+  }
+}

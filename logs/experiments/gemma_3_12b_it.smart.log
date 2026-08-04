@@ -1,0 +1,839 @@
+=== MODEL EXPERIMENT WORKER ===
+[MODEL_ID] gemma_3_12b_it
+[MODEL_PATH] /home/tahiti/RIFT/models/Gemma-3-12B-it
+[GPU_PHYSICAL_ID] 0
+[PYTHON] /home/tahiti/Forensics/.venv_forensics/bin/python
+[TORCH] 2.6.0+cu124
+[TRANSFORMERS] 5.12.0
+[TOTAL_JOBS] 2842
+[ALREADY_SUCCESSFUL] 0
+[SKIPPED_ERRORS] 0
+[PENDING] 2842
+[GPU_BEFORE_LOAD] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 34.52, "total_gib": 39.381, "allocated_gib": 0.0, "reserved_gib": 0.0, "max_allocated_gib": 0.0}
+[LOAD_TOKENIZER]
+[TOKENIZER_OK] 2.494s
+[LOAD_MODEL]
+[DEVICE_MAP] auto
+
+Loading weights:   0%|          | 0/1065 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/1065 [00:00<04:08,  4.27it/s]
+Loading weights:   1%|          | 7/1065 [00:00<00:41, 25.37it/s]
+Loading weights:   2%|▏         | 16/1065 [00:00<00:21, 47.89it/s]
+Loading weights:   2%|▏         | 23/1065 [00:00<00:22, 45.99it/s]
+Loading weights:   3%|▎         | 29/1065 [00:00<00:22, 45.14it/s]
+Loading weights:   4%|▎         | 38/1065 [00:00<00:18, 56.46it/s]
+Loading weights:   5%|▍         | 51/1065 [00:00<00:13, 73.96it/s]
+Loading weights:   7%|▋         | 76/1065 [00:01<00:08, 120.48it/s]
+Loading weights:   8%|▊         | 90/1065 [00:01<00:07, 125.86it/s]
+Loading weights:  10%|▉         | 104/1065 [00:01<00:07, 127.43it/s]
+Loading weights:  11%|█▏        | 120/1065 [00:01<00:07, 133.37it/s]
+Loading weights:  13%|█▎        | 134/1065 [00:01<00:07, 123.02it/s]
+Loading weights:  15%|█▍        | 156/1065 [00:01<00:06, 149.17it/s]
+Loading weights:  16%|█▌        | 172/1065 [00:01<00:06, 146.71it/s]
+Loading weights:  18%|█▊        | 188/1065 [00:01<00:06, 137.25it/s]
+Loading weights:  20%|█▉        | 211/1065 [00:01<00:05, 156.22it/s]
+Loading weights:  21%|██▏       | 227/1065 [00:02<00:05, 147.33it/s]
+Loading weights:  23%|██▎       | 250/1065 [00:02<00:05, 162.09it/s]
+Loading weights:  25%|██▌       | 267/1065 [00:02<00:05, 153.15it/s]
+Loading weights:  27%|██▋       | 289/1065 [00:02<00:04, 164.47it/s]
+Loading weights:  29%|██▊       | 306/1065 [00:02<00:04, 154.38it/s]
+Loading weights:  30%|███       | 322/1065 [00:02<00:08, 86.04it/s] 
+Loading weights:  32%|███▏      | 338/1065 [00:03<00:07, 95.66it/s]
+Loading weights:  33%|███▎      | 354/1065 [00:03<00:06, 107.56it/s]
+Loading weights:  35%|███▍      | 368/1065 [00:03<00:06, 113.23it/s]
+Loading weights:  36%|███▌      | 385/1065 [00:03<00:05, 126.39it/s]
+Loading weights:  38%|███▊      | 405/1065 [00:03<00:04, 137.81it/s]
+Loading weights:  40%|███▉      | 421/1065 [00:03<00:04, 134.80it/s]
+Loading weights:  42%|████▏     | 442/1065 [00:03<00:04, 152.12it/s]
+Loading weights:  43%|████▎     | 459/1065 [00:03<00:04, 137.46it/s]
+Loading weights:  45%|████▍     | 474/1065 [00:04<00:04, 134.13it/s]
+Loading weights:  46%|████▋     | 494/1065 [00:04<00:03, 148.74it/s]
+Loading weights:  48%|████▊     | 510/1065 [00:04<00:03, 150.55it/s]
+Loading weights:  49%|████▉     | 526/1065 [00:04<00:03, 140.71it/s]
+Loading weights:  51%|█████     | 541/1065 [00:04<00:03, 141.60it/s]
+Loading weights:  52%|█████▏    | 559/1065 [00:04<00:03, 151.86it/s]
+Loading weights:  54%|█████▍    | 575/1065 [00:04<00:03, 150.19it/s]
+Loading weights:  55%|█████▌    | 591/1065 [00:04<00:03, 134.15it/s]
+Loading weights:  57%|█████▋    | 607/1065 [00:04<00:03, 140.56it/s]
+Loading weights:  59%|█████▊    | 624/1065 [00:05<00:03, 146.85it/s]
+Loading weights:  77%|███████▋  | 820/1065 [00:05<00:00, 646.46it/s]
+Loading weights:  96%|█████████▌| 1021/1065 [00:05<00:00, 1026.13it/s]
+Loading weights: 100%|██████████| 1065/1065 [00:05<00:00, 201.95it/s] 
+[MODEL_OK] 7.011s
+[GPU_AFTER_LOAD] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 2.082, "total_gib": 39.381, "allocated_gib": 22.701, "reserved_gib": 22.719, "max_allocated_gib": 22.701}
+[MAX_BATCH_SIZE] 2
+[TOKEN_BUDGET] 7000
+[MODEL_CONTEXT] 1024
+[PREPARATION_ERRORS] 2834
+[BATCHES] 4
+[PROGRESS] batches=4/4 done=2842/2842 ok=8 invalid=0 errors=2834 elapsed_s=209.0 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 15.185, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.678, "max_allocated_gib": 23.491}
+=== MODEL WORKER FINISHED ===
+[FINAL_SUCCESSFUL_OR_INVALID] 8/2842
+[FINAL_ERRORS] 2834
+[GPU_AFTER_CLEANUP] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 38.844, "total_gib": 39.381, "allocated_gib": 0.008, "reserved_gib": 0.02, "max_allocated_gib": 23.491}
+=== MODEL EXPERIMENT WORKER ===
+[MODEL_ID] gemma_3_12b_it
+[MODEL_PATH] /home/tahiti/RIFT/models/Gemma-3-12B-it
+[GPU_PHYSICAL_ID] 0
+[PYTHON] /home/tahiti/Forensics/.venv_forensics/bin/python
+[TORCH] 2.6.0+cu124
+[TRANSFORMERS] 5.12.0
+[TOTAL_JOBS] 2842
+[ALREADY_SUCCESSFUL] 8
+[SKIPPED_ERRORS] 0
+[PENDING] 2834
+[GPU_BEFORE_LOAD] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 38.955, "total_gib": 39.381, "allocated_gib": 0.0, "reserved_gib": 0.0, "max_allocated_gib": 0.0}
+[LOAD_TOKENIZER]
+[TOKENIZER_OK] 2.275s
+[LOAD_MODEL]
+[DEVICE_MAP] auto
+
+Loading weights:   0%|          | 0/1065 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/1065 [00:00<02:59,  5.93it/s]
+Loading weights:   2%|▏         | 16/1065 [00:00<00:15, 66.53it/s]
+Loading weights:   3%|▎         | 36/1065 [00:00<00:08, 115.84it/s]
+Loading weights:   5%|▌         | 55/1065 [00:00<00:07, 134.26it/s]
+Loading weights:   7%|▋         | 70/1065 [00:00<00:07, 131.22it/s]
+Loading weights:   9%|▊         | 93/1065 [00:00<00:06, 153.88it/s]
+Loading weights:  10%|█         | 109/1065 [00:00<00:06, 147.37it/s]
+Loading weights:  12%|█▏        | 133/1065 [00:00<00:05, 165.69it/s]
+Loading weights:  14%|█▍        | 150/1065 [00:01<00:05, 153.80it/s]
+Loading weights:  16%|█▌        | 167/1065 [00:01<00:05, 157.91it/s]
+Loading weights:  17%|█▋        | 185/1065 [00:01<00:05, 159.97it/s]
+Loading weights:  19%|█▉        | 202/1065 [00:01<00:05, 156.03it/s]
+Loading weights:  21%|██        | 221/1065 [00:01<00:05, 163.35it/s]
+Loading weights:  22%|██▏       | 238/1065 [00:01<00:05, 155.81it/s]
+Loading weights:  24%|██▍       | 256/1065 [00:01<00:05, 161.08it/s]
+Loading weights:  26%|██▌       | 275/1065 [00:01<00:04, 160.66it/s]
+Loading weights:  27%|██▋       | 292/1065 [00:01<00:05, 154.56it/s]
+Loading weights:  30%|██▉       | 315/1065 [00:02<00:04, 166.87it/s]
+Loading weights:  31%|███       | 332/1065 [00:02<00:04, 156.55it/s]
+Loading weights:  33%|███▎      | 354/1065 [00:02<00:04, 164.07it/s]
+Loading weights:  35%|███▍      | 371/1065 [00:02<00:04, 152.80it/s]
+Loading weights:  36%|███▋      | 387/1065 [00:02<00:04, 150.90it/s]
+Loading weights:  38%|███▊      | 406/1065 [00:02<00:04, 153.47it/s]
+Loading weights:  40%|███▉      | 422/1065 [00:02<00:04, 145.08it/s]
+Loading weights:  42%|████▏     | 445/1065 [00:02<00:03, 159.62it/s]
+Loading weights:  43%|████▎     | 462/1065 [00:03<00:04, 149.89it/s]
+Loading weights:  45%|████▌     | 484/1065 [00:03<00:03, 160.46it/s]
+Loading weights:  47%|████▋     | 501/1065 [00:03<00:03, 154.81it/s]
+Loading weights:  49%|████▉     | 523/1065 [00:03<00:03, 166.00it/s]
+Loading weights:  51%|█████     | 540/1065 [00:03<00:03, 153.42it/s]
+Loading weights:  53%|█████▎    | 562/1065 [00:03<00:03, 164.91it/s]
+Loading weights:  54%|█████▍    | 579/1065 [00:03<00:03, 158.35it/s]
+Loading weights:  56%|█████▌    | 596/1065 [00:03<00:02, 159.75it/s]
+Loading weights:  58%|█████▊    | 615/1065 [00:04<00:02, 159.11it/s]
+Loading weights:  72%|███████▏  | 766/1065 [00:04<00:00, 521.20it/s]
+Loading weights:  94%|█████████▍| 1002/1065 [00:04<00:00, 1029.26it/s]
+Loading weights: 100%|██████████| 1065/1065 [00:04<00:00, 249.33it/s] 
+[MODEL_OK] 5.930s
+[GPU_AFTER_LOAD] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 16.162, "total_gib": 39.381, "allocated_gib": 22.701, "reserved_gib": 22.719, "max_allocated_gib": 22.701}
+[MAX_BATCH_SIZE] 2
+[TOKEN_BUDGET] 7000
+[MODEL_CONTEXT] 1024
+[PREPARATION_ERRORS] 2834
+[BATCHES] 0
+=== MODEL WORKER FINISHED ===
+[FINAL_SUCCESSFUL_OR_INVALID] 8/2842
+[FINAL_ERRORS] 2834
+[GPU_AFTER_CLEANUP] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 38.881, "total_gib": 39.381, "allocated_gib": 0.0, "reserved_gib": 0.0, "max_allocated_gib": 22.701}
+=== MODEL EXPERIMENT WORKER ===
+[MODEL_ID] gemma_3_12b_it
+[MODEL_PATH] /home/tahiti/RIFT/models/Gemma-3-12B-it
+[GPU_PHYSICAL_ID] 0
+[PYTHON] /home/tahiti/Forensics/.venv_forensics/bin/python
+[TORCH] 2.6.0+cu124
+[TRANSFORMERS] 5.12.0
+[TOTAL_JOBS] 2842
+[ALREADY_SUCCESSFUL] 8
+[SKIPPED_ERRORS] 0
+[PENDING] 2834
+[GPU_BEFORE_LOAD] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 38.955, "total_gib": 39.381, "allocated_gib": 0.0, "reserved_gib": 0.0, "max_allocated_gib": 0.0}
+[LOAD_TOKENIZER]
+[TOKENIZER_OK] 2.209s
+[LOAD_MODEL]
+[DEVICE_MAP] auto
+
+Loading weights:   0%|          | 0/1065 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/1065 [00:00<02:54,  6.11it/s]
+Loading weights:   2%|▏         | 16/1065 [00:00<00:14, 72.84it/s]
+Loading weights:   3%|▎         | 31/1065 [00:00<00:10, 96.26it/s]
+Loading weights:   5%|▍         | 53/1065 [00:00<00:07, 138.10it/s]
+Loading weights:   6%|▋         | 68/1065 [00:00<00:07, 141.46it/s]
+Loading weights:   8%|▊         | 83/1065 [00:00<00:07, 135.34it/s]
+Loading weights:  10%|▉         | 105/1065 [00:00<00:05, 160.50it/s]
+Loading weights:  11%|█▏        | 122/1065 [00:00<00:06, 144.50it/s]
+Loading weights:  14%|█▎        | 144/1065 [00:01<00:05, 164.57it/s]
+Loading weights:  15%|█▌        | 162/1065 [00:01<00:06, 148.63it/s]
+Loading weights:  17%|█▋        | 183/1065 [00:01<00:05, 163.95it/s]
+Loading weights:  19%|█▉        | 201/1065 [00:01<00:05, 149.70it/s]
+Loading weights:  21%|██        | 219/1065 [00:01<00:05, 156.70it/s]
+Loading weights:  22%|██▏       | 237/1065 [00:01<00:05, 157.64it/s]
+Loading weights:  24%|██▍       | 254/1065 [00:01<00:05, 150.29it/s]
+Loading weights:  26%|██▌       | 273/1065 [00:01<00:04, 158.48it/s]
+Loading weights:  27%|██▋       | 290/1065 [00:02<00:05, 151.75it/s]
+Loading weights:  29%|██▉       | 308/1065 [00:02<00:04, 157.83it/s]
+Loading weights:  31%|███       | 325/1065 [00:02<00:04, 157.90it/s]
+Loading weights:  32%|███▏      | 341/1065 [00:02<00:04, 155.20it/s]
+Loading weights:  34%|███▎      | 357/1065 [00:02<00:05, 141.46it/s]
+Loading weights:  35%|███▌      | 377/1065 [00:02<00:04, 155.99it/s]
+Loading weights:  37%|███▋      | 393/1065 [00:02<00:04, 147.25it/s]
+Loading weights:  38%|███▊      | 409/1065 [00:02<00:04, 135.96it/s]
+Loading weights:  40%|████      | 430/1065 [00:02<00:04, 153.92it/s]
+Loading weights:  42%|████▏     | 446/1065 [00:03<00:04, 144.71it/s]
+Loading weights:  43%|████▎     | 461/1065 [00:03<00:04, 138.89it/s]
+Loading weights:  45%|████▌     | 482/1065 [00:03<00:03, 157.42it/s]
+Loading weights:  47%|████▋     | 499/1065 [00:03<00:03, 141.72it/s]
+Loading weights:  49%|████▉     | 520/1065 [00:03<00:03, 157.16it/s]
+Loading weights:  50%|█████     | 537/1065 [00:03<00:03, 144.64it/s]
+Loading weights:  52%|█████▏    | 553/1065 [00:03<00:03, 143.94it/s]
+Loading weights:  54%|█████▎    | 570/1065 [00:03<00:03, 150.35it/s]
+Loading weights:  55%|█████▌    | 587/1065 [00:04<00:03, 150.55it/s]
+Loading weights:  57%|█████▋    | 603/1065 [00:04<00:03, 141.67it/s]
+Loading weights:  59%|█████▊    | 625/1065 [00:04<00:02, 161.12it/s]
+Loading weights:  79%|███████▉  | 844/1065 [00:04<00:00, 714.07it/s]
+Loading weights: 100%|█████████▉| 1063/1065 [00:04<00:00, 1127.29it/s]
+Loading weights: 100%|██████████| 1065/1065 [00:04<00:00, 239.35it/s] 
+[MODEL_OK] 6.004s
+[GPU_AFTER_LOAD] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 16.162, "total_gib": 39.381, "allocated_gib": 22.701, "reserved_gib": 22.719, "max_allocated_gib": 22.701}
+[MAX_BATCH_SIZE] 2
+[TOKEN_BUDGET] 7000
+[MODEL_CONTEXT] 1024
+[PREPARATION_ERRORS] 2834
+[BATCHES] 0
+=== MODEL WORKER FINISHED ===
+[FINAL_SUCCESSFUL_OR_INVALID] 8/2842
+[FINAL_ERRORS] 2834
+[GPU_AFTER_CLEANUP] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 38.881, "total_gib": 39.381, "allocated_gib": 0.0, "reserved_gib": 0.0, "max_allocated_gib": 22.701}
+=== MODEL EXPERIMENT WORKER ===
+[MODEL_ID] gemma_3_12b_it
+[MODEL_PATH] /home/tahiti/RIFT/models/Gemma-3-12B-it
+[GPU_PHYSICAL_ID] 0
+[PYTHON] /home/tahiti/Forensics/.venv_forensics/bin/python
+[TORCH] 2.6.0+cu124
+[TRANSFORMERS] 5.12.0
+[TOTAL_JOBS] 2842
+[ALREADY_SUCCESSFUL] 8
+[SKIPPED_ERRORS] 0
+[PENDING] 2834
+[GPU_BEFORE_LOAD] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 38.955, "total_gib": 39.381, "allocated_gib": 0.0, "reserved_gib": 0.0, "max_allocated_gib": 0.0}
+[LOAD_TOKENIZER]
+[TOKENIZER_OK] 2.035s
+[LOAD_MODEL]
+[DEVICE_MAP] auto
+
+Loading weights:   0%|          | 0/1065 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/1065 [00:00<03:24,  5.21it/s]
+Loading weights:   2%|▏         | 17/1065 [00:00<00:15, 67.21it/s]
+Loading weights:   4%|▍         | 42/1065 [00:00<00:08, 125.70it/s]
+Loading weights:   5%|▌         | 57/1065 [00:00<00:08, 124.28it/s]
+Loading weights:   7%|▋         | 79/1065 [00:00<00:06, 153.33it/s]
+Loading weights:   9%|▉         | 96/1065 [00:00<00:06, 141.53it/s]
+Loading weights:  11%|█         | 117/1065 [00:00<00:05, 160.13it/s]
+Loading weights:  13%|█▎        | 134/1065 [00:01<00:06, 151.45it/s]
+Loading weights:  14%|█▍        | 150/1065 [00:01<00:06, 151.80it/s]
+Loading weights:  16%|█▌        | 172/1065 [00:01<00:05, 162.36it/s]
+Loading weights:  18%|█▊        | 189/1065 [00:01<00:05, 154.68it/s]
+Loading weights:  20%|█▉        | 211/1065 [00:01<00:05, 164.77it/s]
+Loading weights:  21%|██▏       | 228/1065 [00:01<00:05, 154.64it/s]
+Loading weights:  23%|██▎       | 249/1065 [00:01<00:05, 162.78it/s]
+Loading weights:  25%|██▍       | 266/1065 [00:01<00:05, 155.36it/s]
+Loading weights:  27%|██▋       | 289/1065 [00:01<00:04, 168.89it/s]
+Loading weights:  29%|██▉       | 307/1065 [00:02<00:04, 166.31it/s]
+Loading weights:  31%|███       | 325/1065 [00:02<00:04, 169.20it/s]
+Loading weights:  32%|███▏      | 343/1065 [00:02<00:04, 154.97it/s]
+Loading weights:  34%|███▍      | 364/1065 [00:02<00:04, 168.44it/s]
+Loading weights:  36%|███▌      | 382/1065 [00:02<00:04, 151.07it/s]
+Loading weights:  38%|███▊      | 404/1065 [00:02<00:03, 168.04it/s]
+Loading weights:  40%|███▉      | 422/1065 [00:02<00:04, 149.55it/s]
+Loading weights:  42%|████▏     | 443/1065 [00:02<00:03, 163.95it/s]
+Loading weights:  43%|████▎     | 461/1065 [00:03<00:04, 147.79it/s]
+Loading weights:  45%|████▌     | 484/1065 [00:03<00:03, 160.92it/s]
+Loading weights:  47%|████▋     | 501/1065 [00:03<00:03, 156.01it/s]
+Loading weights:  49%|████▉     | 521/1065 [00:03<00:03, 158.59it/s]
+Loading weights:  51%|█████     | 538/1065 [00:03<00:03, 148.90it/s]
+Loading weights:  53%|█████▎    | 562/1065 [00:03<00:03, 165.65it/s]
+Loading weights:  54%|█████▍    | 579/1065 [00:03<00:03, 156.73it/s]
+Loading weights:  56%|█████▌    | 599/1065 [00:03<00:02, 166.79it/s]
+Loading weights:  58%|█████▊    | 616/1065 [00:04<00:02, 150.34it/s]
+Loading weights:  78%|███████▊  | 827/1065 [00:04<00:00, 648.01it/s]
+Loading weights: 100%|██████████| 1065/1065 [00:04<00:00, 250.51it/s]
+[MODEL_OK] 5.827s
+[GPU_AFTER_LOAD] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 16.162, "total_gib": 39.381, "allocated_gib": 22.701, "reserved_gib": 22.719, "max_allocated_gib": 22.701}
+[MAX_BATCH_SIZE] 2
+[TOKEN_BUDGET] 7000
+[MODEL_CONTEXT] 1024
+[PREPARATION_ERRORS] 2834
+[BATCHES] 0
+=== MODEL WORKER FINISHED ===
+[FINAL_SUCCESSFUL_OR_INVALID] 8/2842
+[FINAL_ERRORS] 2834
+[GPU_AFTER_CLEANUP] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 38.881, "total_gib": 39.381, "allocated_gib": 0.0, "reserved_gib": 0.0, "max_allocated_gib": 22.701}
+=== MODEL EXPERIMENT WORKER ===
+[MODEL_ID] gemma_3_12b_it
+[MODEL_PATH] /home/tahiti/RIFT/models/Gemma-3-12B-it
+[GPU_PHYSICAL_ID] 0
+[PYTHON] /home/tahiti/Forensics/.venv_forensics/bin/python
+[TORCH] 2.6.0+cu124
+[TRANSFORMERS] 5.12.0
+[TOTAL_JOBS] 2842
+[ALREADY_SUCCESSFUL] 8
+[SKIPPED_ERRORS] 0
+[PENDING] 2834
+[GPU_BEFORE_LOAD] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 38.955, "total_gib": 39.381, "allocated_gib": 0.0, "reserved_gib": 0.0, "max_allocated_gib": 0.0}
+[LOAD_TOKENIZER]
+[TOKENIZER_OK] 2.253s
+[LOAD_MODEL]
+[DEVICE_MAP] auto
+
+Loading weights:   0%|          | 0/1065 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/1065 [00:00<03:29,  5.07it/s]
+Loading weights:   2%|▏         | 18/1065 [00:00<00:14, 69.97it/s]
+Loading weights:   4%|▍         | 42/1065 [00:00<00:08, 122.84it/s]
+Loading weights:   5%|▌         | 57/1065 [00:00<00:08, 123.16it/s]
+Loading weights:   8%|▊         | 81/1065 [00:00<00:06, 150.56it/s]
+Loading weights:   9%|▉         | 97/1065 [00:00<00:06, 147.60it/s]
+Loading weights:  11%|█▏        | 120/1065 [00:00<00:05, 165.32it/s]
+Loading weights:  13%|█▎        | 137/1065 [00:01<00:05, 159.15it/s]
+Loading weights:  15%|█▍        | 157/1065 [00:01<00:05, 163.82it/s]
+Loading weights:  16%|█▋        | 174/1065 [00:01<00:05, 157.27it/s]
+Loading weights:  19%|█▊        | 198/1065 [00:01<00:04, 175.20it/s]
+Loading weights:  20%|██        | 216/1065 [00:01<00:05, 165.19it/s]
+Loading weights:  22%|██▏       | 237/1065 [00:01<00:04, 170.94it/s]
+Loading weights:  24%|██▍       | 255/1065 [00:01<00:04, 166.72it/s]
+Loading weights:  26%|██▌       | 276/1065 [00:01<00:04, 170.60it/s]
+Loading weights:  28%|██▊       | 294/1065 [00:01<00:04, 165.23it/s]
+Loading weights:  30%|██▉       | 315/1065 [00:02<00:04, 171.51it/s]
+Loading weights:  31%|███▏      | 333/1065 [00:02<00:04, 164.41it/s]
+Loading weights:  33%|███▎      | 354/1065 [00:02<00:04, 169.91it/s]
+Loading weights:  35%|███▍      | 372/1065 [00:02<00:04, 159.87it/s]
+Loading weights:  37%|███▋      | 389/1065 [00:02<00:04, 162.48it/s]
+Loading weights:  38%|███▊      | 406/1065 [00:02<00:04, 162.08it/s]
+Loading weights:  40%|███▉      | 423/1065 [00:02<00:04, 154.03it/s]
+Loading weights:  42%|████▏     | 445/1065 [00:02<00:03, 165.95it/s]
+Loading weights:  43%|████▎     | 462/1065 [00:02<00:03, 155.69it/s]
+Loading weights:  45%|████▌     | 484/1065 [00:03<00:03, 167.42it/s]
+Loading weights:  47%|████▋     | 501/1065 [00:03<00:03, 161.41it/s]
+Loading weights:  49%|████▉     | 523/1065 [00:03<00:03, 172.98it/s]
+Loading weights:  51%|█████     | 541/1065 [00:03<00:03, 162.22it/s]
+Loading weights:  53%|█████▎    | 562/1065 [00:03<00:02, 169.91it/s]
+Loading weights:  54%|█████▍    | 580/1065 [00:03<00:02, 166.06it/s]
+Loading weights:  56%|█████▌    | 599/1065 [00:03<00:02, 171.49it/s]
+Loading weights:  58%|█████▊    | 617/1065 [00:03<00:02, 156.09it/s]
+Loading weights:  77%|███████▋  | 817/1065 [00:04<00:00, 639.75it/s]
+Loading weights:  99%|█████████▉| 1054/1065 [00:04<00:00, 1109.05it/s]
+Loading weights: 100%|██████████| 1065/1065 [00:04<00:00, 257.90it/s] 
+[MODEL_OK] 5.658s
+[GPU_AFTER_LOAD] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 16.162, "total_gib": 39.381, "allocated_gib": 22.701, "reserved_gib": 22.719, "max_allocated_gib": 22.701}
+[MAX_BATCH_SIZE] 2
+[TOKEN_BUDGET] 7000
+[MODEL_CONTEXT] 1024
+[PREPARATION_ERRORS] 2834
+[BATCHES] 0
+=== MODEL WORKER FINISHED ===
+[FINAL_SUCCESSFUL_OR_INVALID] 8/2842
+[FINAL_ERRORS] 2834
+[GPU_AFTER_CLEANUP] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 38.881, "total_gib": 39.381, "allocated_gib": 0.0, "reserved_gib": 0.0, "max_allocated_gib": 22.701}
+=== MODEL EXPERIMENT WORKER ===
+[MODEL_ID] gemma_3_12b_it
+[MODEL_PATH] /home/tahiti/RIFT/models/Gemma-3-12B-it
+[GPU_PHYSICAL_ID] 0
+[PYTHON] /home/tahiti/Forensics/.venv_forensics/bin/python
+[TORCH] 2.6.0+cu124
+[TRANSFORMERS] 5.12.0
+[TOTAL_JOBS] 2842
+[ALREADY_SUCCESSFUL] 8
+[SKIPPED_ERRORS] 0
+[PENDING] 2834
+[GPU_BEFORE_LOAD] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 38.955, "total_gib": 39.381, "allocated_gib": 0.0, "reserved_gib": 0.0, "max_allocated_gib": 0.0}
+[LOAD_TOKENIZER]
+[TOKENIZER_OK] 2.081s
+[LOAD_MODEL]
+[DEVICE_MAP] auto
+
+Loading weights:   0%|          | 0/1065 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/1065 [00:00<03:05,  5.73it/s]
+Loading weights:   2%|▏         | 17/1065 [00:00<00:15, 68.64it/s]
+Loading weights:   3%|▎         | 36/1065 [00:00<00:09, 110.68it/s]
+Loading weights:   5%|▌         | 55/1065 [00:00<00:07, 135.08it/s]
+Loading weights:   7%|▋         | 70/1065 [00:00<00:07, 130.65it/s]
+Loading weights:   9%|▉         | 94/1065 [00:00<00:06, 158.24it/s]
+Loading weights:  10%|█         | 111/1065 [00:00<00:06, 154.03it/s]
+Loading weights:  12%|█▏        | 133/1065 [00:00<00:05, 166.70it/s]
+Loading weights:  14%|█▍        | 150/1065 [00:01<00:05, 159.43it/s]
+Loading weights:  16%|█▌        | 172/1065 [00:01<00:05, 168.39it/s]
+Loading weights:  18%|█▊        | 189/1065 [00:01<00:05, 162.21it/s]
+Loading weights:  20%|█▉        | 211/1065 [00:01<00:04, 171.76it/s]
+Loading weights:  22%|██▏       | 229/1065 [00:01<00:05, 164.45it/s]
+Loading weights:  23%|██▎       | 250/1065 [00:01<00:04, 170.86it/s]
+Loading weights:  25%|██▌       | 268/1065 [00:01<00:04, 164.00it/s]
+Loading weights:  27%|██▋       | 289/1065 [00:01<00:04, 172.03it/s]
+Loading weights:  29%|██▉       | 307/1065 [00:02<00:04, 168.51it/s]
+Loading weights:  31%|███       | 326/1065 [00:02<00:04, 173.35it/s]
+Loading weights:  32%|███▏      | 344/1065 [00:02<00:04, 159.78it/s]
+Loading weights:  34%|███▍      | 364/1065 [00:02<00:04, 170.24it/s]
+Loading weights:  36%|███▌      | 382/1065 [00:02<00:04, 151.70it/s]
+Loading weights:  38%|███▊      | 406/1065 [00:02<00:03, 166.60it/s]
+Loading weights:  40%|███▉      | 424/1065 [00:02<00:03, 160.27it/s]
+Loading weights:  42%|████▏     | 443/1065 [00:02<00:03, 167.47it/s]
+Loading weights:  43%|████▎     | 461/1065 [00:02<00:04, 148.90it/s]
+Loading weights:  45%|████▌     | 484/1065 [00:03<00:03, 163.00it/s]
+Loading weights:  47%|████▋     | 501/1065 [00:03<00:03, 157.82it/s]
+Loading weights:  49%|████▉     | 523/1065 [00:03<00:03, 168.75it/s]
+Loading weights:  51%|█████     | 541/1065 [00:03<00:03, 158.66it/s]
+Loading weights:  53%|█████▎    | 562/1065 [00:03<00:03, 165.16it/s]
+Loading weights:  54%|█████▍    | 579/1065 [00:03<00:03, 158.14it/s]
+Loading weights:  56%|█████▌    | 598/1065 [00:03<00:02, 164.92it/s]
+Loading weights:  58%|█████▊    | 615/1065 [00:03<00:02, 156.98it/s]
+Loading weights:  74%|███████▎  | 783/1065 [00:04<00:00, 562.44it/s]
+Loading weights:  96%|█████████▌| 1019/1065 [00:04<00:00, 1056.29it/s]
+Loading weights: 100%|██████████| 1065/1065 [00:04<00:00, 256.47it/s] 
+[MODEL_OK] 5.645s
+[GPU_AFTER_LOAD] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 16.162, "total_gib": 39.381, "allocated_gib": 22.701, "reserved_gib": 22.719, "max_allocated_gib": 22.701}
+[MAX_BATCH_SIZE] 2
+[TOKEN_BUDGET] 7000
+[MODEL_CONTEXT] 1024
+[PREPARATION_ERRORS] 2834
+[BATCHES] 0
+=== MODEL WORKER FINISHED ===
+[FINAL_SUCCESSFUL_OR_INVALID] 8/2842
+[FINAL_ERRORS] 2834
+[GPU_AFTER_CLEANUP] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 38.881, "total_gib": 39.381, "allocated_gib": 0.0, "reserved_gib": 0.0, "max_allocated_gib": 22.701}
+=== MODEL EXPERIMENT WORKER ===
+[MODEL_ID] gemma_3_12b_it
+[MODEL_PATH] /home/tahiti/RIFT/models/Gemma-3-12B-it
+[GPU_PHYSICAL_ID] 0
+[PYTHON] /home/tahiti/Forensics/.venv_forensics/bin/python
+[TORCH] 2.6.0+cu124
+[TRANSFORMERS] 5.12.0
+[TOTAL_JOBS] 2842
+[ALREADY_SUCCESSFUL] 8
+[SKIPPED_ERRORS] 0
+[PENDING] 2834
+[GPU_BEFORE_LOAD] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 38.955, "total_gib": 39.381, "allocated_gib": 0.0, "reserved_gib": 0.0, "max_allocated_gib": 0.0}
+[LOAD_TOKENIZER]
+[TOKENIZER_OK] 2.203s
+[LOAD_MODEL]
+[DEVICE_MAP] auto
+
+Loading weights:   0%|          | 0/1065 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/1065 [00:00<03:29,  5.09it/s]
+Loading weights:   2%|▏         | 17/1065 [00:00<00:15, 68.35it/s]
+Loading weights:   3%|▎         | 31/1065 [00:00<00:11, 92.26it/s]
+Loading weights:   5%|▍         | 51/1065 [00:00<00:07, 128.39it/s]
+Loading weights:   6%|▋         | 68/1065 [00:00<00:07, 138.54it/s]
+Loading weights:   8%|▊         | 83/1065 [00:00<00:07, 130.88it/s]
+Loading weights:  10%|█         | 107/1065 [00:00<00:06, 154.97it/s]
+Loading weights:  12%|█▏        | 124/1065 [00:00<00:06, 147.19it/s]
+Loading weights:  14%|█▎        | 145/1065 [00:01<00:05, 155.90it/s]
+Loading weights:  15%|█▌        | 161/1065 [00:01<00:06, 143.09it/s]
+Loading weights:  17%|█▋        | 185/1065 [00:01<00:05, 160.13it/s]
+Loading weights:  19%|█▉        | 202/1065 [00:01<00:05, 155.19it/s]
+Loading weights:  20%|██        | 218/1065 [00:01<00:05, 156.26it/s]
+Loading weights:  22%|██▏       | 237/1065 [00:01<00:05, 164.01it/s]
+Loading weights:  24%|██▍       | 254/1065 [00:01<00:05, 155.58it/s]
+Loading weights:  25%|██▌       | 271/1065 [00:01<00:05, 158.52it/s]
+Loading weights:  27%|██▋       | 289/1065 [00:02<00:04, 160.53it/s]
+Loading weights:  29%|██▊       | 306/1065 [00:02<00:04, 155.42it/s]
+Loading weights:  31%|███       | 325/1065 [00:02<00:04, 163.92it/s]
+Loading weights:  32%|███▏      | 342/1065 [00:02<00:04, 158.95it/s]
+Loading weights:  34%|███▎      | 358/1065 [00:02<00:04, 156.19it/s]
+Loading weights:  36%|███▌      | 380/1065 [00:02<00:04, 162.70it/s]
+Loading weights:  37%|███▋      | 397/1065 [00:02<00:04, 151.45it/s]
+Loading weights:  39%|███▉      | 416/1065 [00:02<00:04, 161.13it/s]
+Loading weights:  41%|████      | 433/1065 [00:02<00:04, 155.07it/s]
+Loading weights:  42%|████▏     | 449/1065 [00:03<00:03, 155.06it/s]
+Loading weights:  44%|████▍     | 468/1065 [00:03<00:03, 162.44it/s]
+Loading weights:  46%|████▌     | 485/1065 [00:03<00:03, 156.49it/s]
+Loading weights:  47%|████▋     | 503/1065 [00:03<00:03, 162.93it/s]
+Loading weights:  49%|████▉     | 522/1065 [00:03<00:03, 162.46it/s]
+Loading weights:  51%|█████     | 539/1065 [00:03<00:03, 148.57it/s]
+Loading weights:  53%|█████▎    | 562/1065 [00:03<00:03, 160.56it/s]
+Loading weights:  54%|█████▍    | 579/1065 [00:03<00:03, 151.95it/s]
+Loading weights:  56%|█████▌    | 595/1065 [00:03<00:03, 151.00it/s]
+Loading weights:  58%|█████▊    | 614/1065 [00:04<00:02, 156.82it/s]
+Loading weights:  66%|██████▌   | 705/1065 [00:04<00:01, 359.91it/s]
+Loading weights:  89%|████████▉ | 951/1065 [00:04<00:00, 941.07it/s]
+Loading weights: 100%|██████████| 1065/1065 [00:04<00:00, 245.06it/s]
+[MODEL_OK] 5.986s
+[GPU_AFTER_LOAD] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 16.162, "total_gib": 39.381, "allocated_gib": 22.701, "reserved_gib": 22.719, "max_allocated_gib": 22.701}
+[MAX_BATCH_SIZE] 2
+[TOKEN_BUDGET] 7000
+[MODEL_CONTEXT] 1024
+[PREPARATION_ERRORS] 2834
+[BATCHES] 0
+=== MODEL WORKER FINISHED ===
+[FINAL_SUCCESSFUL_OR_INVALID] 8/2842
+[FINAL_ERRORS] 2834
+[GPU_AFTER_CLEANUP] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 38.881, "total_gib": 39.381, "allocated_gib": 0.0, "reserved_gib": 0.0, "max_allocated_gib": 22.701}
+=== MODEL EXPERIMENT WORKER ===
+[MODEL_ID] gemma_3_12b_it
+[MODEL_PATH] /home/tahiti/RIFT/models/Gemma-3-12B-it
+[GPU_PHYSICAL_ID] 0
+[PYTHON] /home/tahiti/Forensics/.venv_forensics/bin/python
+[TORCH] 2.6.0+cu124
+[TRANSFORMERS] 5.12.0
+[TOTAL_JOBS] 2842
+[ALREADY_SUCCESSFUL] 8
+[SKIPPED_ERRORS] 0
+[PENDING] 2834
+[GPU_BEFORE_LOAD] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 38.955, "total_gib": 39.381, "allocated_gib": 0.0, "reserved_gib": 0.0, "max_allocated_gib": 0.0}
+[LOAD_TOKENIZER]
+[TOKENIZER_OK] 2.166s
+[LOAD_MODEL]
+[DEVICE_MAP] auto
+
+Loading weights:   0%|          | 0/1065 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/1065 [00:00<03:03,  5.81it/s]
+Loading weights:   2%|▏         | 16/1065 [00:00<00:14, 70.83it/s]
+Loading weights:   3%|▎         | 31/1065 [00:00<00:10, 94.70it/s]
+Loading weights:   5%|▌         | 55/1065 [00:00<00:07, 135.26it/s]
+Loading weights:   7%|▋         | 70/1065 [00:00<00:07, 132.02it/s]
+Loading weights:   9%|▉         | 94/1065 [00:00<00:06, 156.26it/s]
+Loading weights:  10%|█         | 111/1065 [00:00<00:06, 150.81it/s]
+Loading weights:  12%|█▏        | 133/1065 [00:00<00:05, 162.11it/s]
+Loading weights:  14%|█▍        | 150/1065 [00:01<00:05, 153.72it/s]
+Loading weights:  16%|█▌        | 167/1065 [00:01<00:05, 157.89it/s]
+Loading weights:  17%|█▋        | 185/1065 [00:01<00:05, 160.16it/s]
+Loading weights:  19%|█▉        | 202/1065 [00:01<00:05, 155.49it/s]
+Loading weights:  21%|██        | 221/1065 [00:01<00:05, 162.62it/s]
+Loading weights:  22%|██▏       | 238/1065 [00:01<00:05, 155.15it/s]
+Loading weights:  24%|██▍       | 254/1065 [00:01<00:05, 156.14it/s]
+Loading weights:  26%|██▌       | 273/1065 [00:01<00:04, 162.82it/s]
+Loading weights:  27%|██▋       | 290/1065 [00:02<00:05, 148.44it/s]
+Loading weights:  30%|██▉       | 315/1065 [00:02<00:04, 167.07it/s]
+Loading weights:  31%|███       | 332/1065 [00:02<00:04, 156.61it/s]
+Loading weights:  33%|███▎      | 354/1065 [00:02<00:04, 163.91it/s]
+Loading weights:  35%|███▍      | 371/1065 [00:02<00:04, 151.54it/s]
+Loading weights:  36%|███▋      | 387/1065 [00:02<00:04, 147.34it/s]
+Loading weights:  38%|███▊      | 406/1065 [00:02<00:04, 153.64it/s]
+Loading weights:  40%|███▉      | 422/1065 [00:02<00:04, 144.57it/s]
+Loading weights:  42%|████▏     | 443/1065 [00:02<00:03, 161.21it/s]
+Loading weights:  43%|████▎     | 460/1065 [00:03<00:04, 144.98it/s]
+Loading weights:  45%|████▌     | 484/1065 [00:03<00:03, 161.02it/s]
+Loading weights:  47%|████▋     | 501/1065 [00:03<00:03, 154.16it/s]
+Loading weights:  49%|████▉     | 523/1065 [00:03<00:03, 164.50it/s]
+Loading weights:  51%|█████     | 540/1065 [00:03<00:03, 152.05it/s]
+Loading weights:  53%|█████▎    | 562/1065 [00:03<00:03, 162.87it/s]
+Loading weights:  54%|█████▍    | 579/1065 [00:03<00:03, 154.32it/s]
+Loading weights:  56%|█████▌    | 595/1065 [00:03<00:03, 154.93it/s]
+Loading weights:  58%|█████▊    | 614/1065 [00:04<00:02, 160.69it/s]
+Loading weights:  67%|██████▋   | 717/1065 [00:04<00:00, 397.19it/s]
+Loading weights:  90%|████████▉ | 955/1065 [00:04<00:00, 951.42it/s]
+Loading weights: 100%|██████████| 1065/1065 [00:04<00:00, 246.79it/s]
+[MODEL_OK] 5.926s
+[GPU_AFTER_LOAD] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 16.162, "total_gib": 39.381, "allocated_gib": 22.701, "reserved_gib": 22.719, "max_allocated_gib": 22.701}
+[MAX_BATCH_SIZE] 2
+[TOKEN_BUDGET] 7000
+[MODEL_CONTEXT] 1024
+[PREPARATION_ERRORS] 2834
+[BATCHES] 0
+=== MODEL WORKER FINISHED ===
+[FINAL_SUCCESSFUL_OR_INVALID] 8/2842
+[FINAL_ERRORS] 2834
+[GPU_AFTER_CLEANUP] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 38.881, "total_gib": 39.381, "allocated_gib": 0.0, "reserved_gib": 0.0, "max_allocated_gib": 22.701}
+=== MODEL EXPERIMENT WORKER ===
+[MODEL_ID] gemma_3_12b_it
+[MODEL_PATH] /home/tahiti/RIFT/models/Gemma-3-12B-it
+[GPU_PHYSICAL_ID] 0
+[PYTHON] /home/tahiti/Forensics/.venv_forensics/bin/python
+[TORCH] 2.6.0+cu124
+[TRANSFORMERS] 5.12.0
+[TOTAL_JOBS] 2842
+[ALREADY_SUCCESSFUL] 8
+[SKIPPED_ERRORS] 0
+[PENDING] 2834
+[GPU_BEFORE_LOAD] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 35.809, "total_gib": 39.381, "allocated_gib": 0.0, "reserved_gib": 0.0, "max_allocated_gib": 0.0}
+[LOAD_TOKENIZER]
+[TOKENIZER_OK] 2.542s
+[LOAD_MODEL]
+[DEVICE_MAP] auto
+
+Loading weights:   0%|          | 0/1065 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/1065 [00:01<33:47,  1.91s/it]
+Loading weights:   0%|          | 3/1065 [00:02<09:26,  1.88it/s]
+Loading weights:   0%|          | 5/1065 [00:02<05:29,  3.22it/s]
+Loading weights:   2%|▏         | 16/1065 [00:02<01:21, 12.88it/s]
+Loading weights:   2%|▏         | 19/1065 [00:02<01:18, 13.26it/s]
+Loading weights:   3%|▎         | 29/1065 [00:02<00:48, 21.56it/s]
+Loading weights:   3%|▎         | 33/1065 [00:03<00:50, 20.60it/s]
+Loading weights:   4%|▍         | 41/1065 [00:03<00:38, 26.46it/s]
+Loading weights:   4%|▍         | 45/1065 [00:03<00:39, 25.98it/s]
+Loading weights:   5%|▌         | 55/1065 [00:03<00:30, 32.78it/s]
+Loading weights:   6%|▌         | 59/1065 [00:03<00:36, 27.64it/s]
+Loading weights:   6%|▋         | 68/1065 [00:04<00:30, 32.93it/s]
+Loading weights:   7%|▋         | 72/1065 [00:04<00:34, 28.50it/s]
+Loading weights:   8%|▊         | 81/1065 [00:04<00:29, 32.99it/s]
+Loading weights:   8%|▊         | 85/1065 [00:04<00:32, 29.90it/s]
+Loading weights:   9%|▊         | 92/1065 [00:04<00:26, 36.42it/s]
+Loading weights:   9%|▉         | 97/1065 [00:05<00:36, 26.21it/s]
+Loading weights:  10%|█         | 107/1065 [00:05<00:28, 33.31it/s]
+Loading weights:  10%|█         | 111/1065 [00:05<00:34, 28.06it/s]
+Loading weights:  11%|█         | 119/1065 [00:05<00:30, 31.53it/s]
+Loading weights:  12%|█▏        | 123/1065 [00:06<00:37, 25.14it/s]
+Loading weights:  12%|█▏        | 131/1065 [00:06<00:28, 32.75it/s]
+Loading weights:  13%|█▎        | 136/1065 [00:06<00:34, 27.02it/s]
+Loading weights:  14%|█▎        | 146/1065 [00:06<00:27, 33.63it/s]
+Loading weights:  14%|█▍        | 150/1065 [00:06<00:31, 28.63it/s]
+Loading weights:  15%|█▍        | 159/1065 [00:07<00:27, 33.31it/s]
+Loading weights:  15%|█▌        | 163/1065 [00:07<00:34, 26.48it/s]
+Loading weights:  16%|█▌        | 169/1065 [00:07<00:29, 30.82it/s]
+Loading weights:  16%|█▌        | 173/1065 [00:07<00:36, 24.65it/s]
+Loading weights:  17%|█▋        | 176/1065 [00:07<00:36, 24.20it/s]
+Loading weights:  17%|█▋        | 183/1065 [00:07<00:28, 30.69it/s]
+Loading weights:  18%|█▊        | 187/1065 [00:08<00:40, 21.72it/s]
+Loading weights:  18%|█▊        | 192/1065 [00:08<00:34, 25.58it/s]
+Loading weights:  19%|█▊        | 198/1065 [00:08<00:35, 24.76it/s]
+Loading weights:  19%|█▉        | 201/1065 [00:08<00:39, 22.06it/s]
+Loading weights:  19%|█▉        | 207/1065 [00:09<00:33, 25.60it/s]
+Loading weights:  20%|█▉        | 211/1065 [00:09<00:37, 22.67it/s]
+Loading weights:  20%|██        | 214/1065 [00:09<00:43, 19.78it/s]
+Loading weights:  21%|██        | 219/1065 [00:09<00:34, 24.67it/s]
+Loading weights:  21%|██        | 223/1065 [00:09<00:37, 22.28it/s]
+Loading weights:  21%|██        | 226/1065 [00:10<00:48, 17.22it/s]
+Loading weights:  22%|██▏       | 234/1065 [00:10<00:30, 26.98it/s]
+Loading weights:  22%|██▏       | 238/1065 [00:10<00:34, 23.76it/s]
+Loading weights:  23%|██▎       | 242/1065 [00:10<00:31, 26.49it/s]
+Loading weights:  23%|██▎       | 250/1065 [00:10<00:26, 30.25it/s]
+Loading weights:  24%|██▍       | 254/1065 [00:11<00:31, 26.13it/s]
+Loading weights:  25%|██▍       | 261/1065 [00:11<00:24, 33.49it/s]
+Loading weights:  25%|██▍       | 266/1065 [00:11<00:32, 24.30it/s]
+Loading weights:  26%|██▌       | 276/1065 [00:11<00:24, 32.30it/s]
+Loading weights:  26%|██▋       | 280/1065 [00:11<00:27, 28.43it/s]
+Loading weights:  27%|██▋       | 287/1065 [00:11<00:22, 34.53it/s]
+Loading weights:  27%|██▋       | 292/1065 [00:12<00:31, 24.43it/s]
+Loading weights:  28%|██▊       | 300/1065 [00:12<00:23, 32.39it/s]
+Loading weights:  29%|██▊       | 305/1065 [00:12<00:29, 25.85it/s]
+Loading weights:  30%|██▉       | 315/1065 [00:13<00:23, 31.58it/s]
+Loading weights:  30%|██▉       | 319/1065 [00:13<00:27, 27.56it/s]
+Loading weights:  31%|███       | 328/1065 [00:13<00:22, 32.74it/s]
+Loading weights:  31%|███       | 332/1065 [00:13<00:25, 28.57it/s]
+Loading weights:  32%|███▏      | 341/1065 [00:13<00:21, 33.06it/s]
+Loading weights:  32%|███▏      | 345/1065 [00:14<00:24, 29.29it/s]
+Loading weights:  33%|███▎      | 353/1065 [00:14<00:22, 31.86it/s]
+Loading weights:  34%|███▎      | 357/1065 [00:14<00:26, 26.89it/s]
+Loading weights:  34%|███▍      | 367/1065 [00:14<00:20, 33.29it/s]
+Loading weights:  35%|███▍      | 371/1065 [00:14<00:24, 28.38it/s]
+Loading weights:  36%|███▌      | 380/1065 [00:15<00:20, 33.20it/s]
+Loading weights:  36%|███▌      | 384/1065 [00:15<00:24, 28.36it/s]
+Loading weights:  37%|███▋      | 391/1065 [00:15<00:19, 35.26it/s]
+Loading weights:  37%|███▋      | 396/1065 [00:15<00:26, 25.34it/s]
+Loading weights:  38%|███▊      | 406/1065 [00:16<00:21, 31.34it/s]
+Loading weights:  38%|███▊      | 410/1065 [00:16<00:23, 27.33it/s]
+Loading weights:  39%|███▉      | 419/1065 [00:16<00:20, 31.35it/s]
+Loading weights:  40%|███▉      | 423/1065 [00:16<00:25, 25.32it/s]
+Loading weights:  40%|████      | 430/1065 [00:16<00:20, 31.12it/s]
+Loading weights:  41%|████      | 434/1065 [00:17<00:27, 22.68it/s]
+Loading weights:  42%|████▏     | 445/1065 [00:17<00:19, 31.32it/s]
+Loading weights:  42%|████▏     | 449/1065 [00:17<00:22, 27.18it/s]
+Loading weights:  43%|████▎     | 458/1065 [00:17<00:19, 31.58it/s]
+Loading weights:  43%|████▎     | 462/1065 [00:18<00:20, 29.02it/s]
+Loading weights:  44%|████▍     | 471/1065 [00:18<00:18, 32.28it/s]
+Loading weights:  45%|████▍     | 475/1065 [00:18<00:21, 27.88it/s]
+Loading weights:  45%|████▌     | 484/1065 [00:18<00:18, 31.67it/s]
+Loading weights:  46%|████▌     | 488/1065 [00:18<00:20, 27.84it/s]
+Loading weights:  47%|████▋     | 497/1065 [00:19<00:17, 33.24it/s]
+Loading weights:  47%|████▋     | 501/1065 [00:19<00:19, 29.45it/s]
+Loading weights:  48%|████▊     | 509/1065 [00:19<00:17, 32.34it/s]
+Loading weights:  48%|████▊     | 513/1065 [00:19<00:21, 26.09it/s]
+Loading weights:  49%|████▉     | 523/1065 [00:19<00:16, 32.91it/s]
+Loading weights:  49%|████▉     | 527/1065 [00:20<00:18, 28.66it/s]
+Loading weights:  50%|█████     | 535/1065 [00:20<00:14, 37.15it/s]
+Loading weights:  51%|█████     | 540/1065 [00:20<00:19, 26.54it/s]
+Loading weights:  51%|█████▏    | 547/1065 [00:20<00:15, 33.15it/s]
+Loading weights:  52%|█████▏    | 552/1065 [00:21<00:19, 26.43it/s]
+Loading weights:  53%|█████▎    | 562/1065 [00:21<00:15, 32.53it/s]
+Loading weights:  53%|█████▎    | 567/1065 [00:21<00:15, 31.30it/s]
+Loading weights:  54%|█████▍    | 574/1065 [00:21<00:15, 32.51it/s]
+Loading weights:  54%|█████▍    | 578/1065 [00:21<00:18, 25.91it/s]
+Loading weights:  55%|█████▌    | 588/1065 [00:22<00:14, 32.92it/s]
+Loading weights:  56%|█████▌    | 592/1065 [00:22<00:17, 27.75it/s]
+Loading weights:  56%|█████▌    | 599/1065 [00:22<00:13, 34.21it/s]
+Loading weights:  57%|█████▋    | 604/1065 [00:22<00:17, 26.16it/s]
+Loading weights:  58%|█████▊    | 614/1065 [00:22<00:13, 32.32it/s]
+Loading weights:  58%|█████▊    | 618/1065 [00:23<00:15, 28.07it/s]
+Loading weights:  59%|█████▉    | 631/1065 [00:23<00:09, 44.05it/s]
+Loading weights:  63%|██████▎   | 674/1065 [00:23<00:03, 115.61it/s]
+Loading weights:  68%|██████▊   | 722/1065 [00:23<00:01, 190.63it/s]
+Loading weights:  72%|███████▏  | 772/1065 [00:23<00:01, 260.10it/s]
+Loading weights:  77%|███████▋  | 817/1065 [00:23<00:00, 305.67it/s]
+Loading weights:  81%|████████  | 865/1065 [00:23<00:00, 350.28it/s]
+Loading weights:  86%|████████▌ | 913/1065 [00:23<00:00, 384.64it/s]
+Loading weights:  90%|████████▉ | 956/1065 [00:24<00:00, 396.50it/s]
+Loading weights:  94%|█████████▍| 1004/1065 [00:24<00:00, 412.62it/s]
+Loading weights:  99%|█████████▉| 1055/1065 [00:24<00:00, 439.19it/s]
+Loading weights: 100%|██████████| 1065/1065 [00:24<00:00, 43.92it/s] 
+[MODEL_OK] 26.144s
+[GPU_AFTER_LOAD] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 13.016, "total_gib": 39.381, "allocated_gib": 22.701, "reserved_gib": 22.719, "max_allocated_gib": 22.701}
+[MAX_BATCH_SIZE] 2
+[TOKEN_BUDGET] 7000
+[MODEL_CONTEXT] 131072
+[PREPARED] 250/2834
+[PREPARED] 500/2834
+[PREPARED] 750/2834
+[PREPARED] 1000/2834
+[PREPARED] 1250/2834
+[PREPARED] 1500/2834
+[PREPARED] 1750/2834
+[PREPARED] 2000/2834
+[PREPARED] 2250/2834
+[PREPARED] 2500/2834
+[PREPARED] 2750/2834
+[PREPARED] 2834/2834
+[PREPARATION_ERRORS] 0
+[BATCHES] 1505
+[PROGRESS] batches=10/1505 done=20/2834 ok=19 invalid=1 errors=0 elapsed_s=634.6 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.059, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.658, "max_allocated_gib": 23.496}
+[PROGRESS] batches=20/1505 done=40/2834 ok=39 invalid=1 errors=0 elapsed_s=1275.4 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.66, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.66, "max_allocated_gib": 23.499}
+[PROGRESS] batches=30/1505 done=60/2834 ok=59 invalid=1 errors=0 elapsed_s=1930.4 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.66, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.66, "max_allocated_gib": 23.501}
+[PROGRESS] batches=40/1505 done=80/2834 ok=79 invalid=1 errors=0 elapsed_s=2542.7 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.66, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.66, "max_allocated_gib": 23.502}
+[PROGRESS] batches=50/1505 done=100/2834 ok=98 invalid=2 errors=0 elapsed_s=3173.4 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.66, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.66, "max_allocated_gib": 23.504}
+[PROGRESS] batches=60/1505 done=120/2834 ok=116 invalid=4 errors=0 elapsed_s=3772.2 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.66, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.66, "max_allocated_gib": 23.505}
+[PROGRESS] batches=70/1505 done=140/2834 ok=133 invalid=7 errors=0 elapsed_s=4382.6 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.662, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.66, "max_allocated_gib": 23.507}
+[PROGRESS] batches=80/1505 done=160/2834 ok=151 invalid=9 errors=0 elapsed_s=4982.7 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.662, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.66, "max_allocated_gib": 23.508}
+[PROGRESS] batches=90/1505 done=180/2834 ok=167 invalid=13 errors=0 elapsed_s=5580.9 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.662, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.66, "max_allocated_gib": 23.509}
+[PROGRESS] batches=100/1505 done=200/2834 ok=183 invalid=17 errors=0 elapsed_s=6172.9 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.662, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.66, "max_allocated_gib": 23.51}
+[PROGRESS] batches=110/1505 done=220/2834 ok=201 invalid=19 errors=0 elapsed_s=6773.4 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.66, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.66, "max_allocated_gib": 23.511}
+[PROGRESS] batches=120/1505 done=240/2834 ok=216 invalid=24 errors=0 elapsed_s=7392.6 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.66, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.66, "max_allocated_gib": 23.512}
+[PROGRESS] batches=130/1505 done=260/2834 ok=234 invalid=26 errors=0 elapsed_s=8009.9 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.66, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.66, "max_allocated_gib": 23.513}
+[PROGRESS] batches=140/1505 done=280/2834 ok=253 invalid=27 errors=0 elapsed_s=8637.6 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.057, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.66, "max_allocated_gib": 23.514}
+[PROGRESS] batches=150/1505 done=300/2834 ok=268 invalid=32 errors=0 elapsed_s=9243.3 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.057, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.66, "max_allocated_gib": 23.515}
+[PROGRESS] batches=160/1505 done=320/2834 ok=281 invalid=39 errors=0 elapsed_s=9851.3 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.057, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.66, "max_allocated_gib": 23.516}
+[PROGRESS] batches=170/1505 done=340/2834 ok=299 invalid=41 errors=0 elapsed_s=10459.2 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.057, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.66, "max_allocated_gib": 23.517}
+[PROGRESS] batches=180/1505 done=360/2834 ok=314 invalid=46 errors=0 elapsed_s=11079.6 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.057, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.66, "max_allocated_gib": 23.518}
+[PROGRESS] batches=190/1505 done=380/2834 ok=333 invalid=47 errors=0 elapsed_s=11716.0 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.519}
+[PROGRESS] batches=200/1505 done=400/2834 ok=353 invalid=47 errors=0 elapsed_s=12339.5 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.52}
+[PROGRESS] batches=210/1505 done=420/2834 ok=369 invalid=51 errors=0 elapsed_s=12975.4 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.52}
+[PROGRESS] batches=220/1505 done=440/2834 ok=386 invalid=54 errors=0 elapsed_s=13593.3 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.66, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.521}
+[PROGRESS] batches=230/1505 done=460/2834 ok=403 invalid=57 errors=0 elapsed_s=14198.3 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.66, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.522}
+[PROGRESS] batches=240/1505 done=480/2834 ok=420 invalid=60 errors=0 elapsed_s=14802.7 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.523}
+[PROGRESS] batches=250/1505 done=500/2834 ok=436 invalid=64 errors=0 elapsed_s=15397.4 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.523}
+[PROGRESS] batches=260/1505 done=520/2834 ok=454 invalid=66 errors=0 elapsed_s=16001.6 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.524}
+[PROGRESS] batches=270/1505 done=540/2834 ok=470 invalid=70 errors=0 elapsed_s=16611.1 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.525}
+[PROGRESS] batches=280/1505 done=560/2834 ok=488 invalid=72 errors=0 elapsed_s=17226.6 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.526}
+[PROGRESS] batches=290/1505 done=580/2834 ok=505 invalid=75 errors=0 elapsed_s=17871.9 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.528}
+[PROGRESS] batches=300/1505 done=600/2834 ok=523 invalid=77 errors=0 elapsed_s=18498.0 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.528}
+[PROGRESS] batches=310/1505 done=620/2834 ok=541 invalid=79 errors=0 elapsed_s=19133.9 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.055, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.529}
+[PROGRESS] batches=320/1505 done=640/2834 ok=559 invalid=81 errors=0 elapsed_s=19743.1 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.055, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.53}
+[PROGRESS] batches=330/1505 done=660/2834 ok=578 invalid=82 errors=0 elapsed_s=20342.1 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.055, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.53}
+[PROGRESS] batches=340/1505 done=680/2834 ok=594 invalid=86 errors=0 elapsed_s=20959.7 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.055, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.532}
+[PROGRESS] batches=350/1505 done=700/2834 ok=613 invalid=87 errors=0 elapsed_s=21582.5 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.055, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.532}
+[PROGRESS] batches=360/1505 done=720/2834 ok=631 invalid=89 errors=0 elapsed_s=22213.2 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.533}
+[PROGRESS] batches=370/1505 done=740/2834 ok=650 invalid=90 errors=0 elapsed_s=22850.0 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.534}
+[PROGRESS] batches=380/1505 done=760/2834 ok=666 invalid=94 errors=0 elapsed_s=23487.3 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.534}
+[PROGRESS] batches=390/1505 done=780/2834 ok=685 invalid=95 errors=0 elapsed_s=24142.9 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.66, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.536}
+[PROGRESS] batches=400/1505 done=800/2834 ok=703 invalid=97 errors=0 elapsed_s=24766.6 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.537}
+[PROGRESS] batches=410/1505 done=820/2834 ok=719 invalid=101 errors=0 elapsed_s=25366.6 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.66, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.537}
+[PROGRESS] batches=420/1505 done=840/2834 ok=738 invalid=102 errors=0 elapsed_s=25972.6 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.66, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.538}
+[PROGRESS] batches=430/1505 done=860/2834 ok=757 invalid=103 errors=0 elapsed_s=26572.2 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.66, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.538}
+[PROGRESS] batches=440/1505 done=880/2834 ok=776 invalid=104 errors=0 elapsed_s=27174.7 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.66, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.538}
+[PROGRESS] batches=450/1505 done=900/2834 ok=793 invalid=107 errors=0 elapsed_s=27798.3 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.54}
+[PROGRESS] batches=460/1505 done=920/2834 ok=811 invalid=109 errors=0 elapsed_s=28440.5 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.54}
+[PROGRESS] batches=470/1505 done=940/2834 ok=831 invalid=109 errors=0 elapsed_s=29081.3 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.541}
+[PROGRESS] batches=480/1505 done=960/2834 ok=846 invalid=114 errors=0 elapsed_s=29722.9 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.055, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.542}
+[PROGRESS] batches=490/1505 done=980/2834 ok=865 invalid=115 errors=0 elapsed_s=30346.2 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.055, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.542}
+[PROGRESS] batches=500/1505 done=1000/2834 ok=883 invalid=117 errors=0 elapsed_s=30963.1 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.055, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.542}
+[PROGRESS] batches=510/1505 done=1020/2834 ok=900 invalid=120 errors=0 elapsed_s=31593.6 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.055, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.544}
+[PROGRESS] batches=520/1505 done=1040/2834 ok=918 invalid=122 errors=0 elapsed_s=32217.1 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.055, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.545}
+[PROGRESS] batches=530/1505 done=1060/2834 ok=935 invalid=125 errors=0 elapsed_s=32853.2 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.545}
+[PROGRESS] batches=540/1505 done=1080/2834 ok=952 invalid=128 errors=0 elapsed_s=33517.9 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.546}
+[PROGRESS] batches=550/1505 done=1100/2834 ok=971 invalid=129 errors=0 elapsed_s=34164.9 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.547}
+[PROGRESS] batches=560/1505 done=1120/2834 ok=990 invalid=130 errors=0 elapsed_s=34808.9 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.548}
+[PROGRESS] batches=570/1505 done=1140/2834 ok=1006 invalid=134 errors=0 elapsed_s=35432.3 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.548}
+[PROGRESS] batches=580/1505 done=1160/2834 ok=1023 invalid=137 errors=0 elapsed_s=36045.1 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.548}
+[PROGRESS] batches=590/1505 done=1180/2834 ok=1042 invalid=138 errors=0 elapsed_s=36661.4 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.549}
+[PROGRESS] batches=600/1505 done=1200/2834 ok=1060 invalid=140 errors=0 elapsed_s=37291.0 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.551}
+[PROGRESS] batches=610/1505 done=1220/2834 ok=1078 invalid=142 errors=0 elapsed_s=37924.5 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.551}
+[PROGRESS] batches=620/1505 done=1240/2834 ok=1097 invalid=143 errors=0 elapsed_s=38564.2 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.553}
+[PROGRESS] batches=630/1505 done=1260/2834 ok=1114 invalid=146 errors=0 elapsed_s=39204.0 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.553}
+[PROGRESS] batches=640/1505 done=1280/2834 ok=1131 invalid=149 errors=0 elapsed_s=39832.7 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.66, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.554}
+[PROGRESS] batches=650/1505 done=1300/2834 ok=1148 invalid=152 errors=0 elapsed_s=40452.5 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.555}
+[PROGRESS] batches=660/1505 done=1320/2834 ok=1164 invalid=156 errors=0 elapsed_s=41102.9 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.557}
+[PROGRESS] batches=670/1505 done=1340/2834 ok=1184 invalid=156 errors=0 elapsed_s=41759.7 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.557}
+[PROGRESS] batches=680/1505 done=1360/2834 ok=1204 invalid=156 errors=0 elapsed_s=42436.9 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.558}
+[PROGRESS] batches=690/1505 done=1380/2834 ok=1220 invalid=160 errors=0 elapsed_s=43101.1 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.559}
+[PROGRESS] batches=700/1505 done=1400/2834 ok=1240 invalid=160 errors=0 elapsed_s=43765.5 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.56}
+[PROGRESS] batches=710/1505 done=1420/2834 ok=1258 invalid=162 errors=0 elapsed_s=44432.6 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.561}
+[PROGRESS] batches=720/1505 done=1440/2834 ok=1276 invalid=164 errors=0 elapsed_s=45104.4 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.562}
+[PROGRESS] batches=730/1505 done=1460/2834 ok=1296 invalid=164 errors=0 elapsed_s=45777.5 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.563}
+[PROGRESS] batches=740/1505 done=1480/2834 ok=1315 invalid=165 errors=0 elapsed_s=46435.5 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.564}
+[PROGRESS] batches=750/1505 done=1500/2834 ok=1335 invalid=165 errors=0 elapsed_s=47084.2 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.565}
+[PROGRESS] batches=760/1505 done=1520/2834 ok=1354 invalid=166 errors=0 elapsed_s=47714.9 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.566}
+[PROGRESS] batches=770/1505 done=1540/2834 ok=1373 invalid=167 errors=0 elapsed_s=48341.4 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.566}
+[PROGRESS] batches=780/1505 done=1560/2834 ok=1393 invalid=167 errors=0 elapsed_s=48981.2 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.568}
+[PROGRESS] batches=790/1505 done=1580/2834 ok=1413 invalid=167 errors=0 elapsed_s=49620.1 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.568}
+[PROGRESS] batches=800/1505 done=1600/2834 ok=1432 invalid=168 errors=0 elapsed_s=50258.1 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.569}
+[PROGRESS] batches=810/1505 done=1620/2834 ok=1452 invalid=168 errors=0 elapsed_s=50890.7 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.57}
+[PROGRESS] batches=820/1505 done=1640/2834 ok=1472 invalid=168 errors=0 elapsed_s=51534.1 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.66, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.572}
+[PROGRESS] batches=830/1505 done=1660/2834 ok=1492 invalid=168 errors=0 elapsed_s=52177.6 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.572}
+[PROGRESS] batches=840/1505 done=1680/2834 ok=1510 invalid=170 errors=0 elapsed_s=52824.2 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.574}
+[PROGRESS] batches=850/1505 done=1700/2834 ok=1530 invalid=170 errors=0 elapsed_s=53478.2 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.575}
+[PROGRESS] batches=860/1505 done=1720/2834 ok=1549 invalid=171 errors=0 elapsed_s=54156.6 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.576}
+[PROGRESS] batches=870/1505 done=1740/2834 ok=1569 invalid=171 errors=0 elapsed_s=54835.6 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.577}
+[PROGRESS] batches=880/1505 done=1760/2834 ok=1589 invalid=171 errors=0 elapsed_s=55520.5 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.579}
+[PROGRESS] batches=890/1505 done=1780/2834 ok=1609 invalid=171 errors=0 elapsed_s=56199.7 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.58}
+[PROGRESS] batches=900/1505 done=1800/2834 ok=1629 invalid=171 errors=0 elapsed_s=56880.8 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.581}
+[PROGRESS] batches=910/1505 done=1820/2834 ok=1649 invalid=171 errors=0 elapsed_s=57578.3 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.584}
+[PROGRESS] batches=920/1505 done=1840/2834 ok=1669 invalid=171 errors=0 elapsed_s=58253.4 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.585}
+[PROGRESS] batches=930/1505 done=1860/2834 ok=1689 invalid=171 errors=0 elapsed_s=58896.6 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.658, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.662, "max_allocated_gib": 23.586}
+[PROGRESS] batches=940/1505 done=1880/2834 ok=1707 invalid=173 errors=0 elapsed_s=59561.6 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.639, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.682, "max_allocated_gib": 23.588}
+[PROGRESS] batches=950/1505 done=1900/2834 ok=1727 invalid=173 errors=0 elapsed_s=60206.8 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.639, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.682, "max_allocated_gib": 23.59}
+[PROGRESS] batches=960/1505 done=1920/2834 ok=1747 invalid=173 errors=0 elapsed_s=60861.8 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.619, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.701, "max_allocated_gib": 23.591}
+[PROGRESS] batches=970/1505 done=1940/2834 ok=1767 invalid=173 errors=0 elapsed_s=61511.2 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.619, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.701, "max_allocated_gib": 23.599}
+[PROGRESS] batches=980/1505 done=1960/2834 ok=1787 invalid=173 errors=0 elapsed_s=62163.8 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.6, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.721, "max_allocated_gib": 23.61}
+[PROGRESS] batches=990/1505 done=1980/2834 ok=1807 invalid=173 errors=0 elapsed_s=62824.5 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.58, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.74, "max_allocated_gib": 23.621}
+[PROGRESS] batches=1000/1505 done=2000/2834 ok=1827 invalid=173 errors=0 elapsed_s=63484.7 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.561, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.76, "max_allocated_gib": 23.639}
+[PROGRESS] batches=1010/1505 done=2020/2834 ok=1847 invalid=173 errors=0 elapsed_s=64151.4 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.541, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.779, "max_allocated_gib": 23.662}
+[PROGRESS] batches=1020/1505 done=2040/2834 ok=1867 invalid=173 errors=0 elapsed_s=64812.6 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.522, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.799, "max_allocated_gib": 23.673}
+[PROGRESS] batches=1030/1505 done=2060/2834 ok=1887 invalid=173 errors=0 elapsed_s=65500.8 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.502, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.818, "max_allocated_gib": 23.697}
+[PROGRESS] batches=1040/1505 done=2080/2834 ok=1907 invalid=173 errors=0 elapsed_s=66203.7 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.502, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.818, "max_allocated_gib": 23.715}
+[PROGRESS] batches=1050/1505 done=2100/2834 ok=1927 invalid=173 errors=0 elapsed_s=66909.9 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.502, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.818, "max_allocated_gib": 23.739}
+[PROGRESS] batches=1060/1505 done=2120/2834 ok=1947 invalid=173 errors=0 elapsed_s=67619.0 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.463, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.857, "max_allocated_gib": 23.773}
+[PROGRESS] batches=1070/1505 done=2140/2834 ok=1967 invalid=173 errors=0 elapsed_s=68326.8 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.424, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.896, "max_allocated_gib": 23.81}
+[PROGRESS] batches=1080/1505 done=2160/2834 ok=1987 invalid=173 errors=0 elapsed_s=69035.3 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.385, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.936, "max_allocated_gib": 23.841}
+[PROGRESS] batches=1090/1505 done=2180/2834 ok=2007 invalid=173 errors=0 elapsed_s=69744.7 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.365, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.955, "max_allocated_gib": 23.858}
+[PROGRESS] batches=1100/1505 done=2200/2834 ok=2026 invalid=174 errors=0 elapsed_s=70447.3 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.346, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.975, "max_allocated_gib": 23.88}
+[PROGRESS] batches=1110/1505 done=2220/2834 ok=2046 invalid=174 errors=0 elapsed_s=71127.5 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.326, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 23.994, "max_allocated_gib": 23.903}
+[PROGRESS] batches=1120/1505 done=2240/2834 ok=2066 invalid=174 errors=0 elapsed_s=71805.6 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.287, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.033, "max_allocated_gib": 23.937}
+[PROGRESS] batches=1130/1505 done=2260/2834 ok=2086 invalid=174 errors=0 elapsed_s=72481.8 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.209, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.111, "max_allocated_gib": 23.959}
+[PROGRESS] batches=1140/1505 done=2280/2834 ok=2106 invalid=174 errors=0 elapsed_s=73160.4 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.19, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.131, "max_allocated_gib": 23.974}
+[PROGRESS] batches=1150/1505 done=2300/2834 ok=2126 invalid=174 errors=0 elapsed_s=73840.9 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.17, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.15, "max_allocated_gib": 23.986}
+[PROGRESS] batches=1160/1505 done=2320/2834 ok=2146 invalid=174 errors=0 elapsed_s=74516.8 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.151, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.17, "max_allocated_gib": 23.997}
+[PROGRESS] batches=1170/1505 done=2340/2834 ok=2166 invalid=174 errors=0 elapsed_s=75207.7 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.151, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.17, "max_allocated_gib": 24.008}
+[PROGRESS] batches=1180/1505 done=2360/2834 ok=2186 invalid=174 errors=0 elapsed_s=75903.6 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.131, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.189, "max_allocated_gib": 24.021}
+[PROGRESS] batches=1190/1505 done=2380/2834 ok=2206 invalid=174 errors=0 elapsed_s=76577.6 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.112, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.209, "max_allocated_gib": 24.036}
+[PROGRESS] batches=1200/1505 done=2400/2834 ok=2226 invalid=174 errors=0 elapsed_s=77252.6 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.112, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.209, "max_allocated_gib": 24.049}
+[PROGRESS] batches=1210/1505 done=2420/2834 ok=2246 invalid=174 errors=0 elapsed_s=77965.5 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.073, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.248, "max_allocated_gib": 24.073}
+[PROGRESS] batches=1220/1505 done=2440/2834 ok=2266 invalid=174 errors=0 elapsed_s=78674.5 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.053, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.268, "max_allocated_gib": 24.095}
+[PROGRESS] batches=1230/1505 done=2460/2834 ok=2286 invalid=174 errors=0 elapsed_s=79387.1 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.033, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.287, "max_allocated_gib": 24.108}
+[PROGRESS] batches=1240/1505 done=2480/2834 ok=2306 invalid=174 errors=0 elapsed_s=80093.3 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.014, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.307, "max_allocated_gib": 24.121}
+[PROGRESS] batches=1250/1505 done=2500/2834 ok=2325 invalid=175 errors=0 elapsed_s=80800.9 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 12.014, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.307, "max_allocated_gib": 24.139}
+[PROGRESS] batches=1260/1505 done=2520/2834 ok=2345 invalid=175 errors=0 elapsed_s=81509.2 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 11.994, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.326, "max_allocated_gib": 24.149}
+[PROGRESS] batches=1270/1505 done=2540/2834 ok=2364 invalid=176 errors=0 elapsed_s=82208.0 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 11.975, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.346, "max_allocated_gib": 24.158}
+[PROGRESS] batches=1280/1505 done=2560/2834 ok=2383 invalid=177 errors=0 elapsed_s=82881.1 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 11.975, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.346, "max_allocated_gib": 24.167}
+[PROGRESS] batches=1290/1505 done=2580/2834 ok=2400 invalid=180 errors=0 elapsed_s=83560.3 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 11.955, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.365, "max_allocated_gib": 24.181}
+[PROGRESS] batches=1300/1505 done=2600/2834 ok=2416 invalid=184 errors=0 elapsed_s=84238.5 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 11.936, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.385, "max_allocated_gib": 24.194}
+[PROGRESS] batches=1310/1505 done=2620/2834 ok=2434 invalid=186 errors=0 elapsed_s=84936.0 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 11.916, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.404, "max_allocated_gib": 24.222}
+[PROGRESS] batches=1320/1505 done=2640/2834 ok=2450 invalid=190 errors=0 elapsed_s=85628.0 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 11.858, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.463, "max_allocated_gib": 24.264}
+[PROGRESS] batches=1330/1505 done=2659/2834 ok=2463 invalid=196 errors=0 elapsed_s=86430.9 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 11.76, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.561, "max_allocated_gib": 24.354}
+[PROGRESS] batches=1340/1505 done=2669/2834 ok=2472 invalid=197 errors=0 elapsed_s=88069.4 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 11.76, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.561, "max_allocated_gib": 24.354}
+[PROGRESS] batches=1350/1505 done=2679/2834 ok=2480 invalid=199 errors=0 elapsed_s=89741.8 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 11.76, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.561, "max_allocated_gib": 24.354}
+[PROGRESS] batches=1360/1505 done=2689/2834 ok=2489 invalid=200 errors=0 elapsed_s=91430.2 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 11.76, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.561, "max_allocated_gib": 24.354}
+[PROGRESS] batches=1370/1505 done=2699/2834 ok=2497 invalid=202 errors=0 elapsed_s=93137.0 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 11.76, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.561, "max_allocated_gib": 24.354}
+[PROGRESS] batches=1380/1505 done=2709/2834 ok=2504 invalid=205 errors=0 elapsed_s=94801.2 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 11.76, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.561, "max_allocated_gib": 24.354}
+[PROGRESS] batches=1390/1505 done=2719/2834 ok=2510 invalid=209 errors=0 elapsed_s=96445.6 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 11.76, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.561, "max_allocated_gib": 24.364}
+[PROGRESS] batches=1400/1505 done=2729/2834 ok=2514 invalid=215 errors=0 elapsed_s=98088.1 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 11.721, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.6, "max_allocated_gib": 24.398}
+[PROGRESS] batches=1410/1505 done=2739/2834 ok=2522 invalid=217 errors=0 elapsed_s=99717.9 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 11.643, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.678, "max_allocated_gib": 24.466}
+[PROGRESS] batches=1420/1505 done=2749/2834 ok=2531 invalid=218 errors=0 elapsed_s=101395.1 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 11.545, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.775, "max_allocated_gib": 24.557}
+[PROGRESS] batches=1430/1505 done=2759/2834 ok=2538 invalid=221 errors=0 elapsed_s=103101.9 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 11.448, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 24.873, "max_allocated_gib": 24.651}
+[PROGRESS] batches=1440/1505 done=2769/2834 ok=2546 invalid=223 errors=0 elapsed_s=104815.0 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 11.291, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 25.029, "max_allocated_gib": 24.788}
+[PROGRESS] batches=1450/1505 done=2779/2834 ok=2555 invalid=224 errors=0 elapsed_s=106502.8 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 11.156, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 25.166, "max_allocated_gib": 24.911}
+[PROGRESS] batches=1460/1505 done=2789/2834 ok=2564 invalid=225 errors=0 elapsed_s=108164.3 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 10.883, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 25.439, "max_allocated_gib": 25.168}
+[PROGRESS] batches=1470/1505 done=2799/2834 ok=2574 invalid=225 errors=0 elapsed_s=109829.3 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 10.531, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 25.791, "max_allocated_gib": 25.476}
+[PROGRESS] batches=1480/1505 done=2809/2834 ok=2584 invalid=225 errors=0 elapsed_s=111502.1 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 10.336, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 25.986, "max_allocated_gib": 25.655}
+[PROGRESS] batches=1490/1505 done=2819/2834 ok=2593 invalid=226 errors=0 elapsed_s=113238.2 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 9.084, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 27.236, "max_allocated_gib": 26.935}
+[PROGRESS] batches=1500/1505 done=2829/2834 ok=2597 invalid=232 errors=0 elapsed_s=115056.8 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 8.713, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 27.607, "max_allocated_gib": 27.139}
+[PROGRESS] batches=1505/1505 done=2834/2834 ok=2601 invalid=233 errors=0 elapsed_s=115966.6 gpu={"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 8.498, "total_gib": 39.381, "allocated_gib": 22.709, "reserved_gib": 27.822, "max_allocated_gib": 27.333}
+=== MODEL WORKER FINISHED ===
+[FINAL_SUCCESSFUL_OR_INVALID] 2842/2842
+[FINAL_ERRORS] 2834
+[GPU_AFTER_CLEANUP] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 36.301, "total_gib": 39.381, "allocated_gib": 0.008, "reserved_gib": 0.02, "max_allocated_gib": 27.333}

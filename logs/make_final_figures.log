@@ -1,0 +1,27 @@
+[LOAD] condition_summary.csv: 117 rows
+[LOAD] psi_summary.csv: 45 rows
+[LOAD] psi_summary_overall.csv: 9 rows
+[LOAD] field_volatility_summary_overall.csv: 42 rows
+[LOAD] psi_pairwise.csv: 4605 rows
+[LOAD] paired_wilcoxon_tests.csv: 693 rows
+[LOAD] progress_by_model.csv: 3 rows
+[SAVED] /home/tahiti/PromptStressLab/outputs/figures_final/fig01_f1_prompt_trajectories.png
+[SAVED] /home/tahiti/PromptStressLab/outputs/figures_final/fig01_f1_prompt_trajectories.pdf
+[SAVED] /home/tahiti/PromptStressLab/outputs/figures_final/fig02_psi_prompt_transitions.png
+[SAVED] /home/tahiti/PromptStressLab/outputs/figures_final/fig02_psi_prompt_transitions.pdf
+[SAVED] /home/tahiti/PromptStressLab/outputs/figures_final/fig03_cost_quality_pareto.png
+[SAVED] /home/tahiti/PromptStressLab/outputs/figures_final/fig03_cost_quality_pareto.pdf
+[SAVED] /home/tahiti/PromptStressLab/outputs/figures_final/fig04_field_volatility_heatmaps.png
+[SAVED] /home/tahiti/PromptStressLab/outputs/figures_final/fig04_field_volatility_heatmaps.pdf
+[SAVED] /home/tahiti/PromptStressLab/outputs/figures_final/fig05_psi_f1_relationship.png
+[SAVED] /home/tahiti/PromptStressLab/outputs/figures_final/fig05_psi_f1_relationship.pdf
+[SAVED] /home/tahiti/PromptStressLab/outputs/figures_final/fig06_ablation_effects.png
+[SAVED] /home/tahiti/PromptStressLab/outputs/figures_final/fig06_ablation_effects.pdf
+[SAVED] /home/tahiti/PromptStressLab/outputs/figures_final/fig07_speed_schema_validity.png
+[SAVED] /home/tahiti/PromptStressLab/outputs/figures_final/fig07_speed_schema_validity.pdf
+[SAVED] /home/tahiti/PromptStressLab/outputs/figures_final/fig08_overview_poster.png
+[SAVED] /home/tahiti/PromptStressLab/outputs/figures_final/fig08_overview_poster.pdf
+[SAVED] /home/tahiti/PromptStressLab/outputs/figures_final/figure_manifest.txt
+
+=== ALL FIGURES COMPLETE ===
+Output directory: /home/tahiti/PromptStressLab/outputs/figures_final

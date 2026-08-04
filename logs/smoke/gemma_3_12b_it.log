@@ -1,0 +1,64 @@
+=== LOCAL MODEL SMOKE TEST ===
+[MODEL_KEY] gemma_3_12b_it
+[MODEL_PATH] /home/tahiti/RIFT/models/Gemma-3-12B-it
+[ARCHITECTURE] gemma3
+[PYTHON] /home/tahiti/Forensics/.venv_forensics/bin/python
+[TORCH] 2.6.0+cu124
+[TRANSFORMERS] 5.12.0
+=== ENVIRONMENT ===
+CUDA_VISIBLE_DEVICES=0
+CUDA_DEVICE_ORDER=PCI_BUS_ID
+HF_HOME=/home/tahiti/.cache/huggingface
+HF_HUB_OFFLINE=1
+TRANSFORMERS_OFFLINE=1
+TOKENIZERS_PARALLELISM=false
+PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+[GPU_BEFORE] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 14.705, "total_gib": 39.381, "allocated_gib": 0.0, "reserved_gib": 0.0}
+[RECORD_ID] X96-1059
+[PROMPT_CHARACTERS] 1692
+[LOAD_TOKENIZER]
+[TOKENIZER_OK] 2.386 s
+[PROMPT_TOKENS] 402
+[LOAD_MODEL]
+Loading weights:   0%|          | 0/1065 [00:00<?, ?it/s]Loading weights:   0%|          | 1/1065 [00:01<30:45,  1.73s/it]Loading weights:   0%|          | 3/1065 [00:01<08:39,  2.04it/s]Loading weights:   0%|          | 5/1065 [00:01<04:54,  3.60it/s]Loading weights:   2%|▏         | 16/1065 [00:02<01:13, 14.22it/s]Loading weights:   2%|▏         | 19/1065 [00:02<01:14, 14.13it/s]Loading weights:   3%|▎         | 29/1065 [00:02<00:45, 22.64it/s]Loading weights:   3%|▎         | 33/1065 [00:02<00:47, 21.57it/s]Loading weights:   4%|▍         | 42/1065 [00:03<00:34, 29.36it/s]Loading weights:   4%|▍         | 46/1065 [00:03<00:36, 28.11it/s]Loading weights:   5%|▌         | 54/1065 [00:03<00:31, 32.08it/s]Loading weights:   5%|▌         | 58/1065 [00:03<00:36, 27.55it/s]Loading weights:   6%|▋         | 67/1065 [00:03<00:30, 33.18it/s]Loading weights:   7%|▋         | 71/1065 [00:03<00:34, 28.94it/s]Loading weights:   8%|▊         | 80/1065 [00:04<00:29, 33.51it/s]Loading weights:   8%|▊         | 84/1065 [00:04<00:31, 31.06it/s]Loading weights:   9%|▊         | 92/1065 [00:04<00:24, 40.00it/s]Loading weights:   9%|▉         | 97/1065 [00:04<00:33, 28.88it/s]Loading weights:  10%|▉         | 106/1065 [00:04<00:27, 35.00it/s]Loading weights:  10%|█         | 111/1065 [00:05<00:29, 32.56it/s]Loading weights:  11%|█▏        | 120/1065 [00:05<00:29, 32.37it/s]Loading weights:  12%|█▏        | 124/1065 [00:05<00:29, 31.83it/s]Loading weights:  12%|█▏        | 131/1065 [00:05<00:24, 37.84it/s]Loading weights:  13%|█▎        | 136/1065 [00:05<00:33, 28.10it/s]Loading weights:  14%|█▎        | 145/1065 [00:06<00:27, 33.90it/s]Loading weights:  14%|█▍        | 149/1065 [00:06<00:30, 29.85it/s]Loading weights:  15%|█▍        | 159/1065 [00:06<00:24, 37.35it/s]Loading weights:  15%|█▌        | 164/1065 [00:06<00:26, 33.73it/s]Loading weights:  16%|█▌        | 172/1065 [00:06<00:25, 35.63it/s]Loading weights:  17%|█▋        | 176/1065 [00:07<00:27, 32.04it/s]Loading weights:  17%|█▋        | 185/1065 [00:07<00:22, 38.75it/s]Loading weights:  18%|█▊        | 190/1065 [00:07<00:24, 36.33it/s]Loading weights:  19%|█▊        | 198/1065 [00:07<00:23, 36.77it/s]Loading weights:  19%|█▉        | 202/1065 [00:07<00:28, 30.16it/s]Loading weights:  20%|█▉        | 208/1065 [00:07<00:24, 34.98it/s]Loading weights:  20%|█▉        | 212/1065 [00:08<00:30, 28.07it/s]Loading weights:  20%|██        | 217/1065 [00:08<00:27, 31.38it/s]Loading weights:  21%|██        | 224/1065 [00:08<00:24, 34.06it/s]Loading weights:  21%|██▏       | 228/1065 [00:08<00:29, 28.02it/s]Loading weights:  22%|██▏       | 236/1065 [00:08<00:27, 30.65it/s]Loading weights:  23%|██▎       | 240/1065 [00:09<00:29, 27.59it/s]Loading weights:  23%|██▎       | 250/1065 [00:09<00:23, 35.29it/s]Loading weights:  24%|██▍       | 254/1065 [00:09<00:25, 31.95it/s]Loading weights:  25%|██▍       | 262/1065 [00:09<00:24, 33.17it/s]Loading weights:  25%|██▍       | 266/1065 [00:09<00:26, 29.63it/s]Loading weights:  26%|██▌       | 276/1065 [00:10<00:20, 37.83it/s]Loading weights:  26%|██▋       | 280/1065 [00:10<00:24, 32.50it/s]Loading weights:  27%|██▋       | 287/1065 [00:10<00:19, 39.36it/s]Loading weights:  27%|██▋       | 292/1065 [00:10<00:26, 28.93it/s]Loading weights:  28%|██▊       | 301/1065 [00:10<00:23, 33.02it/s]Loading weights:  29%|██▊       | 305/1065 [00:11<00:26, 28.71it/s]Loading weights:  29%|██▉       | 312/1065 [00:11<00:21, 34.87it/s]Loading weights:  33%|███▎      | 354/1065 [00:11<00:06, 108.48it/s]Loading weights:  60%|██████    | 644/1065 [00:11<00:00, 706.81it/s]Loading weights:  70%|██████▉   | 742/1065 [00:11<00:00, 627.47it/s]Loading weights:  78%|███████▊  | 826/1065 [00:11<00:00, 598.91it/s]Loading weights:  85%|████████▍ | 901/1065 [00:11<00:00, 568.92it/s]Loading weights:  91%|█████████ | 968/1065 [00:12<00:00, 547.52it/s]Loading weights:  97%|█████████▋| 1030/1065 [00:12<00:00, 538.35it/s]Loading weights: 100%|██████████| 1065/1065 [00:12<00:00, 86.94it/s] 
+Some parameters are on the meta device because they were offloaded to the cpu.
+[MODEL_OK] 13.501 s
+[GPU_AFTER_LOAD] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 1.934, "total_gib": 39.381, "allocated_gib": 12.681, "reserved_gib": 12.697}
+[GENERATE]
+[GENERATION_SECONDS] 365.188
+[OUTPUT_TOKENS] 256
+[VALIDATION] {"json_valid": true, "exact_keys": true, "all_values_lists": true, "missing_keys": [], "extra_keys": []}
+=== RAW OUTPUT ===
+```json
+{
+  "Task": [
+    "Recognition of proper nouns",
+    "Multi-lingual Evaluation Task",
+    "morphological analysis"
+  ],
+  "Method": [
+    "dictionary lookup",
+    "rule application"
+  ],
+  "Metric": [
+    "MET"
+  ],
+  "Material": [
+    "Japanese text",
+    "Japanese character strings"
+  ],
+  "OtherScientificTerm": [
+    "Named Entity",
+    "NE",
+    "Japanese information extraction"
+  ],
+  "Generic": [
+    "numerical expressions",
+    "temporal expressions"
+  ]
+}
+```
+=== END RAW OUTPUT ===
+[SMOKE_OK]
+[RESULT] /home/tahiti/PromptStressLab/outputs/smoke/gemma_3_12b_it/smoke_result.json
+=== SMOKE_PROCESS_FINISHED ===

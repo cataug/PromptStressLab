@@ -1,0 +1,6 @@
+dataset,split,documents,eligible_documents,missing_text,mean_chars,median_chars,min_chars,max_chars,entities,relations,annotation_files
+EBM-NLP,unspecified,9986,9986,0,1598.73,1656.0,26,4828,7037354,0,442164
+SciER,dev,713,0,713,0,0,0,0,4468,0,0
+SciER,test,854,0,854,0,0,0,0,5896,0,0
+SciER,test_ood,580,0,580,0,0,0,0,2590,0,0
+SciER,train,5575,0,5575,0,0,0,0,36082,0,0

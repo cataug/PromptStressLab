@@ -1,0 +1,24 @@
+=== GOLD DATASET NORMALIZATION ===
+root=/home/tahiti/PromptStressLab
+[SCIERC_SOURCE] /home/tahiti/PromptStressLab/data/raw/scierc/processed_data/json
+[SCIERC_TRAIN] 350 documents
+[SCIERC_DEV] 50 documents
+[SCIERC_TEST] 100 documents
+[EBM_DOCUMENTS] /home/tahiti/PromptStressLab/data/raw/ebm_nlp/v2_00/ebm_nlp_2_00/documents
+[EBM_ANNOTATED_PMIDS] 4985
+[EBM_TEST] 191 documents
+[EBM_TRAIN] 4794 documents
+[EBM_UNSPECIFIED] 8 documents
+[SCIER_SOURCE] /home/tahiti/PromptStressLab/data/raw/scier/SciER/LLM
+[SCIER_TRAIN] sentences=5575 documents=80
+[SCIER_DEV] sentences=713 documents=10
+[SCIER_TEST] sentences=854 documents=10
+[SCIER_TEST_OOD] sentences=580 documents=6
+
+=== NORMALIZED COUNTS ===
+SciERC documents: 500
+EBM-NLP documents: 4993
+SciER sentence rows: 7722
+SciER documents: 106
+Normalization errors: 0
+=== GOLD_NORMALIZATION_FINISHED ===

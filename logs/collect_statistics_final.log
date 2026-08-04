@@ -1,0 +1,42 @@
+=== RUN BASE EVALUATOR ===
+=== EVALUATION FINISHED ===
+{
+  "physical_jobs_expected": 8526,
+  "physical_predictions_found": 8526,
+  "aliases_materialized": 1200,
+  "logical_rows": 9726,
+  "logical_rows_expected_when_complete": 9726,
+  "prediction_files": [
+    "/home/tahiti/PromptStressLab/outputs/generations/gemma_3_12b_it/predictions.jsonl",
+    "/home/tahiti/PromptStressLab/outputs/generations/mistral_7b_instruct_v03/predictions.jsonl",
+    "/home/tahiti/PromptStressLab/outputs/generations/qwen3_8b/predictions.jsonl"
+  ]
+}
+[EVALUATOR_EXIT_CODE] 0
+
+=== STATISTICS COMPLETE ===
+{
+  "physical_jobs_expected": 8526,
+  "physical_predictions_found": 8526,
+  "completion_percent": 100.0,
+  "unresolved_errors": 0,
+  "prediction_files": [
+    "/home/tahiti/PromptStressLab/outputs/generations/gemma_3_12b_it/predictions.jsonl",
+    "/home/tahiti/PromptStressLab/outputs/generations/mistral_7b_instruct_v03/predictions.jsonl",
+    "/home/tahiti/PromptStressLab/outputs/generations/qwen3_8b/predictions.jsonl"
+  ],
+  "statistics_files": [
+    "progress_by_model.csv",
+    "condition_summary.csv",
+    "paired_wilcoxon_tests.csv",
+    "mcnemar_tests.csv",
+    "idr_summary.csv"
+  ],
+  "note": "PSI and field-wise volatility require an embedding backend and are not computed by this GPU-free pass."
+}
+
+=== PROGRESS BY MODEL ===
+               model_id  predictions  expected_jobs  completion_percent  unresolved_errors  schema_valid_rate  mean_seconds_per_item  projected_remaining_compute_hours
+         gemma_3_12b_it         2842           2842               100.0                  0           0.918015              40.868294                                0.0
+mistral_7b_instruct_v03         2842           2842               100.0                  0           0.859958              65.588543                                0.0
+               qwen3_8b         2842           2842               100.0                  0           0.883181              12.135780                                0.0

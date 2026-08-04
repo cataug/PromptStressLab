@@ -1,0 +1,240 @@
+[JOBS] 8526
+[PREDICTIONS] 8526
+[MAIN_PREDICTIONS_INDEXED] 5526
+[UNIQUE_FIELD_ITEMS] 19553
+[EMBEDDING_MODEL] /home/tahiti/Forensics/models/clip_vit_base_patch32
+[EMBEDDING_DEVICE] cuda
+[EMBEDDING_BATCH_SIZE] 512
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 28085.75it/s]
+[EMBED_PROGRESS] 10240/19553
+[EMBED_PROGRESS] 19553/19553
+
+=== PSI / VOLATILITY COMPLETE ===
+{
+  "embedding_backend": "CLIP text encoder",
+  "embedding_model": "/home/tahiti/Forensics/models/clip_vit_base_patch32",
+  "main_conditions": [
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5",
+    "P6"
+  ],
+  "transitions": [
+    "P1->P2",
+    "P2->P3",
+    "P3->P4",
+    "P4->P5",
+    "P5->P6"
+  ],
+  "document_transition_pairs": 4605,
+  "expected_document_transition_pairs": 4605,
+  "field_transition_pairs": 20055,
+  "expected_field_transition_pairs": 20055,
+  "unique_field_items_embedded": 19553,
+  "complete": true,
+  "psi_definition": "Mean semantic drift across dataset fields. Field drift = 1 - cosine similarity between normalized CLIP centroids. Empty-empty=0; empty-nonempty=1.",
+  "statistics_files": [
+    "psi_pairwise.csv",
+    "psi_summary.csv",
+    "psi_summary_overall.csv",
+    "field_volatility_pairwise.csv",
+    "field_volatility_summary.csv",
+    "field_volatility_summary_overall.csv",
+    "document_volatility.csv",
+    "psi_f1_correlations.csv",
+    "semantic_statistics_summary.json"
+  ]
+}
+
+=== OVERALL PSI ===
+               model_id dataset   n     mean   median      p95  max  bootstrap_ci_low  bootstrap_ci_high
+         gemma_3_12b_it EBM-NLP 955 0.037887 0.015306 0.073842  1.0          0.030355           0.045849
+         gemma_3_12b_it   SciER  80 0.288834 0.038703 1.000000  1.0          0.213384           0.370596
+         gemma_3_12b_it  SciERC 500 0.165371 0.016299 0.857143  1.0          0.142277           0.189013
+mistral_7b_instruct_v03 EBM-NLP 955 0.110812 0.038127 0.411179  1.0          0.100335           0.121446
+mistral_7b_instruct_v03   SciER  80 0.283612 0.045274 1.000000  1.0          0.197267           0.376920
+mistral_7b_instruct_v03  SciERC 500 0.250946 0.149548 0.857143  1.0          0.225591           0.277032
+               qwen3_8b EBM-NLP 955 0.059995 0.018701 0.343113  1.0          0.051941           0.068662
+               qwen3_8b   SciER  80 0.238575 0.000000 1.000000  1.0          0.153952           0.332554
+               qwen3_8b  SciERC 500 0.169670 0.027889 0.857143  1.0          0.147117           0.193145
+
+=== TOP VOLATILE FIELDS ===
+               model_id dataset               field   n     mean  p95  bootstrap_ci_low  bootstrap_ci_high
+         gemma_3_12b_it   SciER                Task  80 0.399619  1.0          0.299987           0.507699
+mistral_7b_instruct_v03   SciER                Task  80 0.307830  1.0          0.213911           0.408924
+         gemma_3_12b_it   SciER             Dataset  80 0.293856  1.0          0.205020           0.392735
+mistral_7b_instruct_v03   SciER       __RELATIONS__  80 0.280391  1.0          0.191230           0.377352
+mistral_7b_instruct_v03   SciER              Method  80 0.275991  1.0          0.187955           0.373384
+mistral_7b_instruct_v03  SciERC                Task 500 0.271487  1.0          0.233415           0.310446
+mistral_7b_instruct_v03   SciER             Dataset  80 0.270236  1.0          0.180539           0.366566
+         gemma_3_12b_it   SciER              Method  80 0.267629  1.0          0.179405           0.367962
+mistral_7b_instruct_v03  SciERC OtherScientificTerm 500 0.266554  1.0          0.229796           0.305139
+         gemma_3_12b_it  SciERC             Generic 500 0.264792  1.0          0.227524           0.303367
+mistral_7b_instruct_v03  SciERC            Material 500 0.264309  1.0          0.227807           0.303095
+mistral_7b_instruct_v03  SciERC              Method 500 0.260780  1.0          0.224850           0.299775
+mistral_7b_instruct_v03  SciERC       __RELATIONS__ 500 0.257127  1.0          0.220857           0.295719
+mistral_7b_instruct_v03  SciERC             Generic 500 0.241828  1.0          0.205323           0.278833
+               qwen3_8b   SciER       __RELATIONS__  80 0.239135  1.0          0.151476           0.338462
+               qwen3_8b   SciER                Task  80 0.238865  1.0          0.150760           0.338260
+               qwen3_8b   SciER              Method  80 0.238725  1.0          0.150637           0.338237
+               qwen3_8b   SciER             Dataset  80 0.237575  1.0          0.150000           0.337500
+mistral_7b_instruct_v03 EBM-NLP             Outcome 955 0.210070  1.0          0.186361           0.233301
+               qwen3_8b  SciERC             Generic 500 0.198271  1.0          0.163110           0.232978
+mistral_7b_instruct_v03  SciERC              Metric 500 0.194540  1.0          0.160242           0.229347
+         gemma_3_12b_it   SciER       __RELATIONS__  80 0.194230  1.0          0.123072           0.276973
+               qwen3_8b  SciERC            Material 500 0.193582  1.0          0.160272           0.228195
+               qwen3_8b  SciERC              Metric 500 0.192233  1.0          0.160552           0.226608
+               qwen3_8b  SciERC                Task 500 0.172309  1.0          0.141615           0.204914
+         gemma_3_12b_it  SciERC                Task 500 0.169936  1.0          0.138569           0.201865
+               qwen3_8b  SciERC OtherScientificTerm 500 0.157735  1.0          0.127842           0.188361
+         gemma_3_12b_it  SciERC            Material 500 0.152014  1.0          0.123007           0.182922
+         gemma_3_12b_it  SciERC              Method 500 0.151489  1.0          0.121524           0.181756
+         gemma_3_12b_it  SciERC              Metric 500 0.146269  1.0          0.115699           0.177477
+
+=== SIGNIFICANT PSI/F1 CORRELATIONS ===
+               model_id dataset transition                    grouping                      target    n  spearman_rho       p_value        p_holm  significant_holm_005
+               qwen3_8b     NaN        NaN                    model_id abs_delta_entity_partial_f1 1535      0.723497 5.259572e-249 1.577871e-248                     1
+               qwen3_8b     NaN        NaN                    model_id   abs_delta_entity_exact_f1 1535      0.676910 2.893824e-206 8.681472e-206                     1
+mistral_7b_instruct_v03     NaN        NaN                    model_id abs_delta_entity_partial_f1 1535      0.670048 1.250149e-200 2.500298e-200                     1
+mistral_7b_instruct_v03     NaN        NaN                    model_id   abs_delta_entity_exact_f1 1535      0.592236 5.661053e-146 1.132211e-145                     1
+               qwen3_8b EBM-NLP        NaN            model_id+dataset abs_delta_entity_partial_f1  955      0.673630 2.754364e-127 2.478927e-126                     1
+         gemma_3_12b_it     NaN        NaN                    model_id abs_delta_entity_partial_f1 1535      0.534070 6.291278e-114 6.291278e-114                     1
+         gemma_3_12b_it     NaN        NaN                    model_id   abs_delta_entity_exact_f1 1535      0.524218 4.242034e-109 4.242034e-109                     1
+mistral_7b_instruct_v03  SciERC        NaN            model_id+dataset abs_delta_entity_partial_f1  500      0.772268 3.524978e-100  2.819982e-99                     1
+               qwen3_8b EBM-NLP        NaN            model_id+dataset   abs_delta_entity_exact_f1  955      0.604133  4.567622e-96  4.110860e-95                     1
+mistral_7b_instruct_v03 EBM-NLP        NaN            model_id+dataset abs_delta_entity_partial_f1  955      0.601858  3.575187e-95  2.502631e-94                     1
+         gemma_3_12b_it  SciERC        NaN            model_id+dataset abs_delta_entity_partial_f1  500      0.754257  4.829503e-93  2.897702e-92                     1
+               qwen3_8b  SciERC        NaN            model_id+dataset abs_delta_entity_partial_f1  500      0.753426  9.957216e-93  4.978608e-92                     1
+mistral_7b_instruct_v03  SciERC        NaN            model_id+dataset   abs_delta_entity_exact_f1  500      0.746145  5.003467e-90  4.002774e-89                     1
+               qwen3_8b  SciERC        NaN            model_id+dataset   abs_delta_entity_exact_f1  500      0.732298  3.888692e-85  2.722085e-84                     1
+         gemma_3_12b_it  SciERC        NaN            model_id+dataset   abs_delta_entity_exact_f1  500      0.717972  2.177805e-80  1.306683e-79                     1
+               qwen3_8b   SciER        NaN            model_id+dataset abs_delta_entity_partial_f1   80      0.988668  5.270351e-66  2.108140e-65                     1
+               qwen3_8b   SciER        NaN            model_id+dataset   abs_delta_entity_exact_f1   80      0.983710  6.737905e-60  3.368953e-59                     1
+mistral_7b_instruct_v03 EBM-NLP        NaN            model_id+dataset   abs_delta_entity_exact_f1  955      0.464665  2.558446e-52  1.023378e-51                     1
+               qwen3_8b EBM-NLP     P2->P3 model_id+dataset+transition abs_delta_entity_partial_f1  191      0.788517  9.207201e-42  4.143240e-40                     1
+               qwen3_8b EBM-NLP     P1->P2 model_id+dataset+transition abs_delta_entity_partial_f1  191      0.757617  7.292570e-37  3.208731e-35                     1
+         gemma_3_12b_it EBM-NLP        NaN            model_id+dataset abs_delta_entity_partial_f1  955      0.386045  2.673322e-35  8.019966e-35                     1
+         gemma_3_12b_it EBM-NLP        NaN            model_id+dataset   abs_delta_entity_exact_f1  955      0.378266  7.526623e-34  2.257987e-33                     1
+mistral_7b_instruct_v03 EBM-NLP     P5->P6 model_id+dataset+transition abs_delta_entity_partial_f1  191      0.743964  6.301798e-35  2.709773e-33                     1
+         gemma_3_12b_it  SciERC     P1->P2 model_id+dataset+transition abs_delta_entity_partial_f1  100      0.871474  4.377578e-32  1.838583e-30                     1
+               qwen3_8b  SciERC     P2->P3 model_id+dataset+transition   abs_delta_entity_exact_f1  100      0.846290  1.489894e-28  6.704523e-27                     1
+               qwen3_8b EBM-NLP     P5->P6 model_id+dataset+transition   abs_delta_entity_exact_f1  191      0.687448  4.643092e-28  2.042960e-26                     1
+               qwen3_8b  SciERC     P2->P3 model_id+dataset+transition abs_delta_entity_partial_f1  100      0.841947  5.225293e-28  2.142370e-26                     1
+               qwen3_8b     NaN        NaN                    model_id abs_delta_relation_exact_f1 1535      0.267640  1.366767e-26  4.100302e-26                     1
+               qwen3_8b EBM-NLP     P5->P6 model_id+dataset+transition abs_delta_entity_partial_f1  191      0.681965  1.779842e-27  7.119369e-26                     1
+mistral_7b_instruct_v03  SciERC     P1->P2 model_id+dataset+transition   abs_delta_entity_exact_f1  100      0.833512  5.383751e-27  2.315013e-25                     1
+               qwen3_8b EBM-NLP     P2->P3 model_id+dataset+transition   abs_delta_entity_exact_f1  191      0.664767  1.001756e-25  4.207376e-24                     1
+         gemma_3_12b_it  SciERC     P2->P3 model_id+dataset+transition abs_delta_entity_partial_f1  100      0.818184  2.719729e-25  1.060694e-23                     1
+mistral_7b_instruct_v03  SciERC     P1->P2 model_id+dataset+transition abs_delta_entity_partial_f1  100      0.811209  1.436802e-24  5.459847e-23                     1
+mistral_7b_instruct_v03  SciERC     P2->P3 model_id+dataset+transition abs_delta_entity_partial_f1  100      0.807113  3.699637e-24  1.368866e-22                     1
+         gemma_3_12b_it  SciERC     P1->P2 model_id+dataset+transition   abs_delta_entity_exact_f1  100      0.797718  2.979641e-23  1.221653e-21                     1
+               qwen3_8b EBM-NLP     P1->P2 model_id+dataset+transition   abs_delta_entity_exact_f1  191      0.638046  3.173931e-23  1.269572e-21                     1
+               qwen3_8b   SciER        NaN            model_id+dataset abs_delta_relation_exact_f1   80      0.836512  4.481591e-22  2.688955e-21                     1
+mistral_7b_instruct_v03  SciERC     P2->P3 model_id+dataset+transition   abs_delta_entity_exact_f1  100      0.787825  2.388350e-22  9.278882e-21                     1
+         gemma_3_12b_it  SciERC     P2->P3 model_id+dataset+transition   abs_delta_entity_exact_f1  100      0.787844  2.379200e-22  9.278882e-21                     1
+mistral_7b_instruct_v03 EBM-NLP     P2->P3 model_id+dataset+transition abs_delta_entity_partial_f1  191      0.621568  8.410887e-22  3.027919e-20                     1
+         gemma_3_12b_it     NaN        NaN                    model_id abs_delta_relation_exact_f1 1535      0.224859  4.790258e-19  9.580516e-19                     1
+               qwen3_8b  SciERC     P1->P2 model_id+dataset+transition abs_delta_entity_partial_f1  100      0.755719  1.019934e-19  3.569770e-18                     1
+               qwen3_8b  SciERC     P5->P6 model_id+dataset+transition abs_delta_entity_partial_f1  100      0.733380  4.081112e-18  1.387578e-16                     1
+               qwen3_8b  SciERC     P1->P2 model_id+dataset+transition   abs_delta_entity_exact_f1  100      0.730165  6.732329e-18  2.490962e-16                     1
+mistral_7b_instruct_v03 EBM-NLP     P1->P2 model_id+dataset+transition abs_delta_entity_partial_f1  191      0.565958  1.442496e-17  4.760236e-16                     1
+         gemma_3_12b_it   SciER        NaN            model_id+dataset   abs_delta_entity_exact_f1   80      0.760420  2.800016e-16  5.600033e-16                     1
+mistral_7b_instruct_v03 EBM-NLP     P2->P3 model_id+dataset+transition   abs_delta_entity_exact_f1  191      0.563344  2.182301e-17  7.856282e-16                     1
+mistral_7b_instruct_v03 EBM-NLP     P5->P6 model_id+dataset+transition   abs_delta_entity_exact_f1  191      0.562824  2.368882e-17  8.291089e-16                     1
+         gemma_3_12b_it   SciER        NaN            model_id+dataset abs_delta_entity_partial_f1   80      0.746300  1.943052e-15  3.886105e-15                     1
+               qwen3_8b   SciER     P5->P6 model_id+dataset+transition abs_delta_entity_partial_f1   16      0.994911  2.338899e-15  7.484478e-14                     1
+               qwen3_8b   SciER     P5->P6 model_id+dataset+transition   abs_delta_entity_exact_f1   16      0.994911  2.338899e-15  7.952258e-14                     1
+         gemma_3_12b_it  SciERC     P3->P4 model_id+dataset+transition abs_delta_entity_partial_f1  100      0.686210  3.296134e-15  1.021802e-13                     1
+         gemma_3_12b_it  SciERC        NaN            model_id+dataset     delta_entity_partial_f1  500      0.324176  1.067220e-13  9.604984e-13                     1
+               qwen3_8b  SciERC     P5->P6 model_id+dataset+transition   abs_delta_entity_exact_f1  100      0.661771  6.582851e-14  2.172341e-12                     1
+mistral_7b_instruct_v03  SciERC     P5->P6 model_id+dataset+transition   abs_delta_entity_exact_f1  100      0.660992  7.208989e-14  2.306877e-12                     1
+         gemma_3_12b_it EBM-NLP     P1->P2 model_id+dataset+transition abs_delta_entity_partial_f1  191      0.505628  8.616695e-14  2.585009e-12                     1
+mistral_7b_instruct_v03  SciERC     P3->P4 model_id+dataset+transition abs_delta_entity_partial_f1  100      0.658245  9.911277e-14  2.874270e-12                     1
+         gemma_3_12b_it  SciERC     P3->P4 model_id+dataset+transition   abs_delta_entity_exact_f1  100      0.656333  1.234608e-13  3.827284e-12                     1
+mistral_7b_instruct_v03  SciERC     P5->P6 model_id+dataset+transition abs_delta_entity_partial_f1  100      0.652551  1.897581e-13  5.313226e-12                     1
+         gemma_3_12b_it EBM-NLP     P5->P6 model_id+dataset+transition   abs_delta_entity_exact_f1  191      0.498460  2.168764e-13  6.506292e-12                     1
+               qwen3_8b   SciER     P3->P4 model_id+dataset+transition abs_delta_entity_partial_f1   16      0.989263  4.288676e-13  1.157942e-11                     1
+         gemma_3_12b_it  SciERC        NaN            model_id+dataset       delta_entity_exact_f1  500      0.309879  1.370906e-12  1.233816e-11                     1
+         gemma_3_12b_it  SciERC     P3->P4 model_id+dataset+transition       delta_entity_exact_f1  100      0.646494  3.729855e-13  1.678435e-11                     1
+mistral_7b_instruct_v03   SciER        NaN            model_id+dataset abs_delta_entity_partial_f1   80      0.662984  2.086073e-11  2.086073e-11                     1
+mistral_7b_instruct_v03   SciER        NaN            model_id+dataset   abs_delta_entity_exact_f1   80      0.661606  2.372813e-11  2.372813e-11                     1
+         gemma_3_12b_it  SciERC        NaN            model_id+dataset abs_delta_relation_exact_f1  500      0.302377  4.958217e-12  2.479108e-11                     1
+               qwen3_8b   SciER     P1->P2 model_id+dataset+transition abs_delta_entity_partial_f1   16      0.987427  1.288040e-12  3.348904e-11                     1
+               qwen3_8b   SciER     P4->P5 model_id+dataset+transition abs_delta_entity_partial_f1   16      0.987228  1.437249e-12  3.593122e-11                     1
+               qwen3_8b   SciER     P2->P3 model_id+dataset+transition   abs_delta_entity_exact_f1   16      0.987367  1.331932e-12  3.862603e-11                     1
+               qwen3_8b   SciER     P4->P5 model_id+dataset+transition   abs_delta_entity_exact_f1   16      0.987228  1.437249e-12  4.024296e-11                     1
+         gemma_3_12b_it EBM-NLP     P5->P6 model_id+dataset+transition abs_delta_entity_partial_f1  191      0.479241  2.323461e-12  5.576306e-11                     1
+         gemma_3_12b_it  SciERC     P3->P4 model_id+dataset+transition     delta_entity_partial_f1  100      0.631802  1.807247e-12  8.132612e-11                     1
+               qwen3_8b  SciERC     P3->P4 model_id+dataset+transition abs_delta_entity_partial_f1  100      0.621372  5.271137e-12  1.212362e-10                     1
+mistral_7b_instruct_v03  SciERC     P3->P4 model_id+dataset+transition   abs_delta_entity_exact_f1  100      0.613226  1.183355e-11  3.195059e-10                     1
+         gemma_3_12b_it  SciERC     P5->P6 model_id+dataset+transition abs_delta_entity_partial_f1  100      0.609280  1.736498e-11  3.820297e-10                     1
+               qwen3_8b   SciER     P3->P4 model_id+dataset+transition   abs_delta_entity_exact_f1   16      0.977486  7.408809e-11  1.926290e-09                     1
+         gemma_3_12b_it EBM-NLP     P2->P3 model_id+dataset+transition   abs_delta_entity_exact_f1  191      0.443872  1.263424e-10  3.158559e-09                     1
+         gemma_3_12b_it EBM-NLP     P2->P3 model_id+dataset+transition abs_delta_entity_partial_f1  191      0.435791  2.956798e-10  6.209276e-09                     1
+               qwen3_8b EBM-NLP     P4->P5 model_id+dataset+transition abs_delta_entity_partial_f1  191      0.431237  4.728787e-10  9.457574e-09                     1
+               qwen3_8b   SciER     P2->P3 model_id+dataset+transition abs_delta_entity_partial_f1   16      0.967930  8.593816e-10  1.632825e-08                     1
+mistral_7b_instruct_v03 EBM-NLP     P1->P2 model_id+dataset+transition   abs_delta_entity_exact_f1  191      0.421893  1.212530e-09  2.910072e-08                     1
+mistral_7b_instruct_v03  SciERC     P4->P5 model_id+dataset+transition abs_delta_entity_partial_f1  100      0.557022  1.759334e-09  3.166800e-08                     1
+               qwen3_8b  SciERC        NaN            model_id+dataset abs_delta_relation_exact_f1  500      0.251182  1.240324e-08  4.961295e-08                     1
+         gemma_3_12b_it  SciERC     P5->P6 model_id+dataset+transition   abs_delta_entity_exact_f1  100      0.549852  3.119683e-09  7.175271e-08                     1
+               qwen3_8b  SciERC     P3->P4 model_id+dataset+transition     delta_entity_partial_f1  100      0.556308  1.863714e-09  8.200342e-08                     1
+               qwen3_8b  SciERC     P3->P4 model_id+dataset+transition   abs_delta_entity_exact_f1  100      0.540949  6.236517e-09  1.372034e-07                     1
+               qwen3_8b   SciER     P1->P2 model_id+dataset+transition   abs_delta_entity_exact_f1   16      0.954994  8.901673e-09  1.869351e-07                     1
+mistral_7b_instruct_v03  SciERC     P3->P4 model_id+dataset+transition     delta_entity_partial_f1  100      0.541870  5.810629e-09  2.498571e-07                     1
+         gemma_3_12b_it EBM-NLP     P1->P2 model_id+dataset+transition   abs_delta_entity_exact_f1  191      0.393117  1.850089e-08  3.700178e-07                     1
+               qwen3_8b  SciERC     P4->P5 model_id+dataset+transition   abs_delta_entity_exact_f1  100      0.526246  1.875091e-08  3.700178e-07                     1
+mistral_7b_instruct_v03 EBM-NLP     P4->P5 model_id+dataset+transition abs_delta_entity_partial_f1  191      0.383861  4.212357e-08  7.161006e-07                     1
+mistral_7b_instruct_v03  SciERC     P3->P4 model_id+dataset+transition       delta_entity_exact_f1  100      0.525913  1.921371e-08  8.454034e-07                     1
+mistral_7b_instruct_v03     NaN        NaN                    model_id abs_delta_relation_exact_f1 1535      0.124685  9.574907e-07  9.574907e-07                     1
+               qwen3_8b  SciERC     P3->P4 model_id+dataset+transition       delta_entity_exact_f1  100      0.501323  1.079908e-07  4.643606e-06                     1
+         gemma_3_12b_it     NaN        NaN                    model_id       delta_entity_exact_f1 1535      0.122260  1.553863e-06  4.661588e-06                     1
+mistral_7b_instruct_v03  SciERC     P4->P5 model_id+dataset+transition   abs_delta_entity_exact_f1  100      0.486997  2.778178e-07  5.000720e-06                     1
+               qwen3_8b EBM-NLP     P3->P4 model_id+dataset+transition abs_delta_entity_partial_f1  191      0.349095  7.439453e-07  1.190312e-05                     1
+         gemma_3_12b_it     NaN        NaN                    model_id     delta_relation_exact_f1 1535      0.111995  1.091892e-05  3.275677e-05                     1
+               qwen3_8b EBM-NLP     P3->P4 model_id+dataset+transition   abs_delta_entity_exact_f1  191      0.330102  3.108041e-06  5.283669e-05                     1
+         gemma_3_12b_it  SciERC     P2->P3 model_id+dataset+transition abs_delta_relation_exact_f1  100      0.455707  1.895426e-06  5.686279e-05                     1
+mistral_7b_instruct_v03   SciER     P5->P6 model_id+dataset+transition abs_delta_entity_partial_f1   16      0.889201  4.082186e-06  6.123280e-05                     1
+         gemma_3_12b_it  SciERC     P1->P2 model_id+dataset+transition abs_delta_relation_exact_f1  100      0.453131  2.201714e-06  6.384972e-05                     1
+               qwen3_8b  SciERC     P4->P5 model_id+dataset+transition abs_delta_entity_partial_f1  100      0.437461  5.336051e-06  7.470472e-05                     1
+               qwen3_8b EBM-NLP     P4->P5 model_id+dataset+transition   abs_delta_entity_exact_f1  191      0.323989  4.827433e-06  7.723893e-05                     1
+         gemma_3_12b_it     NaN        NaN                    model_id     delta_entity_partial_f1 1535      0.105833  3.256695e-05  9.770084e-05                     1
+               qwen3_8b   SciER     P5->P6 model_id+dataset+transition abs_delta_relation_exact_f1   16      0.888748  4.195073e-06  1.174620e-04                     1
+               qwen3_8b   SciER     P1->P2 model_id+dataset+transition abs_delta_relation_exact_f1   16      0.884708  5.325631e-06  1.437920e-04                     1
+mistral_7b_instruct_v03   SciER     P5->P6 model_id+dataset+transition   abs_delta_entity_exact_f1   16      0.873208  1.003777e-05  1.505665e-04                     1
+               qwen3_8b   SciER     P3->P4 model_id+dataset+transition abs_delta_relation_exact_f1   16      0.872278  1.053716e-05  2.739661e-04                     1
+         gemma_3_12b_it  SciERC        NaN            model_id+dataset     delta_relation_exact_f1  500      0.175340  8.097770e-05  4.858662e-04                     1
+mistral_7b_instruct_v03 EBM-NLP        NaN            model_id+dataset     delta_entity_partial_f1  955     -0.129246  6.183760e-05  4.947008e-04                     1
+         gemma_3_12b_it EBM-NLP     P4->P5 model_id+dataset+transition   abs_delta_entity_exact_f1  191      0.289244  4.943398e-05  6.920757e-04                     1
+mistral_7b_instruct_v03 EBM-NLP     P3->P4 model_id+dataset+transition abs_delta_entity_partial_f1  191      0.286669  5.806408e-05  7.548331e-04                     1
+         gemma_3_12b_it   SciER     P2->P3 model_id+dataset+transition   abs_delta_entity_exact_f1   16      0.829412  7.088454e-05  9.214990e-04                     1
+mistral_7b_instruct_v03 EBM-NLP     P4->P5 model_id+dataset+transition   abs_delta_entity_exact_f1  191      0.276885  1.054966e-04  1.265959e-03                     1
+mistral_7b_instruct_v03  SciERC        NaN            model_id+dataset     delta_entity_partial_f1  500      0.165837  1.954941e-04  1.368459e-03                     1
+         gemma_3_12b_it   SciER     P2->P3 model_id+dataset+transition abs_delta_entity_partial_f1   16      0.811765  1.343224e-04  1.611868e-03                     1
+               qwen3_8b   SciER     P4->P5 model_id+dataset+transition abs_delta_relation_exact_f1   16      0.826767  7.835726e-05  1.958931e-03                     1
+mistral_7b_instruct_v03  SciERC        NaN            model_id+dataset       delta_entity_exact_f1  500      0.160108  3.251618e-04  2.601295e-03                     1
+         gemma_3_12b_it   SciER     P1->P2 model_id+dataset+transition   abs_delta_entity_exact_f1   16      0.784401  3.212581e-04  3.533840e-03                     1
+         gemma_3_12b_it   SciER     P5->P6 model_id+dataset+transition abs_delta_entity_partial_f1   16      0.780814  3.568929e-04  3.925821e-03                     1
+         gemma_3_12b_it   SciER     P3->P4 model_id+dataset+transition   abs_delta_entity_exact_f1   16      0.766965  5.265589e-04  4.812900e-03                     1
+         gemma_3_12b_it   SciER     P5->P6 model_id+dataset+transition   abs_delta_entity_exact_f1   16      0.770250  4.812900e-04  4.812900e-03                     1
+         gemma_3_12b_it   SciER     P3->P4 model_id+dataset+transition abs_delta_entity_partial_f1   16      0.769915  4.857605e-04  4.857605e-03                     1
+               qwen3_8b  SciERC     P2->P3 model_id+dataset+transition abs_delta_relation_exact_f1  100      0.362025  2.146680e-04  5.152032e-03                     1
+mistral_7b_instruct_v03   SciER     P4->P5 model_id+dataset+transition abs_delta_entity_partial_f1   16      0.763684  5.752132e-04  5.176918e-03                     1
+         gemma_3_12b_it  SciERC     P1->P2 model_id+dataset+transition     delta_entity_partial_f1  100      0.372942  1.327170e-04  5.574115e-03                     1
+mistral_7b_instruct_v03 EBM-NLP     P3->P4 model_id+dataset+transition   abs_delta_entity_exact_f1  191      0.242562  7.224731e-04  5.779785e-03                     1
+               qwen3_8b     NaN        NaN                    model_id     delta_relation_exact_f1 1535      0.074400  3.538948e-03  7.077896e-03                     1
+mistral_7b_instruct_v03     NaN        NaN                    model_id       delta_entity_exact_f1 1535      0.074036  3.704485e-03  7.408971e-03                     1
+               qwen3_8b  SciERC     P5->P6 model_id+dataset+transition abs_delta_relation_exact_f1  100      0.348803  3.757494e-04  8.642236e-03                     1
+mistral_7b_instruct_v03   SciER     P1->P2 model_id+dataset+transition abs_delta_entity_partial_f1   16      0.730591  1.307151e-03  1.045721e-02                     1
+               qwen3_8b EBM-NLP        NaN            model_id+dataset     delta_entity_partial_f1  955     -0.099447  2.092240e-03  1.255344e-02                     1
+               qwen3_8b  SciERC        NaN            model_id+dataset     delta_relation_exact_f1  500      0.134186  2.641912e-03  1.320956e-02                     1
+         gemma_3_12b_it  SciERC     P4->P5 model_id+dataset+transition abs_delta_entity_partial_f1  100      0.306196  1.946745e-03  1.362722e-02                     1
+         gemma_3_12b_it EBM-NLP     P3->P4 model_id+dataset+transition abs_delta_entity_partial_f1  191      0.220767  2.147842e-03  1.362722e-02                     1
+               qwen3_8b  SciERC        NaN            model_id+dataset     delta_entity_partial_f1  500      0.126207  4.708566e-03  2.354283e-02                     1
+mistral_7b_instruct_v03   SciER     P1->P2 model_id+dataset+transition   abs_delta_entity_exact_f1   16      0.665683  4.881363e-03  3.416954e-02                     1
+mistral_7b_instruct_v03   SciER     P4->P5 model_id+dataset+transition   abs_delta_entity_exact_f1   16      0.653290  6.065686e-03  3.639412e-02                     1
+         gemma_3_12b_it  SciERC     P4->P5 model_id+dataset+transition   abs_delta_entity_exact_f1  100      0.264178  7.909226e-03  3.954613e-02                     1
+         gemma_3_12b_it EBM-NLP     P4->P5 model_id+dataset+transition abs_delta_entity_partial_f1  191      0.188001  9.202418e-03  4.601209e-02                     1
+               qwen3_8b  SciERC        NaN            model_id+dataset       delta_entity_exact_f1  500      0.120837  6.827149e-03  4.779005e-02                     1
+         gemma_3_12b_it   SciER     P1->P2 model_id+dataset+transition abs_delta_entity_partial_f1   16      0.610622  1.199091e-02  4.796363e-02                     1

@@ -1,0 +1,24 @@
+{
+  "root": "/home/tahiti/PromptStressLab",
+  "rows": 17708,
+  "datasets": {
+    "SciERC": 0,
+    "EBM-NLP": 9986,
+    "SciER": 7722
+  },
+  "eligible": {
+    "SciERC": 0,
+    "EBM-NLP": 9986,
+    "SciER": 0
+  },
+  "outputs": [
+    "scierc_manifest.csv",
+    "ebm_nlp_manifest.csv",
+    "scier_manifest.csv",
+    "unified_manifest.csv",
+    "manifest_summary.csv",
+    "manifest_validation.csv",
+    "duplicate_texts.csv",
+    "label_inventory.csv"
+  ]
+}

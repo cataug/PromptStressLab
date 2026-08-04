@@ -1,0 +1,41 @@
+{
+  "project": "PromptStressLab",
+  "seed": 20260717,
+  "python_bin": "/home/tahiti/Forensics/.venv_forensics/bin/python",
+  "poll_seconds": 30,
+  "environment": {
+    "HF_HOME": "/home/tahiti/.cache/huggingface",
+    "HF_HUB_CACHE": "/home/tahiti/.cache/huggingface/hub",
+    "OMP_NUM_THREADS": 4,
+    "MKL_NUM_THREADS": 4
+  },
+  "models": [
+    {
+      "model_id": "mistral_7b_instruct_v03",
+      "display_name": "Mistral-7B-Instruct-v0.3",
+      "path": "/home/tahiti/PromptStressLab/models/Mistral-7B-Instruct-v0.3",
+      "priority": 1,
+      "min_free_gib": 34,
+      "max_batch_size": 6,
+      "batch_token_budget": 12000
+    },
+    {
+      "model_id": "qwen3_8b",
+      "display_name": "Qwen3-8B",
+      "path": "/home/tahiti/PromptStressLab/models/Qwen3-8B",
+      "priority": 2,
+      "min_free_gib": 34,
+      "max_batch_size": 4,
+      "batch_token_budget": 10000
+    },
+    {
+      "model_id": "gemma_3_12b_it",
+      "display_name": "Gemma-3-12B-it",
+      "path": "/home/tahiti/PromptStressLab/models/Gemma-3-12B-it",
+      "priority": 3,
+      "min_free_gib": 37,
+      "max_batch_size": 2,
+      "batch_token_budget": 7000
+    }
+  ]
+}

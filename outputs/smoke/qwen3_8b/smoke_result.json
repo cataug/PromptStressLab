@@ -1,0 +1,66 @@
+{
+  "model_key": "qwen3_8b",
+  "model_path": "/home/tahiti/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218",
+  "architecture": "qwen3",
+  "status": "ok",
+  "gpu_before": {
+    "cuda_available": true,
+    "device": "NVIDIA A100-PCIE-40GB",
+    "free_gib": 14.705,
+    "total_gib": 39.381,
+    "allocated_gib": 0.0,
+    "reserved_gib": 0.0
+  },
+  "record_id": "X96-1059",
+  "prompt_characters": 1692,
+  "prompt_tokens": 390,
+  "tokenizer_seconds": 0.7336,
+  "model_load_seconds": 3.3285,
+  "generation_seconds": 35.5064,
+  "output_tokens": 73,
+  "raw_output": "{\n  \"Task\": [\"Recognition of proper nouns in Japanese text\", \"Multi-lingual Evaluation Task\"],\n  \"Method\": [\"morphological analysis\", \"dictionary lookup\", \"rule application\"],\n  \"Metric\": [],\n  \"Material\": [\"Amorph\"],\n  \"OtherScientificTerm\": [\"Named Entity\", \"NE\"],\n  \"Generic\": []\n}",
+  "extracted_json_text": "{\n  \"Task\": [\"Recognition of proper nouns in Japanese text\", \"Multi-lingual Evaluation Task\"],\n  \"Method\": [\"morphological analysis\", \"dictionary lookup\", \"rule application\"],\n  \"Metric\": [],\n  \"Material\": [\"Amorph\"],\n  \"OtherScientificTerm\": [\"Named Entity\", \"NE\"],\n  \"Generic\": []\n}",
+  "parsed_output": {
+    "Task": [
+      "Recognition of proper nouns in Japanese text",
+      "Multi-lingual Evaluation Task"
+    ],
+    "Method": [
+      "morphological analysis",
+      "dictionary lookup",
+      "rule application"
+    ],
+    "Metric": [],
+    "Material": [
+      "Amorph"
+    ],
+    "OtherScientificTerm": [
+      "Named Entity",
+      "NE"
+    ],
+    "Generic": []
+  },
+  "validation": {
+    "json_valid": true,
+    "exact_keys": true,
+    "all_values_lists": true,
+    "missing_keys": [],
+    "extra_keys": []
+  },
+  "gpu_after_load": {
+    "cuda_available": true,
+    "device": "NVIDIA A100-PCIE-40GB",
+    "free_gib": 2.75,
+    "total_gib": 39.381,
+    "allocated_gib": 11.941,
+    "reserved_gib": 11.955
+  },
+  "gpu_after_generation": {
+    "cuda_available": true,
+    "device": "NVIDIA A100-PCIE-40GB",
+    "free_gib": 1.41,
+    "total_gib": 39.381,
+    "allocated_gib": 11.949,
+    "reserved_gib": 13.203
+  }
+}

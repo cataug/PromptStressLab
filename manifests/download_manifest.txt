@@ -1,0 +1,6 @@
+downloaded_at=2026-07-16T20:43:58+03:00
+root=/home/tahiti/PromptStressLab
+scierc_source=https://nlp.cs.washington.edu/sciIE/data/sciERC_raw.tar.gz
+ebm_nlp_source=https://github.com/bepnye/EBM-NLP
+ebm_nlp_version=2.00
+scier_source=https://github.com/edzq/SciER

@@ -1,0 +1,322 @@
+{
+  "datasets": {
+    "SciERC": [
+      {
+        "record_id": "C90-2032",
+        "input_text": "This paper proposes document oriented preference sets -LRB- DoPS -RRB- for the disambiguation of the dependency structure of sentences . The DoPS system extracts preference knowledge from a target document or other documents automatically . Sentence ambiguities can be resolved by using domain targeted preference knowledge without using complicated large knowledgebases . Implementation and empirical results are described for the the analysis of dependency structures of Japanese patent claim sentences .",
+        "output": {
+          "entities": [
+            {
+              "text": "document oriented preference sets -LRB- DoPS -RRB-",
+              "type": "Method"
+            },
+            {
+              "text": "disambiguation of the dependency structure",
+              "type": "Task"
+            },
+            {
+              "text": "DoPS system",
+              "type": "Method"
+            },
+            {
+              "text": "Sentence ambiguities",
+              "type": "OtherScientificTerm"
+            },
+            {
+              "text": "domain targeted preference knowledge",
+              "type": "OtherScientificTerm"
+            },
+            {
+              "text": "knowledgebases",
+              "type": "Material"
+            },
+            {
+              "text": "dependency structures",
+              "type": "OtherScientificTerm"
+            },
+            {
+              "text": "Japanese patent claim sentences",
+              "type": "Material"
+            }
+          ],
+          "relations": [
+            {
+              "head": "document oriented preference sets -LRB- DoPS -RRB-",
+              "type": "USED-FOR",
+              "tail": "disambiguation of the dependency structure"
+            },
+            {
+              "head": "domain targeted preference knowledge",
+              "type": "USED-FOR",
+              "tail": "Sentence ambiguities"
+            },
+            {
+              "head": "domain targeted preference knowledge",
+              "type": "COMPARE",
+              "tail": "knowledgebases"
+            },
+            {
+              "head": "dependency structures",
+              "type": "FEATURE-OF",
+              "tail": "Japanese patent claim sentences"
+            }
+          ]
+        }
+      },
+      {
+        "record_id": "C08-1118",
+        "input_text": "This paper shows that it is very often possible to identify the source language of medium-length speeches in the EUROPARL corpus on the basis of frequency counts of word n-grams -LRB- 87.2 % -96.7 % accuracy depending on classification method -RRB- . The paper also examines in detail which positive markers are most powerful and identifies a number of linguistic aspects as well as culture - and domain-related ones .",
+        "output": {
+          "entities": [
+            {
+              "text": "medium-length speeches",
+              "type": "Material"
+            },
+            {
+              "text": "EUROPARL corpus",
+              "type": "Material"
+            },
+            {
+              "text": "frequency counts of word n-grams",
+              "type": "Method"
+            },
+            {
+              "text": "word n-grams",
+              "type": "OtherScientificTerm"
+            },
+            {
+              "text": "accuracy",
+              "type": "Metric"
+            },
+            {
+              "text": "classification method",
+              "type": "Method"
+            },
+            {
+              "text": "positive markers",
+              "type": "OtherScientificTerm"
+            }
+          ],
+          "relations": [
+            {
+              "head": "medium-length speeches",
+              "type": "PART-OF",
+              "tail": "EUROPARL corpus"
+            },
+            {
+              "head": "accuracy",
+              "type": "EVALUATE-FOR",
+              "tail": "classification method"
+            }
+          ]
+        }
+      },
+      {
+        "record_id": "E91-1050",
+        "input_text": "Unification is often the appropriate method for expressing relations between representations in the form of feature structures ; however , there are circumstances in which a different approach is desirable . A declarative formalism is presented which permits direct mappings of one feature structure into another , and illustrative examples are given of its application to areas of current interest .",
+        "output": {
+          "entities": [
+            {
+              "text": "Unification",
+              "type": "Method"
+            },
+            {
+              "text": "method",
+              "type": "Generic"
+            },
+            {
+              "text": "relations between representations",
+              "type": "Task"
+            },
+            {
+              "text": "feature structures",
+              "type": "OtherScientificTerm"
+            },
+            {
+              "text": "approach",
+              "type": "Generic"
+            },
+            {
+              "text": "declarative formalism",
+              "type": "Method"
+            },
+            {
+              "text": "direct mappings of one feature structure into another",
+              "type": "OtherScientificTerm"
+            }
+          ],
+          "relations": [
+            {
+              "head": "method",
+              "type": "USED-FOR",
+              "tail": "relations between representations"
+            },
+            {
+              "head": "feature structures",
+              "type": "USED-FOR",
+              "tail": "relations between representations"
+            },
+            {
+              "head": "approach",
+              "type": "COMPARE",
+              "tail": "method"
+            },
+            {
+              "head": "direct mappings of one feature structure into another",
+              "type": "FEATURE-OF",
+              "tail": "declarative formalism"
+            }
+          ]
+        }
+      }
+    ],
+    "EBM-NLP": [
+      {
+        "record_id": "21724047",
+        "input_text": "Nepafenac for epiretinal membrane surgery .",
+        "output": {
+          "entities": [
+            {
+              "text": "epiretinal membrane surgery .",
+              "type": "Participant"
+            },
+            {
+              "text": "Nepafenac",
+              "type": "Intervention"
+            }
+          ],
+          "relations": []
+        }
+      },
+      {
+        "record_id": "8069156",
+        "input_text": "Bronchodilator treatment in asthma and bronchitis .",
+        "output": {
+          "entities": [
+            {
+              "text": "asthma and bronchitis .",
+              "type": "Participant"
+            },
+            {
+              "text": "Bronchodilator treatment",
+              "type": "Intervention"
+            }
+          ],
+          "relations": []
+        }
+      },
+      {
+        "record_id": "3885290",
+        "input_text": "Neuroleptic-related dyskinesias in autistic children : a prospective study .",
+        "output": {
+          "entities": [
+            {
+              "text": "autistic children :",
+              "type": "Participant"
+            },
+            {
+              "text": "Neuroleptic-related dyskinesias",
+              "type": "Intervention"
+            }
+          ],
+          "relations": []
+        }
+      }
+    ],
+    "SciER": [
+      {
+        "record_id": "146120936::sent_001883",
+        "input_text": "Feature Pyramid Network ( FPN ) .",
+        "output": {
+          "entities": [
+            {
+              "text": "Feature Pyramid Network",
+              "type": "Method"
+            },
+            {
+              "text": "FPN",
+              "type": "Method"
+            }
+          ],
+          "relations": [
+            {
+              "head": "FPN",
+              "type": "Synonym-Of",
+              "tail": "Feature Pyramid Network"
+            }
+          ]
+        }
+      },
+      {
+        "record_id": "202540251::sent_001298",
+        "input_text": "Domain Adaptation for Semantic Segmentation .",
+        "output": {
+          "entities": [
+            {
+              "text": "Domain Adaptation",
+              "type": "Method"
+            },
+            {
+              "text": "Semantic Segmentation",
+              "type": "Task"
+            }
+          ],
+          "relations": [
+            {
+              "head": "Domain Adaptation",
+              "type": "Used-For",
+              "tail": "Semantic Segmentation"
+            }
+          ]
+        }
+      },
+      {
+        "record_id": "4539700::sent_004445",
+        "input_text": "Thus , I 3 D is 6 4 times larger than ResNeXt - 1 0 1 .",
+        "output": {
+          "entities": [
+            {
+              "text": "I 3 D",
+              "type": "Method"
+            },
+            {
+              "text": "ResNeXt - 1 0 1",
+              "type": "Method"
+            }
+          ],
+          "relations": [
+            {
+              "head": "I 3 D",
+              "type": "Compare-With",
+              "tail": "ResNeXt - 1 0 1"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "relation_types": {
+    "SciERC": [
+      "Compare",
+      "Conjunction",
+      "Evaluate-for",
+      "Used-for",
+      "Feature-of",
+      "Part-of",
+      "Hyponym-of"
+    ],
+    "EBM-NLP": [],
+    "SciER": [
+      "Benchmark-For",
+      "Compare-With",
+      "Evaluated-With",
+      "Part-Of",
+      "SubClass-Of",
+      "SubTask-Of",
+      "Synonym-Of",
+      "Trained-With",
+      "Used-For"
+    ]
+  },
+  "selection_policy": "three compact deterministic train examples per dataset"
+}

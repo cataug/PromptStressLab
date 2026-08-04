@@ -1,0 +1,21 @@
+=== SPECIALIZED MANIFEST BUILDER V2 ===
+root=/home/tahiti/PromptStressLab
+[SCIERC_SOURCE] /home/tahiti/PromptStressLab/data/raw/scierc/processed_data/json
+[SCIERC_TRAIN_JSON_ROWS] 350
+[SCIERC_DEV_JSON_ROWS] 50
+[SCIERC_TEST_JSON_ROWS] 100
+[EBM_ERROR] documents directory not found
+[SCIER_SOURCE] /home/tahiti/PromptStressLab/data/raw/scier/SciER/LLM
+[SCIER_TRAIN_SENTENCES] 5575
+[SCIER_DEV_SENTENCES] 713
+[SCIER_TEST_SENTENCES] 854
+[SCIER_TEST_OOD_SENTENCES] 580
+[SCIER_TOTAL_SENTENCE_ROWS] 7722
+[SCIER_GROUPED_DOCUMENTS] 106
+
+=== FINAL COUNTS ===
+[PASS] SciERC: actual=500 expected=500
+[WARN] EBM-NLP: actual=0 expected=4993
+[PASS] SciER: actual=106 expected=106
+[TOTAL] 606
+=== MANIFEST_V2_FINISHED ===

@@ -1,0 +1,27 @@
+{
+  "model_id": "mistral_7b_instruct_v03",
+  "model_path": "/home/tahiti/TimeBound/models/mistralai__Mistral-7B-Instruct-v0.3",
+  "gpu_physical_id": "0",
+  "started_at": "2026-07-17T04:49:59.129855+00:00",
+  "finished_at": "2026-07-19T08:33:05.895253+00:00",
+  "load_seconds": 3.450271,
+  "pending_at_start": 2836,
+  "prepared": 2836,
+  "preparation_errors": 0,
+  "counters": {
+    "ok": 2438,
+    "invalid_json": 398,
+    "errors": 0
+  },
+  "max_batch_size": 1,
+  "token_budget": 5000,
+  "model_context": 32768,
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "0",
+    "HF_HOME": "/home/tahiti/.cache/huggingface",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1",
+    "TOKENIZERS_PARALLELISM": "false",
+    "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True"
+  }
+}

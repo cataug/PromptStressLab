@@ -1,0 +1,553 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import argparse
+import gc
+import json
+import os
+import sys
+import time
+import traceback
+from collections import defaultdict
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any
+
+import torch
+import transformers
+from transformers import AutoTokenizer
+
+from psl_common import (
+    build_prompt,
+    extract_json_object,
+    read_jsonl,
+    stable_hash,
+    validate_prediction,
+)
+
+
+def utc_now() -> str:
+    return datetime.now(timezone.utc).isoformat()
+
+
+def gpu_status() -> dict[str, Any]:
+    if not torch.cuda.is_available():
+        return {"cuda_available": False}
+    free_bytes, total_bytes = torch.cuda.mem_get_info()
+    return {
+        "cuda_available": True,
+        "device": torch.cuda.get_device_name(0),
+        "free_gib": round(free_bytes / 1024**3, 3),
+        "total_gib": round(total_bytes / 1024**3, 3),
+        "allocated_gib": round(torch.cuda.memory_allocated(0) / 1024**3, 3),
+        "reserved_gib": round(torch.cuda.memory_reserved(0) / 1024**3, 3),
+        "max_allocated_gib": round(torch.cuda.max_memory_allocated(0) / 1024**3, 3),
+    }
+
+
+def load_json(path: Path) -> dict[str, Any]:
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def completed_job_ids(path: Path) -> set[str]:
+    if not path.exists():
+        return set()
+    output: set[str] = set()
+    with path.open("r", encoding="utf-8", errors="replace") as handle:
+        for line in handle:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                value = json.loads(line)
+            except Exception:
+                continue
+            job_id = value.get("job_id")
+            if isinstance(job_id, str):
+                output.add(job_id)
+    return output
+
+
+def load_record_index(jobs: list[dict[str, Any]]) -> dict[tuple[str, str, str], dict[str, Any]]:
+    index: dict[tuple[str, str, str], dict[str, Any]] = {}
+    paths = sorted({Path(job["source_file"]) for job in jobs})
+    for path in paths:
+        for record in read_jsonl(path):
+            dataset = record["dataset"]
+            split = record["split"]
+            record_id = record["record_id"]
+            index[(dataset, split, record_id)] = record
+    return index
+
+
+def load_tokenizer(model_path: Path) -> Any:
+    try:
+        tokenizer = AutoTokenizer.from_pretrained(
+            str(model_path),
+            local_files_only=True,
+            trust_remote_code=True,
+            use_fast=True,
+        )
+    except Exception as fast_error:
+        print(f"[TOKENIZER_FAST_FAILED] {fast_error}", flush=True)
+        tokenizer = AutoTokenizer.from_pretrained(
+            str(model_path),
+            local_files_only=True,
+            trust_remote_code=True,
+            use_fast=False,
+        )
+    if tokenizer.pad_token_id is None:
+        tokenizer.pad_token_id = tokenizer.eos_token_id
+    tokenizer.padding_side = "left"
+    return tokenizer
+
+
+def model_class_for(model_id: str) -> Any:
+    if model_id == "gemma_3_12b_it":
+        cls = getattr(transformers, "AutoModelForImageTextToText", None)
+        if cls is not None:
+            return cls
+    return transformers.AutoModelForCausalLM
+
+
+def load_model(model_id: str, model_path: Path) -> Any:
+    model_class = model_class_for(model_id)
+    device_map_mode = os.environ.get(
+        "PSL_DEVICE_MAP",
+        "auto",
+    )
+
+    if device_map_mode == "full":
+        device_map = {"": 0}
+    else:
+        device_map = device_map_mode
+
+    common = {
+        "local_files_only": True,
+        "trust_remote_code": True,
+        "low_cpu_mem_usage": True,
+        "device_map": device_map,
+    }
+
+    print(
+        f"[DEVICE_MAP] {device_map}",
+        flush=True,
+    )
+    try:
+        model = model_class.from_pretrained(
+            str(model_path),
+            dtype=torch.bfloat16,
+            **common,
+        )
+    except TypeError:
+        model = model_class.from_pretrained(
+            str(model_path),
+            torch_dtype=torch.bfloat16,
+            **common,
+        )
+    model.eval()
+    return model
+
+
+def render_chat(tokenizer: Any, prompt: str, model_id: str) -> str:
+    messages = [{"role": "user", "content": prompt}]
+    if not hasattr(tokenizer, "apply_chat_template"):
+        return prompt
+    if model_id == "qwen3_8b":
+        try:
+            return tokenizer.apply_chat_template(
+                messages,
+                tokenize=False,
+                add_generation_prompt=True,
+                enable_thinking=False,
+            )
+        except TypeError:
+            pass
+    try:
+        return tokenizer.apply_chat_template(
+            messages,
+            tokenize=False,
+            add_generation_prompt=True,
+        )
+    except Exception:
+        return prompt
+
+
+def context_limit(model: Any, tokenizer: Any) -> int:
+    candidates: list[int] = []
+    config = getattr(model, "config", None)
+    for obj in [config, getattr(config, "text_config", None)]:
+        if obj is None:
+            continue
+        for name in ["max_position_embeddings", "sliding_window", "n_positions"]:
+            value = getattr(obj, name, None)
+            if isinstance(value, int) and 1024 <= value < 10**7:
+                candidates.append(value)
+    tokenizer_limit = getattr(tokenizer, "model_max_length", None)
+    if isinstance(tokenizer_limit, int) and 1024 <= tokenizer_limit < 10**7:
+        candidates.append(tokenizer_limit)
+    return min(candidates) if candidates else 32768
+
+
+def make_batches(items: list[dict[str, Any]], max_batch_size: int, token_budget: int) -> list[list[dict[str, Any]]]:
+    groups: dict[int, list[dict[str, Any]]] = defaultdict(list)
+    for item in items:
+        groups[int(item["job"]["max_new_tokens"])].append(item)
+
+    batches: list[list[dict[str, Any]]] = []
+    for max_new_tokens, group in sorted(groups.items()):
+        group.sort(key=lambda item: (item["prompt_tokens"], item["job"]["job_id"]))
+        current: list[dict[str, Any]] = []
+        current_max = 0
+        for item in group:
+            proposed_size = len(current) + 1
+            proposed_max = max(current_max, item["prompt_tokens"])
+            padded_input_cost = proposed_max * proposed_size
+            generation_cost = max_new_tokens * proposed_size
+            fits = (
+                proposed_size <= max_batch_size
+                and padded_input_cost + generation_cost <= token_budget
+            )
+            if current and not fits:
+                batches.append(current)
+                current = []
+                current_max = 0
+            current.append(item)
+            current_max = max(current_max, item["prompt_tokens"])
+        if current:
+            batches.append(current)
+    return batches
+
+
+def append_record(handle: Any, record: dict[str, Any]) -> None:
+    handle.write(json.dumps(record, ensure_ascii=False) + "\n")
+    handle.flush()
+    os.fsync(handle.fileno())
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--root", default="/home/tahiti/PromptStressLab")
+    parser.add_argument("--model-id", required=True)
+    parser.add_argument("--gpu-physical-id", default="0")
+    parser.add_argument("--max-batch-size", type=int, default=None)
+    parser.add_argument("--token-budget", type=int, default=None)
+    parser.add_argument("--retry-errors", action="store_true")
+    args = parser.parse_args()
+
+    root = Path(args.root).expanduser().resolve()
+    config = load_json(root / "config" / "experiment.json")
+    model_config = next(
+        model for model in config["models"] if model["model_id"] == args.model_id
+    )
+    model_path = Path(model_config["path"]).resolve()
+
+    output_dir = root / "outputs" / "generations" / args.model_id
+    output_dir.mkdir(parents=True, exist_ok=True)
+    predictions_path = output_dir / "predictions.jsonl"
+    errors_path = output_dir / "errors.jsonl"
+    run_metadata_path = output_dir / "run_metadata.json"
+
+    all_jobs = [
+        job
+        for job in read_jsonl(root / "manifests" / "experiment_jobs.jsonl")
+        if job["model_id"] == args.model_id
+    ]
+    successful = completed_job_ids(predictions_path)
+    failed = set() if args.retry_errors else completed_job_ids(errors_path)
+    pending_jobs = [
+        job for job in all_jobs if job["job_id"] not in successful and job["job_id"] not in failed
+    ]
+
+    print("=== MODEL EXPERIMENT WORKER ===", flush=True)
+    print(f"[MODEL_ID] {args.model_id}", flush=True)
+    print(f"[MODEL_PATH] {model_path}", flush=True)
+    print(f"[GPU_PHYSICAL_ID] {args.gpu_physical_id}", flush=True)
+    print(f"[PYTHON] {sys.executable}", flush=True)
+    print(f"[TORCH] {torch.__version__}", flush=True)
+    print(f"[TRANSFORMERS] {transformers.__version__}", flush=True)
+    print(f"[TOTAL_JOBS] {len(all_jobs)}", flush=True)
+    print(f"[ALREADY_SUCCESSFUL] {len(successful)}", flush=True)
+    print(f"[SKIPPED_ERRORS] {len(failed)}", flush=True)
+    print(f"[PENDING] {len(pending_jobs)}", flush=True)
+    print(f"[GPU_BEFORE_LOAD] {json.dumps(gpu_status())}", flush=True)
+
+    if not pending_jobs:
+        print("[MODEL_ALREADY_COMPLETE]", flush=True)
+        return 0
+    if not torch.cuda.is_available():
+        raise RuntimeError("CUDA is not available")
+    if not model_path.exists():
+        raise FileNotFoundError(model_path)
+
+    torch.manual_seed(int(config["seed"]))
+    torch.cuda.manual_seed_all(int(config["seed"]))
+    torch.backends.cuda.matmul.allow_tf32 = True
+    torch.set_float32_matmul_precision("high")
+
+    demos_manifest = load_json(root / "manifests" / "demo_manifest.json")
+    record_index = load_record_index(pending_jobs)
+
+    print("[LOAD_TOKENIZER]", flush=True)
+    tokenizer_started = time.perf_counter()
+    tokenizer = load_tokenizer(model_path)
+    print(f"[TOKENIZER_OK] {time.perf_counter() - tokenizer_started:.3f}s", flush=True)
+
+    print("[LOAD_MODEL]", flush=True)
+    model_started = time.perf_counter()
+    model = load_model(args.model_id, model_path)
+    load_seconds = time.perf_counter() - model_started
+    print(f"[MODEL_OK] {load_seconds:.3f}s", flush=True)
+    print(f"[GPU_AFTER_LOAD] {json.dumps(gpu_status())}", flush=True)
+
+    max_batch_size = int(args.max_batch_size or model_config["max_batch_size"])
+    token_budget = int(args.token_budget or model_config["batch_token_budget"])
+    model_context = context_limit(model, tokenizer)
+    print(f"[MAX_BATCH_SIZE] {max_batch_size}", flush=True)
+    print(f"[TOKEN_BUDGET] {token_budget}", flush=True)
+    print(f"[MODEL_CONTEXT] {model_context}", flush=True)
+
+    prepared: list[dict[str, Any]] = []
+    pre_errors: list[dict[str, Any]] = []
+    for index, job in enumerate(pending_jobs, start=1):
+        key = (job["dataset"], job["split"], job["record_id"])
+        record = record_index.get(key)
+        if record is None:
+            pre_errors.append({
+                "job_id": job["job_id"],
+                "model_id": args.model_id,
+                "status": "error",
+                "error_type": "MissingRecord",
+                "error": f"No record found for {key}",
+                "job": job,
+                "created_at": utc_now(),
+            })
+            continue
+        prompt = build_prompt(
+            dataset=job["dataset"],
+            record=record,
+            condition=job["condition"],
+            demos=demos_manifest["datasets"][job["dataset"]],
+            relation_types=demos_manifest["relation_types"][job["dataset"]],
+        )
+        prompt_hash = stable_hash(prompt)
+        if prompt_hash != job["prompt_sha256"]:
+            pre_errors.append({
+                "job_id": job["job_id"],
+                "model_id": args.model_id,
+                "status": "error",
+                "error_type": "PromptHashMismatch",
+                "error": f"expected={job['prompt_sha256']} actual={prompt_hash}",
+                "job": job,
+                "created_at": utc_now(),
+            })
+            continue
+        rendered = render_chat(tokenizer, prompt, args.model_id)
+        token_ids = tokenizer(rendered, add_special_tokens=False)["input_ids"]
+        prompt_tokens = len(token_ids)
+        if prompt_tokens + int(job["max_new_tokens"]) > model_context:
+            pre_errors.append({
+                "job_id": job["job_id"],
+                "model_id": args.model_id,
+                "status": "error",
+                "error_type": "ContextOverflow",
+                "error": (
+                    f"prompt_tokens={prompt_tokens} max_new_tokens={job['max_new_tokens']} "
+                    f"context={model_context}"
+                ),
+                "job": job,
+                "created_at": utc_now(),
+            })
+            continue
+        prepared.append({
+            "job": job,
+            "record": record,
+            "prompt": prompt,
+            "rendered_prompt": rendered,
+            "prompt_tokens": prompt_tokens,
+        })
+        if index % 250 == 0 or index == len(pending_jobs):
+            print(f"[PREPARED] {index}/{len(pending_jobs)}", flush=True)
+
+    with errors_path.open("a", encoding="utf-8") as error_handle:
+        for error in pre_errors:
+            append_record(error_handle, error)
+    print(f"[PREPARATION_ERRORS] {len(pre_errors)}", flush=True)
+
+    batches = make_batches(prepared, max_batch_size=max_batch_size, token_budget=token_budget)
+    print(f"[BATCHES] {len(batches)}", flush=True)
+
+    counters = {"ok": 0, "invalid_json": 0, "errors": len(pre_errors)}
+    started_at = utc_now()
+    worker_start = time.perf_counter()
+
+    prediction_handle = predictions_path.open("a", encoding="utf-8")
+    error_handle = errors_path.open("a", encoding="utf-8")
+
+    def process_batch(batch: list[dict[str, Any]]) -> None:
+        if not batch:
+            return
+        max_new_tokens = int(batch[0]["job"]["max_new_tokens"])
+        prompts = [item["rendered_prompt"] for item in batch]
+        try:
+            encoded = tokenizer(
+                prompts,
+                return_tensors="pt",
+                padding=True,
+                add_special_tokens=False,
+            )
+            encoded = {key: value.to("cuda:0") for key, value in encoded.items()}
+            input_width = int(encoded["input_ids"].shape[1])
+            batch_started = time.perf_counter()
+            with torch.inference_mode():
+                generated = model.generate(
+                    **encoded,
+                    max_new_tokens=max_new_tokens,
+                    do_sample=False,
+                    use_cache=True,
+                    pad_token_id=tokenizer.pad_token_id,
+                    eos_token_id=tokenizer.eos_token_id,
+                )
+            batch_seconds = time.perf_counter() - batch_started
+            for row_index, item in enumerate(batch):
+                generated_tokens = generated[row_index, input_width:]
+                raw_output = tokenizer.decode(generated_tokens, skip_special_tokens=True).strip()
+                parsed, extracted_json = extract_json_object(raw_output)
+                validation = validate_prediction(parsed)
+                output_tokens = int(generated_tokens.shape[-1])
+                status = "ok" if validation["schema_valid"] else "invalid_json"
+                record = {
+                    **item["job"],
+                    "status": status,
+                    "gpu_physical_id": str(args.gpu_physical_id),
+                    "prompt_tokens": item["prompt_tokens"],
+                    "output_tokens": output_tokens,
+                    "max_new_tokens": max_new_tokens,
+                    "truncated_at_limit": output_tokens >= max_new_tokens,
+                    "batch_size": len(batch),
+                    "batch_seconds": round(batch_seconds, 6),
+                    "seconds_per_item_in_batch": round(batch_seconds / len(batch), 6),
+                    "raw_output": raw_output,
+                    "extracted_json_text": extracted_json,
+                    "parsed_output": parsed,
+                    "validation": validation,
+                    "created_at": utc_now(),
+                }
+                append_record(prediction_handle, record)
+                counters[status] += 1
+            del generated
+            del encoded
+        except torch.cuda.OutOfMemoryError as error:
+            torch.cuda.empty_cache()
+            gc.collect()
+            if len(batch) > 1:
+                midpoint = len(batch) // 2
+                print(f"[OOM_SPLIT] size={len(batch)} -> {midpoint}+{len(batch)-midpoint}", flush=True)
+                process_batch(batch[:midpoint])
+                process_batch(batch[midpoint:])
+                return
+            item = batch[0]
+            error_record = {
+                **item["job"],
+                "status": "error",
+                "error_type": "CUDAOutOfMemoryError",
+                "error": str(error),
+                "prompt_tokens": item["prompt_tokens"],
+                "gpu_status": gpu_status(),
+                "traceback": traceback.format_exc(),
+                "created_at": utc_now(),
+            }
+            append_record(error_handle, error_record)
+            counters["errors"] += 1
+        except Exception as error:
+            if len(batch) > 1:
+                print(
+                    f"[BATCH_ERROR_SPLIT] {type(error).__name__}: {error}; size={len(batch)}",
+                    flush=True,
+                )
+                midpoint = len(batch) // 2
+                process_batch(batch[:midpoint])
+                process_batch(batch[midpoint:])
+                return
+            item = batch[0]
+            error_record = {
+                **item["job"],
+                "status": "error",
+                "error_type": type(error).__name__,
+                "error": str(error),
+                "prompt_tokens": item["prompt_tokens"],
+                "gpu_status": gpu_status(),
+                "traceback": traceback.format_exc(),
+                "created_at": utc_now(),
+            }
+            append_record(error_handle, error_record)
+            counters["errors"] += 1
+
+    try:
+        for batch_index, batch in enumerate(batches, start=1):
+            process_batch(batch)
+            if batch_index % 10 == 0 or batch_index == len(batches):
+                elapsed = time.perf_counter() - worker_start
+                done = counters["ok"] + counters["invalid_json"] + counters["errors"]
+                print(
+                    f"[PROGRESS] batches={batch_index}/{len(batches)} done={done}/{len(pending_jobs)} "
+                    f"ok={counters['ok']} invalid={counters['invalid_json']} errors={counters['errors']} "
+                    f"elapsed_s={elapsed:.1f} gpu={json.dumps(gpu_status())}",
+                    flush=True,
+                )
+    finally:
+        prediction_handle.close()
+        error_handle.close()
+        del model
+        del tokenizer
+        gc.collect()
+        torch.cuda.empty_cache()
+        try:
+            torch.cuda.ipc_collect()
+        except Exception:
+            pass
+
+    metadata = {
+        "model_id": args.model_id,
+        "model_path": str(model_path),
+        "gpu_physical_id": str(args.gpu_physical_id),
+        "started_at": started_at,
+        "finished_at": utc_now(),
+        "load_seconds": round(load_seconds, 6),
+        "pending_at_start": len(pending_jobs),
+        "prepared": len(prepared),
+        "preparation_errors": len(pre_errors),
+        "counters": counters,
+        "max_batch_size": max_batch_size,
+        "token_budget": token_budget,
+        "model_context": model_context,
+        "environment": {
+            key: os.environ.get(key)
+            for key in [
+                "CUDA_VISIBLE_DEVICES",
+                "HF_HOME",
+                "HF_HUB_OFFLINE",
+                "TRANSFORMERS_OFFLINE",
+                "TOKENIZERS_PARALLELISM",
+                "PYTORCH_CUDA_ALLOC_CONF",
+            ]
+        },
+    }
+    run_metadata_path.write_text(
+        json.dumps(metadata, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+
+    final_success_ids = completed_job_ids(predictions_path)
+    final_error_ids = completed_job_ids(errors_path)
+    final_successful = len(final_success_ids)
+    final_errors = len(final_error_ids)
+    final_completed_unique = len(final_success_ids | final_error_ids)
+    print("=== MODEL WORKER FINISHED ===", flush=True)
+    print(f"[FINAL_SUCCESSFUL_OR_INVALID] {final_successful}/{len(all_jobs)}", flush=True)
+    print(f"[FINAL_ERRORS] {final_errors}", flush=True)
+    print(f"[GPU_AFTER_CLEANUP] {json.dumps(gpu_status())}", flush=True)
+    return 0 if final_successful >= len(all_jobs) else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

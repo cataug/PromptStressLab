@@ -1,0 +1,27 @@
+{
+  "model_id": "qwen3_8b",
+  "model_path": "/home/tahiti/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218",
+  "gpu_physical_id": "0",
+  "started_at": "2026-07-17T21:27:56.354258+00:00",
+  "finished_at": "2026-07-18T07:03:03.870582+00:00",
+  "load_seconds": 4.756866,
+  "pending_at_start": 2842,
+  "prepared": 2842,
+  "preparation_errors": 0,
+  "counters": {
+    "ok": 2510,
+    "invalid_json": 332,
+    "errors": 0
+  },
+  "max_batch_size": 2,
+  "token_budget": 7000,
+  "model_context": 40960,
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "0",
+    "HF_HOME": "/home/tahiti/.cache/huggingface",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1",
+    "TOKENIZERS_PARALLELISM": "false",
+    "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True"
+  }
+}

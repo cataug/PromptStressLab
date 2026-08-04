@@ -1,0 +1,54 @@
+{
+  "project": "PromptStressLab",
+  "models": [
+    {
+      "model_id": "qwen3_8b",
+      "display_name": "Qwen3-8B",
+      "provider": "local",
+      "family": "Qwen",
+      "path": "/home/tahiti/PromptStressLab/models/Qwen3-8B",
+      "role": "cross_model_evaluation",
+      "enabled": true,
+      "resolved_path": "/home/tahiti/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218",
+      "path_exists": true,
+      "is_symlink": true
+    },
+    {
+      "model_id": "gemma_3_12b_it",
+      "display_name": "Gemma-3-12B-it",
+      "provider": "local",
+      "family": "Gemma",
+      "path": "/home/tahiti/PromptStressLab/models/Gemma-3-12B-it",
+      "role": "cross_model_evaluation",
+      "enabled": true,
+      "resolved_path": "/home/tahiti/RIFT/models/Gemma-3-12B-it",
+      "path_exists": true,
+      "is_symlink": true
+    },
+    {
+      "model_id": "mistral_7b_instruct_v03",
+      "display_name": "Mistral-7B-Instruct-v0.3",
+      "provider": "local",
+      "family": "Mistral",
+      "path": "/home/tahiti/PromptStressLab/models/Mistral-7B-Instruct-v0.3",
+      "role": "cross_model_evaluation",
+      "enabled": true,
+      "resolved_path": "/home/tahiti/TimeBound/models/mistralai__Mistral-7B-Instruct-v0.3",
+      "path_exists": true,
+      "is_symlink": true
+    },
+    {
+      "model_id": "gpt_4_1_mini",
+      "display_name": "gpt-4.1-mini",
+      "provider": "openai_api",
+      "family": "GPT",
+      "path": null,
+      "role": "primary_api_baseline",
+      "enabled": false,
+      "notes": "Enable only when OPENAI_API_KEY is configured.",
+      "resolved_path": null,
+      "path_exists": null,
+      "is_symlink": false
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+
+# ------------------------------------------------------------
+# PromptStressLab local and heavy artifacts
+
+# Datasets and external corpora
+/data/
+/datasets/
+/dataset/
+/external/
+/downloads/
+/raw_data/
+/corpora/
+
+# Local models and checkpoints
+/models/
+/checkpoints/
+/weights/
+/pretrained/
+/hf_cache/
+/huggingface_cache/
+/wandb/
+/runs/
+
+# Python environments
+/.venv/
+/.venv_*/
+/venv/
+/env/
+/.conda/
+/conda_env/
+
+# Python caches and temporary files
+**/__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Secrets and machine-specific configuration
+.env
+.env.*
+!.env.example
+*credentials*.json
+*secrets*.json
+*token*.txt
+*.pem
+*.key
+
+# Model and dataset binary formats
+*.safetensors
+*.ckpt
+*.pth
+*.pt
+*.onnx
+*.h5
+*.hdf5
+*.parquet
+*.arrow
+*.feather
+*.pkl
+*.pickle
+*.joblib
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# Core dumps and profiling artifacts
+core
+core.*
+*.prof
+*.trace
+/data/raw/scierc/sciERC_processed.tar.gz
+/data/raw/scierc/processed_data/elmo/train.hdf5
+/data/raw/scierc/processed_data/elmo/test.hdf5

@@ -1,0 +1,37 @@
+{
+  "embedding_backend": "CLIP text encoder",
+  "embedding_model": "/home/tahiti/Forensics/models/clip_vit_base_patch32",
+  "main_conditions": [
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5",
+    "P6"
+  ],
+  "transitions": [
+    "P1->P2",
+    "P2->P3",
+    "P3->P4",
+    "P4->P5",
+    "P5->P6"
+  ],
+  "document_transition_pairs": 4605,
+  "expected_document_transition_pairs": 4605,
+  "field_transition_pairs": 20055,
+  "expected_field_transition_pairs": 20055,
+  "unique_field_items_embedded": 19553,
+  "complete": true,
+  "psi_definition": "Mean semantic drift across dataset fields. Field drift = 1 - cosine similarity between normalized CLIP centroids. Empty-empty=0; empty-nonempty=1.",
+  "statistics_files": [
+    "psi_pairwise.csv",
+    "psi_summary.csv",
+    "psi_summary_overall.csv",
+    "field_volatility_pairwise.csv",
+    "field_volatility_summary.csv",
+    "field_volatility_summary_overall.csv",
+    "document_volatility.csv",
+    "psi_f1_correlations.csv",
+    "semantic_statistics_summary.json"
+  ]
+}

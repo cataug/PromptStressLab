@@ -1,0 +1,27 @@
+{
+  "model_id": "gemma_3_12b_it",
+  "model_path": "/home/tahiti/RIFT/models/Gemma-3-12B-it",
+  "gpu_physical_id": "0",
+  "started_at": "2026-08-01T18:00:44.701375+00:00",
+  "finished_at": "2026-08-03T02:13:31.654411+00:00",
+  "load_seconds": 26.143568,
+  "pending_at_start": 2834,
+  "prepared": 2834,
+  "preparation_errors": 0,
+  "counters": {
+    "ok": 2601,
+    "invalid_json": 233,
+    "errors": 0
+  },
+  "max_batch_size": 2,
+  "token_budget": 7000,
+  "model_context": 131072,
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "0",
+    "HF_HOME": "/home/tahiti/.cache/huggingface",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1",
+    "TOKENIZERS_PARALLELISM": "false",
+    "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True"
+  }
+}

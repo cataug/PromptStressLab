@@ -1,0 +1,10 @@
+dataset,check,value,status
+EBM-NLP,nonempty_manifest,9986,PASS
+EBM-NLP,eligible_documents,9986,PASS
+EBM-NLP,missing_text,0,PASS
+EBM-NLP,gold_signal_present,9986,PASS
+SciER,nonempty_manifest,7722,PASS
+SciER,eligible_documents,0,FAIL
+SciER,missing_text,7722,WARN
+SciER,gold_signal_present,7710,PASS
+ALL,rows_in_duplicate_text_groups,0,PASS

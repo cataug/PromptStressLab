@@ -1,0 +1,27 @@
+PromptStressLab final figure set
+
+fig01_f1_prompt_trajectories
+  Exact and partial entity F1 across P1–P6.
+
+fig02_psi_prompt_transitions
+  PSI across adjacent prompt transitions with bootstrap confidence intervals.
+
+fig03_cost_quality_pareto
+  Prompt-token cost versus partial F1 with schema-validity marker sizes.
+
+fig04_field_volatility_heatmaps
+  Field-wise semantic volatility across models and datasets.
+
+fig05_psi_f1_relationship
+  Relationship between PSI and absolute partial-F1 changes.
+
+fig06_ablation_effects
+  Partial-F1 changes for A1–A6 relative to A0.
+
+fig07_speed_schema_validity
+  Model latency versus schema validity.
+
+fig08_overview_poster
+  Four-panel summary figure.
+
+Every figure is provided as 300-dpi PNG and vector PDF.

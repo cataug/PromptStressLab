@@ -1,0 +1,73 @@
+{
+  "model_key": "gemma_3_12b_it",
+  "model_path": "/home/tahiti/RIFT/models/Gemma-3-12B-it",
+  "architecture": "gemma3",
+  "status": "ok",
+  "gpu_before": {
+    "cuda_available": true,
+    "device": "NVIDIA A100-PCIE-40GB",
+    "free_gib": 14.705,
+    "total_gib": 39.381,
+    "allocated_gib": 0.0,
+    "reserved_gib": 0.0
+  },
+  "record_id": "X96-1059",
+  "prompt_characters": 1692,
+  "prompt_tokens": 402,
+  "tokenizer_seconds": 2.3862,
+  "model_load_seconds": 13.5014,
+  "generation_seconds": 365.1876,
+  "output_tokens": 256,
+  "raw_output": "```json\n{\n  \"Task\": [\n    \"Recognition of proper nouns\",\n    \"Multi-lingual Evaluation Task\",\n    \"morphological analysis\"\n  ],\n  \"Method\": [\n    \"dictionary lookup\",\n    \"rule application\"\n  ],\n  \"Metric\": [\n    \"MET\"\n  ],\n  \"Material\": [\n    \"Japanese text\",\n    \"Japanese character strings\"\n  ],\n  \"OtherScientificTerm\": [\n    \"Named Entity\",\n    \"NE\",\n    \"Japanese information extraction\"\n  ],\n  \"Generic\": [\n    \"numerical expressions\",\n    \"temporal expressions\"\n  ]\n}\n```",
+  "extracted_json_text": "{\n  \"Task\": [\n    \"Recognition of proper nouns\",\n    \"Multi-lingual Evaluation Task\",\n    \"morphological analysis\"\n  ],\n  \"Method\": [\n    \"dictionary lookup\",\n    \"rule application\"\n  ],\n  \"Metric\": [\n    \"MET\"\n  ],\n  \"Material\": [\n    \"Japanese text\",\n    \"Japanese character strings\"\n  ],\n  \"OtherScientificTerm\": [\n    \"Named Entity\",\n    \"NE\",\n    \"Japanese information extraction\"\n  ],\n  \"Generic\": [\n    \"numerical expressions\",\n    \"temporal expressions\"\n  ]\n}",
+  "parsed_output": {
+    "Task": [
+      "Recognition of proper nouns",
+      "Multi-lingual Evaluation Task",
+      "morphological analysis"
+    ],
+    "Method": [
+      "dictionary lookup",
+      "rule application"
+    ],
+    "Metric": [
+      "MET"
+    ],
+    "Material": [
+      "Japanese text",
+      "Japanese character strings"
+    ],
+    "OtherScientificTerm": [
+      "Named Entity",
+      "NE",
+      "Japanese information extraction"
+    ],
+    "Generic": [
+      "numerical expressions",
+      "temporal expressions"
+    ]
+  },
+  "validation": {
+    "json_valid": true,
+    "exact_keys": true,
+    "all_values_lists": true,
+    "missing_keys": [],
+    "extra_keys": []
+  },
+  "gpu_after_load": {
+    "cuda_available": true,
+    "device": "NVIDIA A100-PCIE-40GB",
+    "free_gib": 1.934,
+    "total_gib": 39.381,
+    "allocated_gib": 12.681,
+    "reserved_gib": 12.697
+  },
+  "gpu_after_generation": {
+    "cuda_available": true,
+    "device": "NVIDIA A100-PCIE-40GB",
+    "free_gib": 1.641,
+    "total_gib": 39.381,
+    "allocated_gib": 12.688,
+    "reserved_gib": 12.973
+  }
+}

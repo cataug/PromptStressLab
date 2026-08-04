@@ -1,0 +1,43 @@
+=== LOCAL MODEL SMOKE TEST ===
+[MODEL_KEY] mistral_7b_instruct_v03
+[MODEL_PATH] /home/tahiti/TimeBound/models/mistralai__Mistral-7B-Instruct-v0.3
+[ARCHITECTURE] mistral
+[PYTHON] /home/tahiti/Forensics/.venv_forensics/bin/python
+[TORCH] 2.6.0+cu124
+[TRANSFORMERS] 5.12.0
+=== ENVIRONMENT ===
+CUDA_VISIBLE_DEVICES=0
+CUDA_DEVICE_ORDER=PCI_BUS_ID
+HF_HOME=/home/tahiti/.cache/huggingface
+HF_HUB_OFFLINE=1
+TRANSFORMERS_OFFLINE=1
+TOKENIZERS_PARALLELISM=false
+PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+[GPU_BEFORE] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 14.705, "total_gib": 39.381, "allocated_gib": 0.0, "reserved_gib": 0.0}
+[RECORD_ID] X96-1059
+[PROMPT_CHARACTERS] 1692
+[LOAD_TOKENIZER]
+[TOKENIZER_OK] 0.345 s
+[PROMPT_TOKENS] 426
+[LOAD_MODEL]
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights:   4%|▍         | 13/291 [00:00<00:02, 115.35it/s]Loading weights:   9%|▊         | 25/291 [00:00<00:02, 107.10it/s]Loading weights:  14%|█▎        | 40/291 [00:00<00:02, 116.54it/s]Loading weights:  18%|█▊        | 52/291 [00:00<00:02, 108.49it/s]Loading weights:  23%|██▎       | 67/291 [00:00<00:01, 118.00it/s]Loading weights:  27%|██▋       | 79/291 [00:00<00:01, 112.60it/s]Loading weights:  32%|███▏      | 94/291 [00:00<00:01, 118.94it/s]Loading weights:  36%|███▋      | 106/291 [00:00<00:01, 111.90it/s]Loading weights:  42%|████▏     | 121/291 [00:01<00:01, 117.95it/s]Loading weights:  46%|████▌     | 133/291 [00:01<00:01, 110.71it/s]Loading weights:  51%|█████     | 148/291 [00:01<00:01, 116.21it/s]Loading weights:  55%|█████▍    | 160/291 [00:01<00:01, 111.26it/s]Loading weights:  60%|██████    | 175/291 [00:01<00:01, 115.47it/s]Loading weights:  64%|██████▍   | 187/291 [00:01<00:00, 111.19it/s]Loading weights:  69%|██████▉   | 202/291 [00:01<00:00, 117.80it/s]Loading weights:  74%|███████▎  | 214/291 [00:01<00:00, 112.23it/s]Loading weights:  79%|███████▊  | 229/291 [00:01<00:00, 119.15it/s]Loading weights:  83%|████████▎ | 241/291 [00:02<00:00, 114.33it/s]Loading weights:  88%|████████▊ | 256/291 [00:02<00:00, 121.32it/s]Loading weights:  92%|█████████▏| 269/291 [00:02<00:00, 119.68it/s]Loading weights: 100%|██████████| 291/291 [00:02<00:00, 124.18it/s]
+Some parameters are on the meta device because they were offloaded to the cpu.
+[MODEL_OK] 3.170 s
+[GPU_AFTER_LOAD] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 2.262, "total_gib": 39.381, "allocated_gib": 12.438, "reserved_gib": 12.443}
+[GENERATE]
+[GENERATION_SECONDS] 19.804
+[OUTPUT_TOKENS] 111
+[VALIDATION] {"json_valid": true, "exact_keys": true, "all_values_lists": true, "missing_keys": [], "extra_keys": []}
+=== RAW OUTPUT ===
+{
+  "Task": ["Multi-lingual Evaluation Task for Japanese text"],
+  "Method": ["Amorph morphological analyzer"],
+  "Metric": [],
+  "Material": [],
+  "OtherScientificTerm": ["MET", "morphological analysis", "information extraction"],
+  "Generic": ["proper nouns", "named entity items", "dictionary lookup", "rule application", "segmentation", "tagging", "Japanese character strings"]
+}
+=== END RAW OUTPUT ===
+[SMOKE_OK]
+[RESULT] /home/tahiti/PromptStressLab/outputs/smoke/mistral_7b_instruct_v03/smoke_result.json
+=== SMOKE_PROCESS_FINISHED ===

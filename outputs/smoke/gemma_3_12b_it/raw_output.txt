@@ -1,0 +1,29 @@
+```json
+{
+  "Task": [
+    "Recognition of proper nouns",
+    "Multi-lingual Evaluation Task",
+    "morphological analysis"
+  ],
+  "Method": [
+    "dictionary lookup",
+    "rule application"
+  ],
+  "Metric": [
+    "MET"
+  ],
+  "Material": [
+    "Japanese text",
+    "Japanese character strings"
+  ],
+  "OtherScientificTerm": [
+    "Named Entity",
+    "NE",
+    "Japanese information extraction"
+  ],
+  "Generic": [
+    "numerical expressions",
+    "temporal expressions"
+  ]
+}
+```

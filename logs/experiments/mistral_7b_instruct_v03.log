@@ -1,0 +1,37 @@
+=== MODEL EXPERIMENT WORKER ===
+[MODEL_ID] mistral_7b_instruct_v03
+[MODEL_PATH] /home/tahiti/TimeBound/models/mistralai__Mistral-7B-Instruct-v0.3
+[GPU_PHYSICAL_ID] 0
+[PYTHON] /home/tahiti/Forensics/.venv_forensics/bin/python
+[TORCH] 2.6.0+cu124
+[TRANSFORMERS] 5.12.0
+[TOTAL_JOBS] 2842
+[ALREADY_SUCCESSFUL] 0
+[SKIPPED_ERRORS] 0
+[PENDING] 2842
+[GPU_BEFORE_LOAD] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 14.647, "total_gib": 39.381, "allocated_gib": 0.0, "reserved_gib": 0.0, "max_allocated_gib": 0.0}
+[LOAD_TOKENIZER]
+[TOKENIZER_OK] 0.236s
+[LOAD_MODEL]
+[DEVICE_MAP] auto
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights:   3%|▎         | 9/291 [00:00<00:03, 83.72it/s]Loading weights:   7%|▋         | 19/291 [00:00<00:02, 91.29it/s]Loading weights:  11%|█         | 31/291 [00:00<00:02, 99.59it/s]Loading weights:  14%|█▍        | 41/291 [00:00<00:02, 98.59it/s]Loading weights:  18%|█▊        | 51/291 [00:00<00:02, 93.89it/s]Loading weights:  23%|██▎       | 67/291 [00:00<00:02, 107.57it/s]Loading weights:  27%|██▋       | 78/291 [00:00<00:02, 100.34it/s]Loading weights:  32%|███▏      | 94/291 [00:00<00:01, 111.68it/s]Loading weights:  36%|███▋      | 106/291 [00:01<00:01, 104.99it/s]Loading weights:  42%|████▏     | 121/291 [00:01<00:01, 110.88it/s]Loading weights:  46%|████▌     | 133/291 [00:01<00:01, 104.69it/s]Loading weights:  49%|████▉     | 144/291 [00:01<00:01, 105.30it/s]Loading weights:  53%|█████▎    | 155/291 [00:01<00:01, 106.32it/s]Loading weights:  57%|█████▋    | 166/291 [00:01<00:01, 97.05it/s] Loading weights:  60%|██████    | 176/291 [00:01<00:01, 84.44it/s]Loading weights:  64%|██████▍   | 186/291 [00:01<00:01, 88.04it/s]Loading weights:  68%|██████▊   | 199/291 [00:01<00:00, 97.22it/s]Loading weights:  72%|███████▏  | 210/291 [00:02<00:00, 98.99it/s]Loading weights:  76%|███████▌  | 221/291 [00:02<00:00, 92.53it/s]Loading weights:  79%|███████▉  | 231/291 [00:02<00:00, 92.61it/s]Loading weights:  85%|████████▍ | 247/291 [00:02<00:00, 104.87it/s]Loading weights:  89%|████████▊ | 258/291 [00:02<00:00, 102.53it/s]Loading weights: 100%|██████████| 291/291 [00:02<00:00, 108.55it/s]
+Some parameters are on the meta device because they were offloaded to the cpu.
+[MODEL_OK] 3.512s
+[GPU_AFTER_LOAD] {"cuda_available": true, "device": "NVIDIA A100-PCIE-40GB", "free_gib": 2.203, "total_gib": 39.381, "allocated_gib": 12.438, "reserved_gib": 12.443, "max_allocated_gib": 12.438}
+[MAX_BATCH_SIZE] 1
+[TOKEN_BUDGET] 5000
+[MODEL_CONTEXT] 32768
+[PREPARED] 250/2842
+[PREPARED] 500/2842
+[PREPARED] 750/2842
+[PREPARED] 1000/2842
+[PREPARED] 1250/2842
+[PREPARED] 1500/2842
+[PREPARED] 1750/2842
+[PREPARED] 2000/2842
+[PREPARED] 2250/2842
+[PREPARED] 2500/2842
+[PREPARED] 2750/2842
+[PREPARED] 2842/2842
+[PREPARATION_ERRORS] 0
+[BATCHES] 2842
