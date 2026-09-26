@@ -1,0 +1,11 @@
+REVIEWER POST-HOC HEADLINE STATISTICS
+========================================================================
+
+Document-level semantic-encoder PSI agreement, Spearman rho: 0.973--0.988
+Document-level semantic-encoder PSI agreement, Kendall tau: 0.871--0.920
+Top-10% PSI overlap, Jaccard: 0.780--0.937
+
+Semantic PSI vs |Delta partial F1|, overall rho: 0.647--0.666
+PSI screening AUROC for |Delta partial F1| >= 0.20: 0.836--0.880
+Adjacent POSIX vs semantic PSI, overall rho: 0.464--0.478
+Adjacent POSIX vs |Delta partial F1|, overall rho: 0.386

@@ -1,0 +1,15 @@
+{
+  "encoder_agreement_spearman_min": 0.973058067390221,
+  "encoder_agreement_spearman_max": 0.9878329058374232,
+  "encoder_agreement_kendall_min": 0.8707629710743373,
+  "encoder_agreement_kendall_max": 0.920409209002844,
+  "encoder_agreement_top10_jaccard_min": 0.7799227799227799,
+  "encoder_agreement_top10_jaccard_max": 0.9369747899159664,
+  "semantic_psi_abs_f1_rho_min": 0.6468401816268672,
+  "semantic_psi_abs_f1_rho_max": 0.6660353810898316,
+  "psi_utility_auc_020_min": 0.8359938342564531,
+  "psi_utility_auc_020_max": 0.8801596573208722,
+  "adjacent_posix_semantic_psi_rho_min": 0.4637300145970166,
+  "adjacent_posix_semantic_psi_rho_max": 0.478299796265576,
+  "adjacent_posix_abs_f1_rho_overall": 0.3857177526787171
+}

@@ -1,0 +1,10 @@
+model_id,dataset,parsed_source,size
+Gemma-3-12B-IT,EBM-NLP,parsed_output,1146
+Gemma-3-12B-IT,SciER,parsed_output,96
+Gemma-3-12B-IT,SciERC,parsed_output,600
+Mistral-7B-Instruct-v0.3,EBM-NLP,parsed_output,1146
+Mistral-7B-Instruct-v0.3,SciER,parsed_output,96
+Mistral-7B-Instruct-v0.3,SciERC,parsed_output,600
+Qwen3-8B,EBM-NLP,parsed_output,1146
+Qwen3-8B,SciER,parsed_output,96
+Qwen3-8B,SciERC,parsed_output,600
