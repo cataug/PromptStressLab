@@ -1,0 +1,36 @@
+\begin{tabular}{lllrrr}
+\toprule
+encoder & model\_id & comparison & n & spearman\_rho & p\_holm \\
+\midrule
+clip\_vit\_b32 & Gemma-3-12B-IT & POSIX\_vs\_semantic\_psi & 307 & -0.179 & 0.041 \\
+clip\_vit\_b32 & Gemma-3-12B-IT & POSIX\_vs\_prosa\_pss & 307 & -0.170 & 0.067 \\
+clip\_vit\_b32 & Mistral-7B-Instruct-v0.3 & POSIX\_vs\_semantic\_psi & 307 & -0.308 & 0.000 \\
+clip\_vit\_b32 & Mistral-7B-Instruct-v0.3 & POSIX\_vs\_prosa\_pss & 307 & -0.138 & 0.245 \\
+clip\_vit\_b32 & Qwen3-8B & POSIX\_vs\_semantic\_psi & 307 & -0.199 & 0.012 \\
+clip\_vit\_b32 & Qwen3-8B & POSIX\_vs\_prosa\_pss & 307 & 0.009 & 1.000 \\
+mpnet & Gemma-3-12B-IT & POSIX\_vs\_semantic\_psi & 307 & -0.140 & 0.237 \\
+mpnet & Gemma-3-12B-IT & POSIX\_vs\_prosa\_pss & 307 & -0.170 & 0.067 \\
+mpnet & Mistral-7B-Instruct-v0.3 & POSIX\_vs\_semantic\_psi & 307 & -0.126 & 0.279 \\
+mpnet & Mistral-7B-Instruct-v0.3 & POSIX\_vs\_prosa\_pss & 307 & -0.138 & 0.245 \\
+mpnet & Qwen3-8B & POSIX\_vs\_semantic\_psi & 307 & -0.022 & 1.000 \\
+mpnet & Qwen3-8B & POSIX\_vs\_prosa\_pss & 307 & 0.009 & 1.000 \\
+set\_jaccard & Gemma-3-12B-IT & POSIX\_vs\_semantic\_psi & 307 & -0.077 & 1.000 \\
+set\_jaccard & Gemma-3-12B-IT & POSIX\_vs\_prosa\_pss & 307 & -0.170 & 0.067 \\
+set\_jaccard & Mistral-7B-Instruct-v0.3 & POSIX\_vs\_semantic\_psi & 307 & 0.286 & 0.000 \\
+set\_jaccard & Mistral-7B-Instruct-v0.3 & POSIX\_vs\_prosa\_pss & 307 & -0.138 & 0.245 \\
+set\_jaccard & Qwen3-8B & POSIX\_vs\_semantic\_psi & 307 & 0.312 & 0.000 \\
+set\_jaccard & Qwen3-8B & POSIX\_vs\_prosa\_pss & 307 & 0.009 & 1.000 \\
+specter & Gemma-3-12B-IT & POSIX\_vs\_semantic\_psi & 307 & -0.168 & 0.067 \\
+specter & Gemma-3-12B-IT & POSIX\_vs\_prosa\_pss & 307 & -0.170 & 0.067 \\
+specter & Mistral-7B-Instruct-v0.3 & POSIX\_vs\_semantic\_psi & 307 & -0.289 & 0.000 \\
+specter & Mistral-7B-Instruct-v0.3 & POSIX\_vs\_prosa\_pss & 307 & -0.138 & 0.245 \\
+specter & Qwen3-8B & POSIX\_vs\_semantic\_psi & 307 & -0.152 & 0.140 \\
+specter & Qwen3-8B & POSIX\_vs\_prosa\_pss & 307 & 0.009 & 1.000 \\
+token\_jaccard & Gemma-3-12B-IT & POSIX\_vs\_semantic\_psi & 307 & -0.106 & 0.499 \\
+token\_jaccard & Gemma-3-12B-IT & POSIX\_vs\_prosa\_pss & 307 & -0.170 & 0.067 \\
+token\_jaccard & Mistral-7B-Instruct-v0.3 & POSIX\_vs\_semantic\_psi & 307 & 0.120 & 0.316 \\
+token\_jaccard & Mistral-7B-Instruct-v0.3 & POSIX\_vs\_prosa\_pss & 307 & -0.138 & 0.245 \\
+token\_jaccard & Qwen3-8B & POSIX\_vs\_semantic\_psi & 307 & 0.128 & 0.278 \\
+token\_jaccard & Qwen3-8B & POSIX\_vs\_prosa\_pss & 307 & 0.009 & 1.000 \\
+\bottomrule
+\end{tabular}

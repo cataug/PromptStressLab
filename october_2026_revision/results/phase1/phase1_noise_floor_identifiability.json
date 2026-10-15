@@ -1,0 +1,10 @@
+{
+  "api_call_records": 3180,
+  "unique_doc_condition_pairs": 3180,
+  "independently_recorded_repeats": 0,
+  "raw_responses": 3180,
+  "parsed_derivatives": 3180,
+  "filename_duplicate_groups": 0,
+  "noise_floor_identifiable": false,
+  "note": "Two files (raw and __parsed) are one API generation. Noise floor needs repeated identical requests. Distinct document or different prompt are not replicates."
+}

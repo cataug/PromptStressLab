@@ -1,0 +1,157 @@
+[
+  {
+    "record_id": "24371832",
+    "input_text": "Effects of water extracts of Graptopetalum paraguayense on blood pressure , fasting glucose , and lipid profiles of subjects with metabolic syndrome . This study was aimed to investigate the effects of water extracts of Graptopetalum paraguayense ( WGP , 4 g/d ) on blood pressure , blood glucose level , and lipid profiles in subjects with metabolic syndrome ( MS ) . Participants with MS ( n = 54 ) were randomly assigned to the placebo ( n = 28 ) and WGP groups ( n = 26 ) , and the intervention was administered for 12 weeks . Systolic blood pressure ( SBP ) , diastolic blood pressure ( DBP ) , fasting glucose ( FG ) , lipid profiles ( total cholesterol ( TC ) , triglyceride ( TG ) , low density lipoprotein cholesterol ( LDL-C ) , and high density lipoprotein ( HDL-C ) ) , and antioxidant enzymes activities ( catalase ( CAT ) , superoxide dismutase ( SOD ) , and glutathione peroxidase ( GPx ) ) were measured . Forty-two subjects completed the study ( placebo , n = 19 ; WGP , n = 23 ) . FG , SBP , and LDL-C levels were significantly lower and HDL-C level and antioxidant enzymes activities ( CAT and SOD ) were significantly higher after WGP supplementation . Blood pressure , FG , and lipid profiles were significantly correlated with antioxidant enzymes activities after supplementation ( P < 0.05 ) . The present study demonstrated a significant reduction in blood pressure , blood glucose , and lipid profiles and an increase in antioxidant enzymes activities in subjects with MS after WGP supplementation . Taken together , the antioxidative capacity of WGP might exert a beneficial effect on MS . This trial is registered with ClinicalTrials.gov NCT01463748 .",
+    "output": {
+      "entities": [
+        {
+          "text": "subjects with metabolic syndrome .",
+          "type": "Participant"
+        },
+        {
+          "text": "subjects with metabolic syndrome ( MS ) . Participants with MS ( n = 54 )",
+          "type": "Participant"
+        },
+        {
+          "text": "Forty-two subjects completed the study ( placebo , n = 19 ; WGP , n = 23 )",
+          "type": "Participant"
+        },
+        {
+          "text": "subjects with MS",
+          "type": "Participant"
+        },
+        {
+          "text": "water extracts of Graptopetalum paraguayense",
+          "type": "Intervention"
+        },
+        {
+          "text": "water extracts of Graptopetalum paraguayense ( WGP , 4 g/d )",
+          "type": "Intervention"
+        },
+        {
+          "text": "placebo",
+          "type": "Intervention"
+        },
+        {
+          "text": "WGP",
+          "type": "Intervention"
+        },
+        {
+          "text": "( placebo",
+          "type": "Intervention"
+        },
+        {
+          "text": "WGP",
+          "type": "Intervention"
+        },
+        {
+          "text": "WGP",
+          "type": "Intervention"
+        },
+        {
+          "text": "WGP",
+          "type": "Intervention"
+        },
+        {
+          "text": "blood pressure , fasting glucose , and lipid profiles",
+          "type": "Outcome"
+        },
+        {
+          "text": "blood pressure , blood glucose level , and lipid profiles",
+          "type": "Outcome"
+        },
+        {
+          "text": "Systolic blood pressure ( SBP ) , diastolic blood pressure ( DBP ) , fasting glucose ( FG ) , lipid profiles ( total cholesterol ( TC ) , triglyceride ( TG ) , low density lipoprotein cholesterol ( LDL-C ) , and high density lipoprotein ( HDL-C ) ) , and antioxidant enzymes",
+          "type": "Outcome"
+        },
+        {
+          "text": "FG , SBP , and LDL-C levels were significantly lower",
+          "type": "Outcome"
+        },
+        {
+          "text": "HDL-C level and antioxidant enzymes activities ( CAT and SOD ) were significantly higher",
+          "type": "Outcome"
+        },
+        {
+          "text": "Blood pressure , FG , and lipid profiles",
+          "type": "Outcome"
+        },
+        {
+          "text": "blood pressure , blood glucose , and lipid profiles",
+          "type": "Outcome"
+        },
+        {
+          "text": "antioxidant enzymes activities",
+          "type": "Outcome"
+        }
+      ],
+      "relations": []
+    }
+  },
+  {
+    "record_id": "12031927",
+    "input_text": "Thiabendazole for the prophylaxis of strongyloidiasis in immunosuppressed patients with hematological diseases : a randomized double-blind placebo-controlled study .",
+    "output": {
+      "entities": [
+        {
+          "text": "immunosuppressed patients with hematological diseases :",
+          "type": "Participant"
+        },
+        {
+          "text": "Thiabendazole",
+          "type": "Intervention"
+        },
+        {
+          "text": "placebo-controlled",
+          "type": "Intervention"
+        }
+      ],
+      "relations": []
+    }
+  },
+  {
+    "record_id": "2928074",
+    "input_text": "Motion aftereffects with horizontally moving sound sources in the free field . A horizontally moving sound was presented to an observer seated in the center of an anechoic chamber . The sound , either a 500-Hz low-pass noise or a 6300-Hz high-pass noise , repeatedly traversed a semicircular arc in the observer 's front hemifield at ear level ( distance : 1.5 m ) . At 10-sec intervals this adaptor was interrupted , and a 750-msec moving probe ( a 500-Hz low-pass noise ) was presented from a horizontal arc 1.6 m in front of the observer . During a run , the adaptor was presented at a constant velocity ( -200 degrees to +200 degrees/sec ) , while probes with velocities varying from -10 degrees to +10 degrees/sec were presented in a random order . Observers judged the direction of motion ( left or right ) of each probe . As in the case of stimuli presented over headphones ( Grantham & Wightman , 1979 ) , an auditory motion aftereffect ( MAE ) occurred : subjects responded \" left \" to probes more often when the adaptor moved right than when it moved left . When the adaptor and probe were spectrally the same , the MAE was greater than when they were from different spectral regions ; the magnitude of this difference depended on adaptor speed and was subject-dependent . It is proposed that there are two components underlying the auditory MAE : ( 1 ) a generalized bias to respond that probes move in the direction opposite to that of the adaptor , independent of their spectra ; and ( 2 ) a loss of sensitivity to the velocity of moving sounds after prolonged exposure to moving sounds having the same spectral content .",
+    "output": {
+      "entities": [
+        {
+          "text": "an observer seated in the center of an anechoic chamber .",
+          "type": "Participant"
+        },
+        {
+          "text": "observer 's front hemifield at ear level",
+          "type": "Participant"
+        },
+        {
+          "text": "Observers judged the direction of motion ( left or right ) of each probe .",
+          "type": "Participant"
+        },
+        {
+          "text": "horizontally moving sound",
+          "type": "Intervention"
+        },
+        {
+          "text": "500-Hz low-pass noise or a 6300-Hz high-pass noise",
+          "type": "Intervention"
+        },
+        {
+          "text": "moving probe",
+          "type": "Intervention"
+        },
+        {
+          "text": "auditory motion aftereffect ( MAE )",
+          "type": "Outcome"
+        },
+        {
+          "text": "MAE",
+          "type": "Outcome"
+        },
+        {
+          "text": "MAE :",
+          "type": "Outcome"
+        }
+      ],
+      "relations": []
+    }
+  }
+]

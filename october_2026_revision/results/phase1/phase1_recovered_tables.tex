@@ -1,0 +1,78 @@
+% Phase I: automatically generated from saved original JSON responses
+% Legacy embedding=TF-IDF 1-2grams, corrected null-state semantics.
+% Source: independent recreation, not OpenAI text-embedding-3-small.
+\begin{table*}[t]
+\centering
+\small
+\caption{Recomputed Phase I concatenated PSI by adjacent prompt transition (state-aware TF--IDF). Confidence intervals are document-bootstrap intervals for the mean; each transition contains 530 paired abstracts.}
+\label{tab:phase1-recovered-psi}
+\begin{tabular}{lrrrrr}
+\toprule
+Transition & Mean & Median & P95 & 95\% CI (mean) & $N$ \\
+\midrule
+P1->P2 & 0.240 & 0.235 & 0.371 & [0.234,0.247] & 530 \\
+P2->P3 & 0.240 & 0.234 & 0.375 & [0.233,0.247] & 530 \\
+P3->P4 & 0.250 & 0.246 & 0.381 & [0.243,0.257] & 530 \\
+P4->P5 & 0.269 & 0.262 & 0.392 & [0.262,0.274] & 530 \\
+P5->P6 & 0.302 & 0.299 & 0.439 & [0.296,0.309] & 530 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\small
+\caption{Recomputed Phase I document-level field volatility (mean over five adjacent prompt transitions), with document-bootstrap confidence intervals.}
+\label{tab:phase1-recovered-vol}
+\begin{tabular}{lrrrr}
+\toprule
+Field & Mean & Median & P95 & 95\% CI (mean) \\
+\midrule
+Concatenated output & 0.260 & 0.255 & 0.356 & [0.256,0.265] \\
+Research objective & 0.391 & 0.385 & 0.686 & [0.377,0.405] \\
+Methodology & 0.417 & 0.422 & 0.625 & [0.407,0.427] \\
+Data / material & 0.329 & 0.303 & 0.748 & [0.310,0.350] \\
+Key results & 0.349 & 0.329 & 0.652 & [0.335,0.363] \\
+Application domain & 0.289 & 0.278 & 0.604 & [0.274,0.303] \\
+Limitations / future work & 0.097 & 0.000 & 0.721 & [0.078,0.116] \\
+Keywords & 0.255 & 0.236 & 0.551 & [0.241,0.270] \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\small
+\caption{Original recorded Phase I usage and JSON-validity, from \texttt{run\_summary.xlsx}. Means are across 530 requests per prompt level.}
+\label{tab:phase1-recovered-tokens}
+\begin{tabular}{lrrrrr}
+\toprule
+Prompt & Input tokens & Output tokens & Total tokens & Latency (s) & JSON valid \\
+\midrule
+P1 & 352.1 & 227.3 & 579.4 & 4.28 & 100.0\% \\
+P2 & 422.1 & 186.3 & 608.5 & 3.62 & 100.0\% \\
+P3 & 502.1 & 200.9 & 703.0 & 3.95 & 100.0\% \\
+P4 & 598.1 & 186.4 & 784.5 & 3.68 & 100.0\% \\
+P5 & 1106.1 & 149.4 & 1255.5 & 3.23 & 100.0\% \\
+P6 & 4079.3 & 178.2 & 4257.5 & 3.68 & 100.0\% \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{table}[t]
+\centering
+\small
+\caption{Paired Wilcoxon tests for adjacent concatenated-PSI transition distributions. Holm adjustment defines one family of four pre-specified tests.}
+\label{tab:phase1-recovered-stats}
+\begin{tabular}{lrrr}
+\toprule
+Contrast & $\Delta$ mean & $p_{\rm Holm}$ & Rank-biserial \\
+\midrule
+P3 minus P2 & -0.000 & 0.4532 & -0.038 \\
+P4 minus P3 & +0.010 & 0.0045 & +0.153 \\
+P5 minus P4 & +0.019 & 0.0000 & +0.239 \\
+P6 minus P5 & +0.034 & 0.0000 & +0.556 \\
+\bottomrule
+\end{tabular}
+\end{table}
+

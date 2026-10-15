@@ -1,0 +1,799 @@
+{
+  "created_at": "2026-10-15T20:27:32.765526+03:00",
+  "source_root": "local PromptStressLab working directory",
+  "github_remote": "git@github.com:cataug/PromptStressLab.git",
+  "subdirectory": "october_2026_revision",
+  "files": [
+    {
+      "source": "PromptStressLab_PHASE1_FINAL_INLINE.tex",
+      "destination": "manuscript/PromptStressLab_PHASE1_FINAL_INLINE.tex",
+      "bytes": 132630,
+      "sha256": "4097c1d370598d701b5024cfba97294ab21113c1cbc9c2ba70000e405c5d662f"
+    },
+    {
+      "source": "figs/Figure3_PSI_ECDF_with_insets_corrected.pdf",
+      "destination": "manuscript/figs/Figure3_PSI_ECDF_with_insets_corrected.pdf",
+      "bytes": 145141,
+      "sha256": "17a2075e284d32aab80212a6a049afbbff6062a15aa1f11b2078621a6a8462e3"
+    },
+    {
+      "source": "figs/Figure4_Field_Volatility_gradient_corrected.pdf",
+      "destination": "manuscript/figs/Figure4_Field_Volatility_gradient_corrected.pdf",
+      "bytes": 22418,
+      "sha256": "c028ec9c8bba09a9371778213219e7789db7ab8ee5f294ec9f1becd16b6dafab"
+    },
+    {
+      "source": "figs/Figure5_Pareto_common_axes_local_insets_corrected.pdf",
+      "destination": "manuscript/figs/Figure5_Pareto_common_axes_local_insets_corrected.pdf",
+      "bytes": 97413,
+      "sha256": "a2728eda876af0a049b9b32d6b0cc379cb87e2145a37d351f65a37760c8f07e5"
+    },
+    {
+      "source": "build_promptstresslab_final.py",
+      "destination": "code/root/build_promptstresslab_final.py",
+      "bytes": 30080,
+      "sha256": "73ad0070da6284788a7536652fbb6dd7d7850407d8e78079d2a38b0beab6c7cd"
+    },
+    {
+      "source": "find_phase1_sources.py",
+      "destination": "code/root/find_phase1_sources.py",
+      "bytes": 1764,
+      "sha256": "cb2c3648948014e5a1056f1444dff70779f6d89d16cf9d0d33485f65950ba9ec"
+    },
+    {
+      "source": "phase1_complete_revision.py",
+      "destination": "code/root/phase1_complete_revision.py",
+      "bytes": 20803,
+      "sha256": "32d7c1bc5fd38e40ac786b53e146d0ca5813e3e588f98d7c211c020f4ae9fe6c"
+    },
+    {
+      "source": "phase1_complete_revision_FIXED.py",
+      "destination": "code/root/phase1_complete_revision_FIXED.py",
+      "bytes": 24319,
+      "sha256": "0fddf51adf0cce730b71d7e1eca81d2a9ae5117611e26fbef94b5db8c4c63d1b"
+    },
+    {
+      "source": "phase1_noise_floor_optional.py",
+      "destination": "code/root/phase1_noise_floor_optional.py",
+      "bytes": 9907,
+      "sha256": "8ec20ab1b509d991742cc796361e494af355857bb6b94a0a3a8b9b909d38623b"
+    },
+    {
+      "source": "phase1_viridis_figures.py",
+      "destination": "code/root/phase1_viridis_figures.py",
+      "bytes": 11857,
+      "sha256": "74ee0a3b3700d158a1f471d075217881d4a8c6b50c87651dad79ab46bce4974a"
+    },
+    {
+      "source": "publish_october_2026.py",
+      "destination": "code/root/publish_october_2026.py",
+      "bytes": 14848,
+      "sha256": "397308098ca805681c99b0808e5a23d01f8249d3e67f442dabdd7746add77775"
+    },
+    {
+      "source": "rebuild_phase1_from_original.py",
+      "destination": "code/root/rebuild_phase1_from_original.py",
+      "bytes": 25974,
+      "sha256": "fea03837ba0bc170b36d1a1430ec67fc44524da705547a49d8c864f8a610beca"
+    },
+    {
+      "source": "reviewer1_round2_posthoc.py",
+      "destination": "code/root/reviewer1_round2_posthoc.py",
+      "bytes": 16514,
+      "sha256": "15446ef05a7d6eea551b4bed120093a0b0b85dd9e46361487cbbf1b4955ff69a"
+    },
+    {
+      "source": "reviewer1_targeted_controls.py",
+      "destination": "code/root/reviewer1_targeted_controls.py",
+      "bytes": 14444,
+      "sha256": "1dd5a38c7f831161a0c300b881adfbaca1f5e56db4aa850fd8fa9e03ad73c6f0"
+    },
+    {
+      "source": "reviewer_posthoc.py",
+      "destination": "code/root/reviewer_posthoc.py",
+      "bytes": 71386,
+      "sha256": "5d15897799df0cdac156bea85ff6fdfc98bba39d953a9fb5168dfe832734fabb"
+    },
+    {
+      "source": "RUN_PATCH_ONLY.sh",
+      "destination": "code/root/RUN_PATCH_ONLY.sh",
+      "bytes": 2332,
+      "sha256": "4fe964c0212715cd66076b4c89bf1a1dc65ca000ca5cd34dbe120811615e006e"
+    },
+    {
+      "source": "RUN_PHASE1_FULL.sh",
+      "destination": "code/root/RUN_PHASE1_FULL.sh",
+      "bytes": 2319,
+      "sha256": "befc895b7b5bb756f5ad0ad8d7fe343f77fec49da01df89437aaa2eeb650e026"
+    },
+    {
+      "source": "Run_Phase1_2026.sh",
+      "destination": "code/root/Run_Phase1_2026.sh",
+      "bytes": 639,
+      "sha256": "d6f04a6b4694aad024fe28a15b3a7a75088964a06508091630bc2b37356332a9"
+    },
+    {
+      "source": "finish_round2.sh",
+      "destination": "code/root/finish_round2.sh",
+      "bytes": 1224,
+      "sha256": "41414a82fddc4e068f8454dfb1800f06006e1d668928d91210b7d87403d17d5d"
+    },
+    {
+      "source": "run_reviewer_posthoc.sh",
+      "destination": "code/root/run_reviewer_posthoc.sh",
+      "bytes": 3729,
+      "sha256": "9bbde2cabb82af7258ecec09a7947aff080ce87df7e6f17c9aedeb48368a6655"
+    },
+    {
+      "source": "setup_promptstresslab_pipeline.sh",
+      "destination": "code/root/setup_promptstresslab_pipeline.sh",
+      "bytes": 80612,
+      "sha256": "9ac01a663480ad097dbdd4ec00080b8b19b2f4646c4e232f969fa1f661bc9943"
+    },
+    {
+      "source": "scripts/build_experiment_manifest.py",
+      "destination": "code/scripts/build_experiment_manifest.py",
+      "bytes": 11573,
+      "sha256": "b7d7036d5707b40c8f193cb388983453d6f12547d32f8d2323fcd37385935dfa"
+    },
+    {
+      "source": "scripts/build_manifests.py",
+      "destination": "code/scripts/build_manifests.py",
+      "bytes": 32288,
+      "sha256": "3ac7908f5abcb04fe720448da5b510ac1b2ab7e3021ff26d4d75970214592de2"
+    },
+    {
+      "source": "scripts/build_manifests_v2.py",
+      "destination": "code/scripts/build_manifests_v2.py",
+      "bytes": 23292,
+      "sha256": "b360a9b615411b08ce58bc0ba33d07c080fb08968f4404645a38eb1bf7cbf74c"
+    },
+    {
+      "source": "scripts/collect_statistics.py",
+      "destination": "code/scripts/collect_statistics.py",
+      "bytes": 30158,
+      "sha256": "5535dfc799be4db25a10c0346f60c472c4e3b19a15d3096a39de1d0fbf13f1bf"
+    },
+    {
+      "source": "scripts/compute_psi_volatility.py",
+      "destination": "code/scripts/compute_psi_volatility.py",
+      "bytes": 48152,
+      "sha256": "541b79527568b3a915cba1bf4dafdf00fc32b14d129161bbbe20c567b183def3"
+    },
+    {
+      "source": "scripts/evaluate_experiment.py",
+      "destination": "code/scripts/evaluate_experiment.py",
+      "bytes": 13365,
+      "sha256": "8dfee3d4ac884e31fc8cfc8eba4d8feba326ab5f21e06cc0139c9d5289fe26cb"
+    },
+    {
+      "source": "scripts/evaluate_when_complete.sh",
+      "destination": "code/scripts/evaluate_when_complete.sh",
+      "bytes": 516,
+      "sha256": "ceff04255044feeb21f4faac3a1070ce2891335aa07a476ade2d353aecf77446"
+    },
+    {
+      "source": "scripts/gpu_scheduler.py",
+      "destination": "code/scripts/gpu_scheduler.py",
+      "bytes": 11822,
+      "sha256": "2582d5aaff6017ad5b6ffbbe6068cdd0d82c31f79dcbde32be6c3124c7ff3295"
+    },
+    {
+      "source": "scripts/make_final_figures.py",
+      "destination": "code/scripts/make_final_figures.py",
+      "bytes": 45492,
+      "sha256": "38e37c0f58d1000a836e4aa59b4ff0b868119d5ef78189ae2958f11591a2131e"
+    },
+    {
+      "source": "scripts/make_reviewer_figures_new.py",
+      "destination": "code/scripts/make_reviewer_figures_new.py",
+      "bytes": 24914,
+      "sha256": "153ca79527e617096bf0e67cfc01d6252d2c01578ee6b4d3b197fef18b33293e"
+    },
+    {
+      "source": "scripts/normalize_gold_datasets.py",
+      "destination": "code/scripts/normalize_gold_datasets.py",
+      "bytes": 41757,
+      "sha256": "c20d6372a7e9bc81fe5c802db113483c88e5a0ff3bad85aa64d9d2170c3e2989"
+    },
+    {
+      "source": "scripts/prepare_experiment.sh",
+      "destination": "code/scripts/prepare_experiment.sh",
+      "bytes": 1193,
+      "sha256": "52b7c1bcc72adafa815fa8af680454ed5664c5ab4978d872dd38490ca2e17d90"
+    },
+    {
+      "source": "scripts/psl_common.py",
+      "destination": "code/scripts/psl_common.py",
+      "bytes": 16174,
+      "sha256": "ceab36845771c691cbf37eb86f4d23fc91c55dcea73f6375455868c098a8c590"
+    },
+    {
+      "source": "scripts/repair_ebm_manifest.py",
+      "destination": "code/scripts/repair_ebm_manifest.py",
+      "bytes": 13524,
+      "sha256": "82feffac4580da6bf801a8f9e49073631276001c35c35505e71fc07d74af120a"
+    },
+    {
+      "source": "scripts/restyle_reviewer_figures.py",
+      "destination": "code/scripts/restyle_reviewer_figures.py",
+      "bytes": 28762,
+      "sha256": "5f6d0fad9c8bb62673dd57adc3832643947ebb09afa390bfc56683b465a96362"
+    },
+    {
+      "source": "scripts/run_all_experiments.sh",
+      "destination": "code/scripts/run_all_experiments.sh",
+      "bytes": 1673,
+      "sha256": "749e7ed430a87b40e026b03add6972977116b9e00b28083b8ac14797579798a8"
+    },
+    {
+      "source": "scripts/run_model_experiment.py",
+      "destination": "code/scripts/run_model_experiment.py",
+      "bytes": 21023,
+      "sha256": "c869dc168eddb18ae08c23cfa3c805905842c44d6b8e19bb3ff87cf216f13e30"
+    },
+    {
+      "source": "scripts/run_sequential_smoke.sh",
+      "destination": "code/scripts/run_sequential_smoke.sh",
+      "bytes": 3985,
+      "sha256": "4d472410d01709caf032986191cf45e8ff3227ea9b9e449ed7e7782e0b0c92e2"
+    },
+    {
+      "source": "scripts/show_status.sh",
+      "destination": "code/scripts/show_status.sh",
+      "bytes": 297,
+      "sha256": "885a47190ea7cb2d6334aa047b50dafccf95184547610abd4c5f8b202c6cace9"
+    },
+    {
+      "source": "scripts/smart_gpu_scheduler.py",
+      "destination": "code/scripts/smart_gpu_scheduler.py",
+      "bytes": 14260,
+      "sha256": "7849a53518b49bc62cdc99ebd2fad9dc0ecf2d0f91fb2b013d6f992ae4ed60f5"
+    },
+    {
+      "source": "scripts/smoke_local_model.py",
+      "destination": "code/scripts/smoke_local_model.py",
+      "bytes": 14587,
+      "sha256": "cfcceb5823e1b6635f1b5ed9a10c3416cd7552ce3ef5b6a78f370381cac27676"
+    },
+    {
+      "source": "scripts/status.py",
+      "destination": "code/scripts/status.py",
+      "bytes": 1225,
+      "sha256": "ba20ce6a76aa8cd173333a804555eeb3e674833f9cc4c1c620f4256b2ab98180"
+    },
+    {
+      "source": "reviewer_posthoc_20260926/scripts/make_reviewer_figures_new.py",
+      "destination": "code/reviewer_posthoc_20260926/scripts/make_reviewer_figures_new.py",
+      "bytes": 24914,
+      "sha256": "153ca79527e617096bf0e67cfc01d6252d2c01578ee6b4d3b197fef18b33293e"
+    },
+    {
+      "source": "reviewer_posthoc_20260926/scripts/restyle_reviewer_figures.py",
+      "destination": "code/reviewer_posthoc_20260926/scripts/restyle_reviewer_figures.py",
+      "bytes": 28762,
+      "sha256": "5f6d0fad9c8bb62673dd57adc3832643947ebb09afa390bfc56683b465a96362"
+    },
+    {
+      "source": "reviewer_posthoc_20260926/scripts/reviewer_posthoc.py",
+      "destination": "code/reviewer_posthoc_20260926/scripts/reviewer_posthoc.py",
+      "bytes": 71386,
+      "sha256": "5d15897799df0cdac156bea85ff6fdfc98bba39d953a9fb5168dfe832734fabb"
+    },
+    {
+      "source": "outputs/phase1_reanalysis_2026/Figure3_PSI_ECDF_with_insets_corrected.pdf",
+      "destination": "results/phase1/Figure3_PSI_ECDF_with_insets_corrected.pdf",
+      "bytes": 145141,
+      "sha256": "17a2075e284d32aab80212a6a049afbbff6062a15aa1f11b2078621a6a8462e3"
+    },
+    {
+      "source": "outputs/phase1_reanalysis_2026/Figure3_PSI_ECDF_with_insets_corrected.png",
+      "destination": "results/phase1/Figure3_PSI_ECDF_with_insets_corrected.png",
+      "bytes": 697951,
+      "sha256": "4b19674a93afcebb3e8a6257fd07bab2ffbd1f2c201f0da6fede3f5e5b18a974"
+    },
+    {
+      "source": "outputs/phase1_reanalysis_2026/Figure4_Field_Volatility_gradient_corrected.pdf",
+      "destination": "results/phase1/Figure4_Field_Volatility_gradient_corrected.pdf",
+      "bytes": 22418,
+      "sha256": "c028ec9c8bba09a9371778213219e7789db7ab8ee5f294ec9f1becd16b6dafab"
+    },
+    {
+      "source": "outputs/phase1_reanalysis_2026/Figure4_Field_Volatility_gradient_corrected.png",
+      "destination": "results/phase1/Figure4_Field_Volatility_gradient_corrected.png",
+      "bytes": 312068,
+      "sha256": "ff28b6593368a50c4a6d6ce0ab11799a2a5114dfd63236011bec37974ca7acb6"
+    },
+    {
+      "source": "outputs/phase1_reanalysis_2026/Figure5_Pareto_common_axes_local_insets_corrected.pdf",
+      "destination": "results/phase1/Figure5_Pareto_common_axes_local_insets_corrected.pdf",
+      "bytes": 97413,
+      "sha256": "a2728eda876af0a049b9b32d6b0cc379cb87e2145a37d351f65a37760c8f07e5"
+    },
+    {
+      "source": "outputs/phase1_reanalysis_2026/Figure5_Pareto_common_axes_local_insets_corrected.png",
+      "destination": "results/phase1/Figure5_Pareto_common_axes_local_insets_corrected.png",
+      "bytes": 895532,
+      "sha256": "0c1719906bd9ce925014715587f42d4bdc017e5ead49298d4812c5db4fc6c6a3"
+    },
+    {
+      "source": "outputs/phase1_reanalysis_2026/PromptStressLab_PHASE1_FINAL_INLINE.tex",
+      "destination": "results/phase1/PromptStressLab_PHASE1_FINAL_INLINE.tex",
+      "bytes": 132630,
+      "sha256": "4097c1d370598d701b5024cfba97294ab21113c1cbc9c2ba70000e405c5d662f"
+    },
+    {
+      "source": "outputs/phase1_reanalysis_2026/phase1_ALL_INLINE_TABLES.tex",
+      "destination": "results/phase1/phase1_ALL_INLINE_TABLES.tex",
+      "bytes": 3517,
+      "sha256": "8512254317f39868c27b27036f4eb033c51b4c525094e1fde88975f679d913eb"
+    },
+    {
+      "source": "outputs/phase1_reanalysis_2026/phase1_conditional_volatility.csv",
+      "destination": "results/phase1/phase1_conditional_volatility.csv",
+      "bytes": 70941,
+      "sha256": "c2c7f71e665810e462ac969b42584bca7524cd34e9293cdcaa40a139914693e8"
+    },
+    {
+      "source": "outputs/phase1_reanalysis_2026/phase1_corrected_transitions.csv",
+      "destination": "results/phase1/phase1_corrected_transitions.csv",
+      "bytes": 875952,
+      "sha256": "db8f5628a824068276f7e2d59dbe6ca45f32aa16db650d0976dd789ccdf494e6"
+    },
+    {
+      "source": "outputs/phase1_reanalysis_2026/phase1_corrected_volatility.csv",
+      "destination": "results/phase1/phase1_corrected_volatility.csv",
+      "bytes": 82646,
+      "sha256": "77e77807ae1b5dff1439fdec9223ba8bf3aa135fcfa6da57b188940ecf2e3d79"
+    },
+    {
+      "source": "outputs/phase1_reanalysis_2026/phase1_disappearance_appearance.csv",
+      "destination": "results/phase1/phase1_disappearance_appearance.csv",
+      "bytes": 288,
+      "sha256": "5e0453241d5e6ae25a6c1ff50255b4b77c0690be7352df31f4816b5d077c132e"
+    },
+    {
+      "source": "outputs/phase1_reanalysis_2026/phase1_figure5_quantile_definitions.csv",
+      "destination": "results/phase1/phase1_figure5_quantile_definitions.csv",
+      "bytes": 139,
+      "sha256": "3a2bc3710679b566f35fe7cfec2b14aac8a9d419c10dd74fcc554f340ac17833"
+    },
+    {
+      "source": "outputs/phase1_reanalysis_2026/phase1_legacy_vs_recomputed_concat.csv",
+      "destination": "results/phase1/phase1_legacy_vs_recomputed_concat.csv",
+      "bytes": 214179,
+      "sha256": "62a834ee2a686f111e6290005fa6cbe60bd5de9cfa7115c80ae5cc5b3dbf81db"
+    },
+    {
+      "source": "outputs/phase1_reanalysis_2026/phase1_noise_floor_identifiability.json",
+      "destination": "results/phase1/phase1_noise_floor_identifiability.json",
+      "bytes": 404,
+      "sha256": "65806c83f26beb785c2cb4b4e24285fff241310836a7bd6949218e1befbe7cda"
+    },
+    {
+      "source": "outputs/phase1_reanalysis_2026/phase1_null_policy_audit.csv",
+      "destination": "results/phase1/phase1_null_policy_audit.csv",
+      "bytes": 855,
+      "sha256": "f9e4631d03e91d1dd54fe39ab64871c79afc921ec4fc14e4ed2647548829b7e3"
+    },
+    {
+      "source": "outputs/phase1_reanalysis_2026/phase1_paired_tests.csv",
+      "destination": "results/phase1/phase1_paired_tests.csv",
+      "bytes": 486,
+      "sha256": "56e34ba4b8cd1488737ebc7267a80f2800c522b79e066d69c91aa86558ae4f18"
+    },
+    {
+      "source": "outputs/phase1_reanalysis_2026/phase1_pareto_counts.csv",
+      "destination": "results/phase1/phase1_pareto_counts.csv",
+      "bytes": 91,
+      "sha256": "7f29075636afdb780f61bc3a9f1982d05f40e8ee9049c58166e147a7e8aa7acb"
+    },
+    {
+      "source": "outputs/phase1_reanalysis_2026/phase1_psi_summary.csv",
+      "destination": "results/phase1/phase1_psi_summary.csv",
+      "bytes": 5897,
+      "sha256": "96f65c845c8d751b315cba4bf84af39941e3319942d33e5a0ff88adad443d55f"
+    },
+    {
+      "source": "outputs/phase1_reanalysis_2026/phase1_recovered_tables.tex",
+      "destination": "results/phase1/phase1_recovered_tables.tex",
+      "bytes": 2934,
+      "sha256": "5d4aa0b6fa7702f5bace93e552ccee79afefff482ac5b376697af20a0df3baa7"
+    },
+    {
+      "source": "outputs/phase1_reanalysis_2026/phase1_same_condition_repeats.csv",
+      "destination": "results/phase1/phase1_same_condition_repeats.csv",
+      "bytes": 56,
+      "sha256": "332caad0734bfa165712ea6a8d4f292a88a1b18e417930f6b176e3625eb27515"
+    },
+    {
+      "source": "outputs/phase1_reanalysis_2026/phase1_tokens_json_latency.csv",
+      "destination": "results/phase1/phase1_tokens_json_latency.csv",
+      "bytes": 822,
+      "sha256": "e65a0efb559c11180f5a3e9890b40734d15857f143c1e443bd64af6cbf4c1af8"
+    },
+    {
+      "source": "outputs/phase1_reanalysis_2026/phase1_volatility_summary.csv",
+      "destination": "results/phase1/phase1_volatility_summary.csv",
+      "bytes": 975,
+      "sha256": "c3587b8f150ed2aaea33eb174dcfee09314a02d85ebfc43d47977cdf32bed285"
+    },
+    {
+      "source": "outputs/figures_final/fig06_ablation_effects.pdf",
+      "destination": "results/phase2/figures_final/fig06_ablation_effects.pdf",
+      "bytes": 29312,
+      "sha256": "21685b32628568f693acf5ba22ee5ba34d54a72dd44531d022ddaefe60252ed0"
+    },
+    {
+      "source": "outputs/figures_final/fig06_ablation_effects.png",
+      "destination": "results/phase2/figures_final/fig06_ablation_effects.png",
+      "bytes": 471784,
+      "sha256": "bdc16100af116dea95c97c5dedb9a0c894c939ebf98a555cd0d2f77f7d924424"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/encoder_agreement.csv",
+      "destination": "results/phase2/reviewer_posthoc/encoder_agreement.csv",
+      "bytes": 402,
+      "sha256": "4fa3ed7cfe17f17c25e9edffdbdfa0b7ff6d631ba4a89be3993855d12441193e"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/encoder_field_rank_agreement.csv",
+      "destination": "results/phase2/reviewer_posthoc/encoder_field_rank_agreement.csv",
+      "bytes": 1763,
+      "sha256": "72e834d45398f9afc3d36e4f16f7d9716cbe30c3f92a6331eccf91a9186a4be6"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/encoder_transition_rank_agreement.csv",
+      "destination": "results/phase2/reviewer_posthoc/encoder_transition_rank_agreement.csv",
+      "bytes": 2244,
+      "sha256": "3020499b972af9bf401630c38f32e547b81eb085017f3393a8e142da8817f033"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/field_volatility_multi_encoder.csv",
+      "destination": "results/phase2/reviewer_posthoc/field_volatility_multi_encoder.csv",
+      "bytes": 1407604,
+      "sha256": "efbcb1ac765d7d97239176d0909ffb0a2dcd00ab5a59b81a93605b59a53a563d"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/field_volatility_summary_multi_encoder.csv",
+      "destination": "results/phase2/reviewer_posthoc/field_volatility_summary_multi_encoder.csv",
+      "bytes": 17367,
+      "sha256": "e121571055f77653765b29abdb5114390c6ca271bf6b01d816a3dd0ab058212a"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/fig_encoder_agreement.pdf",
+      "destination": "results/phase2/reviewer_posthoc/fig_encoder_agreement.pdf",
+      "bytes": 11410,
+      "sha256": "f7a8b4113796ccf1aa38a15884e67932e80115d25cd892c7d332060a2183017b"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/fig_practical_risk_clip_vit_b32.pdf",
+      "destination": "results/phase2/reviewer_posthoc/fig_practical_risk_clip_vit_b32.pdf",
+      "bytes": 16496,
+      "sha256": "e57d4123a9e9f82829db4362682bdcac71b0548e727734e24913c1ce5f5b5c2f"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/fig_practical_risk_mpnet.pdf",
+      "destination": "results/phase2/reviewer_posthoc/fig_practical_risk_mpnet.pdf",
+      "bytes": 16259,
+      "sha256": "f26a6cab54c2861f88a4fcf83729f19f4e8d26a875532cfac18533fb902bfe32"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/fig_practical_risk_set_jaccard.pdf",
+      "destination": "results/phase2/reviewer_posthoc/fig_practical_risk_set_jaccard.pdf",
+      "bytes": 16179,
+      "sha256": "28cd4d4ce7b9d4c1f628eb7c2d08d781561ee7a0a6f4fc499682999a2eadbbee"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/fig_practical_risk_specter.pdf",
+      "destination": "results/phase2/reviewer_posthoc/fig_practical_risk_specter.pdf",
+      "bytes": 16115,
+      "sha256": "096f6ddb889cfbca8e97b7c029dd9f7665f25fc53c59fa59114eaec13a5295be"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/fig_practical_risk_token_jaccard.pdf",
+      "destination": "results/phase2/reviewer_posthoc/fig_practical_risk_token_jaccard.pdf",
+      "bytes": 16381,
+      "sha256": "680c398e69693eb7630d285c2f70489c9b65866efc9015e08e5d862e973f4a04"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/fig_psi_f1_clip_vit_b32.pdf",
+      "destination": "results/phase2/reviewer_posthoc/fig_psi_f1_clip_vit_b32.pdf",
+      "bytes": 71833,
+      "sha256": "aada369ba4264f146448b195abf152105b24b6b72ff919bc29838652bd889c63"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/fig_psi_f1_mpnet.pdf",
+      "destination": "results/phase2/reviewer_posthoc/fig_psi_f1_mpnet.pdf",
+      "bytes": 72211,
+      "sha256": "5c0e9fcb3d5e3016e24f91a392d2cff81b07fb8e3f3fcb9ed07f3fef35e9dda6"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/fig_psi_f1_set_jaccard.pdf",
+      "destination": "results/phase2/reviewer_posthoc/fig_psi_f1_set_jaccard.pdf",
+      "bytes": 62338,
+      "sha256": "2b4c54cd35efc1da74e595aa271c8ec1a72bc4f025ec95e6c5ad305de9050978"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/fig_psi_f1_specter.pdf",
+      "destination": "results/phase2/reviewer_posthoc/fig_psi_f1_specter.pdf",
+      "bytes": 71670,
+      "sha256": "7e1d1307215c6a63476fd482525b5e5353be6833e6832bbc44aa1e224522c103"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/fig_psi_f1_token_jaccard.pdf",
+      "destination": "results/phase2/reviewer_posthoc/fig_psi_f1_token_jaccard.pdf",
+      "bytes": 69339,
+      "sha256": "9bcdd6326affede864e5b9a87ae6ef9733977794e6d07c7a4672503a0906342d"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/input_index.csv",
+      "destination": "results/phase2/reviewer_posthoc/input_index.csv",
+      "bytes": 290309,
+      "sha256": "cf9fe9ec579842f2252d7334084a14ed7a39e143bec45ad51f82aae869e0eb5e"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/parse_coverage.csv",
+      "destination": "results/phase2/reviewer_posthoc/parse_coverage.csv",
+      "bytes": 408,
+      "sha256": "82949c2065200d4fbe661cd83d06a25ec5d9964398563b24b88e04366d9b8491"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/posix_adjacent_transitions.csv",
+      "destination": "results/phase2/reviewer_posthoc/posix_adjacent_transitions.csv",
+      "bytes": 863922,
+      "sha256": "bb8afc48b389d609f8e17975e2b84d67b479d750eded890025898bf807f8eeab"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/posix_adjacent_vs_f1_change.csv",
+      "destination": "results/phase2/reviewer_posthoc/posix_adjacent_vs_f1_change.csv",
+      "bytes": 3005,
+      "sha256": "cf1ae05c966915b8283c1fb33b0680fd230dc1f359504cbea2667d93d5b72710"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/posix_adjacent_vs_semantic_psi.csv",
+      "destination": "results/phase2/reviewer_posthoc/posix_adjacent_vs_semantic_psi.csv",
+      "bytes": 7113,
+      "sha256": "4e2fe05e75fa23ee6c667d92e1ff85645d36982f46bb1067a515a5e6f13206c1"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/posix_document.csv",
+      "destination": "results/phase2/reviewer_posthoc/posix_document.csv",
+      "bytes": 56189,
+      "sha256": "00d1e000dda38470d2aa177ce812395e2275687651d03a923d8e461f7734f93d"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/posix_input_audit.csv",
+      "destination": "results/phase2/reviewer_posthoc/posix_input_audit.csv",
+      "bytes": 371651,
+      "sha256": "857bf0dc7c6f21246626c07f28de8a63332d2a9208b477443161390394b66c6d"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/posix_pair_logprobs.csv",
+      "destination": "results/phase2/reviewer_posthoc/posix_pair_logprobs.csv",
+      "bytes": 3450433,
+      "sha256": "788f182689af90f412868fad09c4c316f8133c629d9f9d2e2114b9d1a813f7ab"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/posix_summary.csv",
+      "destination": "results/phase2/reviewer_posthoc/posix_summary.csv",
+      "bytes": 647,
+      "sha256": "acaa1e48743c8c95090542ffb98e995a39e412182d5a455dca43e15c1b7c5426"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/posix_vs_semantic_and_prosa.csv",
+      "destination": "results/phase2/reviewer_posthoc/posix_vs_semantic_and_prosa.csv",
+      "bytes": 3329,
+      "sha256": "a524ddb39c6b61dc5c0f47f7281f154879fa69e3a05e81491880ee7af6f07be8"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/prosa_pss_document.csv",
+      "destination": "results/phase2/reviewer_posthoc/prosa_pss_document.csv",
+      "bytes": 186648,
+      "sha256": "987cce608adfb7ab6dc363095db1efbdadf37d2a88e7e8876c9265645572a103"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/prosa_pss_summary.csv",
+      "destination": "results/phase2/reviewer_posthoc/prosa_pss_summary.csv",
+      "bytes": 1804,
+      "sha256": "6f940d67b81ba7353af9b4dbd9d6fc0a3a8ed6c601f3339e9c215cbffe17f3d0"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/psi_f1_correlations_multi_encoder.csv",
+      "destination": "results/phase2/reviewer_posthoc/psi_f1_correlations_multi_encoder.csv",
+      "bytes": 31982,
+      "sha256": "dbda54d46142cedcb52bf5df61656fd8f01d6005b1cfa52a237512389bd262f2"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/psi_practical_utility.csv",
+      "destination": "results/phase2/reviewer_posthoc/psi_practical_utility.csv",
+      "bytes": 4273,
+      "sha256": "1b1781cf34976338837856f3baffa19043134c9cad9201faf3237a1f7446e960"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/psi_risk_by_quintile.csv",
+      "destination": "results/phase2/reviewer_posthoc/psi_risk_by_quintile.csv",
+      "bytes": 8095,
+      "sha256": "2fd7a16f94dcaaaab3479459b50aad2097793eae258213945cb2fbb5a48754e7"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/reviewer_posthoc_summary.json",
+      "destination": "results/phase2/reviewer_posthoc/reviewer_posthoc_summary.json",
+      "bytes": 22389,
+      "sha256": "9e71b55b1f2b303f294967f6eb8630082b8ad609983aefffa634315815eeabf8"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/semantic_psi_vs_prosa_pss.csv",
+      "destination": "results/phase2/reviewer_posthoc/semantic_psi_vs_prosa_pss.csv",
+      "bytes": 1489,
+      "sha256": "5f26c7536ada795dd549438b4dcba98f40321ed9362ced36ae9404acefbd31a9"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/sensitivity_adjacent_multi_encoder.csv",
+      "destination": "results/phase2/reviewer_posthoc/sensitivity_adjacent_multi_encoder.csv",
+      "bytes": 5581857,
+      "sha256": "205a5a2ab1ee3354ba709d95c105a9b65a1a9d435d42227473a6b25c00ab5f69"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/sensitivity_allpairs_multi_encoder.csv",
+      "destination": "results/phase2/reviewer_posthoc/sensitivity_allpairs_multi_encoder.csv",
+      "bytes": 17432327,
+      "sha256": "e892ecc673a718aa7c2fc69e774f55d2ccf6094d6d3f9faffe2409fe65d9f1a4"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/sensitivity_summary_multi_encoder.csv",
+      "destination": "results/phase2/reviewer_posthoc/sensitivity_summary_multi_encoder.csv",
+      "bytes": 4989,
+      "sha256": "4cd282e662804876b4fc474b299154d5575f7aa6b46663e95d9bd49ee11eb497"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/table_encoder_robustness.tex",
+      "destination": "results/phase2/reviewer_posthoc/table_encoder_robustness.tex",
+      "bytes": 316,
+      "sha256": "c2108266e42af35df4f9fb5dc4afe6562e0918494dacfa386c874cafc4812773"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/table_field_rank_robustness.tex",
+      "destination": "results/phase2/reviewer_posthoc/table_field_rank_robustness.tex",
+      "bytes": 2096,
+      "sha256": "e7559c97283d4edcf0bce379ab666d01dfa7ba5c6ce6c9162c93a256854a192c"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/table_posix_comparison.tex",
+      "destination": "results/phase2/reviewer_posthoc/table_posix_comparison.tex",
+      "bytes": 2562,
+      "sha256": "93481de178bbd0fd384596eefa55b4d970763a5ba20a8b0c76da8b58eb959eff"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/table_psi_f1_by_encoder.tex",
+      "destination": "results/phase2/reviewer_posthoc/table_psi_f1_by_encoder.tex",
+      "bytes": 1223,
+      "sha256": "b9c0809ca8a4e102c49530ba8aedffd607be09443e155c5196493c167da778a1"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/table_psi_practical_utility.tex",
+      "destination": "results/phase2/reviewer_posthoc/table_psi_practical_utility.tex",
+      "bytes": 3385,
+      "sha256": "b329589aec4550f25ba0b11a7f77c4625898d405436433f7ea7bbb81dfb5e65f"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/table_semantic_vs_prosa.tex",
+      "destination": "results/phase2/reviewer_posthoc/table_semantic_vs_prosa.tex",
+      "bytes": 972,
+      "sha256": "99c092cb7e7048b70b4924c637d47eda7c03b2559fc2fc1e19f09d7a064e382a"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/embedding_cache/clip_vit_b32_3d27e92febd194b6.json",
+      "destination": "results/phase2/reviewer_posthoc/embedding_cache/clip_vit_b32_3d27e92febd194b6.json",
+      "bytes": 942997,
+      "sha256": "a7787b1fbbbd5d0708bc218c85018edb6d750f91cff60e10d6a590a250a9cd8c"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/embedding_cache/mpnet_3d27e92febd194b6.json",
+      "destination": "results/phase2/reviewer_posthoc/embedding_cache/mpnet_3d27e92febd194b6.json",
+      "bytes": 942997,
+      "sha256": "07b414f8adbe77d318f83cc298d7c156391f44f3631f9863187b63cc5f65e096"
+    },
+    {
+      "source": "outputs/reviewer_posthoc/embedding_cache/specter_3d27e92febd194b6.json",
+      "destination": "results/phase2/reviewer_posthoc/embedding_cache/specter_3d27e92febd194b6.json",
+      "bytes": 942992,
+      "sha256": "8e7b5f00f8b4563631cb37b4212aaf198df35e6bc9d46693a13780c202120155"
+    },
+    {
+      "source": "outputs/statistics/mcnemar_tests.csv",
+      "destination": "results/phase2/statistics/mcnemar_tests.csv",
+      "bytes": 30840,
+      "sha256": "eb7a33c65c38262548f0ca40e31826257f6810cafbf4da2d15536518b6a55431"
+    },
+    {
+      "source": "outputs/statistics/reviewer1_round2/ablation_paired_inference.csv",
+      "destination": "results/phase2/statistics/reviewer1_round2/ablation_paired_inference.csv",
+      "bytes": 8239,
+      "sha256": "4a47c93f0cd6b1af5c751396a430d418030663d1132564678629739230a9c27d"
+    },
+    {
+      "source": "outputs/statistics/reviewer1_round2/field_disappearance_jaccard.csv",
+      "destination": "results/phase2/statistics/reviewer1_round2/field_disappearance_jaccard.csv",
+      "bytes": 267686,
+      "sha256": "735fb996c2da7a1bcb4d680675819d8f6c5b7f2bfca5aef86f21c493321d7324"
+    },
+    {
+      "source": "outputs/statistics/reviewer1_round2/p6_vs_a5_paired.csv",
+      "destination": "results/phase2/statistics/reviewer1_round2/p6_vs_a5_paired.csv",
+      "bytes": 1435,
+      "sha256": "8d6e6f18d6b2cff05cb6cd6d4753b74581c4f144a18e95dc450e99a0b00a8d1a"
+    },
+    {
+      "source": "outputs/statistics/reviewer1_round2/per_condition_full.csv",
+      "destination": "results/phase2/statistics/reviewer1_round2/per_condition_full.csv",
+      "bytes": 15912,
+      "sha256": "530e2912e2aeeadb39a084ae484b71ee07559c85e5ad2ae235f99b7d7bd40458"
+    },
+    {
+      "source": "outputs/statistics/reviewer1_round2/phase2_idr.csv",
+      "destination": "results/phase2/statistics/reviewer1_round2/phase2_idr.csv",
+      "bytes": 3656,
+      "sha256": "2bf05b09c05e66387876401d1354b54198db9a01186d87b7004a6f2cd2f9d421"
+    },
+    {
+      "source": "outputs/statistics/reviewer1_round2/psi_jaccard_cluster_correlations.csv",
+      "destination": "results/phase2/statistics/reviewer1_round2/psi_jaccard_cluster_correlations.csv",
+      "bytes": 13607,
+      "sha256": "8902239c22e92720caebaac90ad59a6b29e7371e62bfe8cae81a92c32326c102"
+    },
+    {
+      "source": "outputs/statistics/reviewer1_round2/rq5_rank_agreement.csv",
+      "destination": "results/phase2/statistics/reviewer1_round2/rq5_rank_agreement.csv",
+      "bytes": 6449,
+      "sha256": "1595dd6012a95c588951532330185193c4a61cc63873e412933fbab1b2096f8c"
+    },
+    {
+      "source": "outputs/statistics/reviewer1_round2/visible_output_token_audit.csv",
+      "destination": "results/phase2/statistics/reviewer1_round2/visible_output_token_audit.csv",
+      "bytes": 384087,
+      "sha256": "77a389f130576332e26da164be3b4e33f2176d276902e89bd5de8943f6a25c14"
+    },
+    {
+      "source": "outputs/statistics/reviewer1_round2/targeted_controls/alternative_demonstrations.json",
+      "destination": "results/phase2/statistics/reviewer1_round2/targeted_controls/alternative_demonstrations.json",
+      "bytes": 7606,
+      "sha256": "90e0244480f40a20aab6cbcbbbb575cd697e07bed480ddeaaa9ca5d32f7cc0e9"
+    },
+    {
+      "source": "legacy_PromptEng26/run_summary.xlsx",
+      "destination": "historical_reference/run_summary.xlsx",
+      "bytes": 348914,
+      "sha256": "f96f1c1835889480717626fa94c78da32d3da4bd88f146dc49d7f1165766c6a0"
+    },
+    {
+      "source": "legacy_PromptEng26/stability_metrics.xlsx",
+      "destination": "historical_reference/stability_metrics.xlsx",
+      "bytes": 481890,
+      "sha256": "5af8ac0b133b501deb87f7080eddf80d7b6ef2f098c66ae6af2509e098f610bb"
+    },
+    {
+      "source": "legacy_PromptEng26/json_metrics.xlsx",
+      "destination": "historical_reference/json_metrics.xlsx",
+      "bytes": 172254,
+      "sha256": "13d9108b58e089344506436163666c7e0455799e2b2134cc32838bb0528c6fef"
+    },
+    {
+      "source": "generated README",
+      "destination": "README.md",
+      "bytes": 2087,
+      "sha256": "d291ac58a1599a12834cede9f9bd474080609571fb0d9c988f3f0caaf8a94176"
+    }
+  ],
+  "warnings": [
+    "Manuscript graphic missing: figs/Prompt Optimization Experimental Pipeline2.pdf",
+    "Manuscript graphic missing: figs/abs_hist.pdf",
+    "Manuscript graphic missing: figs/fig01_f1_prompt_trajectories.pdf",
+    "Manuscript graphic missing: figs/fig02_psi_prompt_transitions.pdf",
+    "Manuscript graphic missing: figs/fig04_field_volatility_heatmaps.pdf",
+    "Manuscript graphic missing: figs/fig05_psi_f1_relationship.pdf",
+    "Manuscript graphic missing: figs/fig06_ablation_effects.pdf",
+    "Manuscript graphic missing: figs/fig07_speed_schema_validity.pdf",
+    "Manuscript graphic missing: figs/fig08_overview_poster.pdf"
+  ]
+}

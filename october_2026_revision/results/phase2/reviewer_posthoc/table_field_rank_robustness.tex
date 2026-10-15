@@ -1,0 +1,33 @@
+\begin{tabular}{llllrrr}
+\toprule
+model\_id & dataset & encoder\_a & encoder\_b & n\_fields & spearman\_rho & kendall\_tau \\
+\midrule
+Gemma-3-12B-IT & EBM-NLP & clip\_vit\_b32 & mpnet & 3 & 0.500 & 0.333 \\
+Gemma-3-12B-IT & EBM-NLP & clip\_vit\_b32 & specter & 3 & 1.000 & 1.000 \\
+Gemma-3-12B-IT & EBM-NLP & mpnet & specter & 3 & 0.500 & 0.333 \\
+Gemma-3-12B-IT & SciER & clip\_vit\_b32 & mpnet & 4 & 1.000 & 1.000 \\
+Gemma-3-12B-IT & SciER & clip\_vit\_b32 & specter & 4 & 1.000 & 1.000 \\
+Gemma-3-12B-IT & SciER & mpnet & specter & 4 & 1.000 & 1.000 \\
+Gemma-3-12B-IT & SciERC & clip\_vit\_b32 & mpnet & 7 & 0.571 & 0.524 \\
+Gemma-3-12B-IT & SciERC & clip\_vit\_b32 & specter & 7 & 0.964 & 0.905 \\
+Gemma-3-12B-IT & SciERC & mpnet & specter & 7 & 0.750 & 0.619 \\
+Mistral-7B-Instruct-v0.3 & EBM-NLP & clip\_vit\_b32 & mpnet & 3 & 1.000 & 1.000 \\
+Mistral-7B-Instruct-v0.3 & EBM-NLP & clip\_vit\_b32 & specter & 3 & 1.000 & 1.000 \\
+Mistral-7B-Instruct-v0.3 & EBM-NLP & mpnet & specter & 3 & 1.000 & 1.000 \\
+Mistral-7B-Instruct-v0.3 & SciER & clip\_vit\_b32 & mpnet & 4 & 1.000 & 1.000 \\
+Mistral-7B-Instruct-v0.3 & SciER & clip\_vit\_b32 & specter & 4 & 1.000 & 1.000 \\
+Mistral-7B-Instruct-v0.3 & SciER & mpnet & specter & 4 & 1.000 & 1.000 \\
+Mistral-7B-Instruct-v0.3 & SciERC & clip\_vit\_b32 & mpnet & 7 & 0.607 & 0.524 \\
+Mistral-7B-Instruct-v0.3 & SciERC & clip\_vit\_b32 & specter & 7 & 1.000 & 1.000 \\
+Mistral-7B-Instruct-v0.3 & SciERC & mpnet & specter & 7 & 0.607 & 0.524 \\
+Qwen3-8B & EBM-NLP & clip\_vit\_b32 & mpnet & 3 & 1.000 & 1.000 \\
+Qwen3-8B & EBM-NLP & clip\_vit\_b32 & specter & 3 & 1.000 & 1.000 \\
+Qwen3-8B & EBM-NLP & mpnet & specter & 3 & 1.000 & 1.000 \\
+Qwen3-8B & SciER & clip\_vit\_b32 & mpnet & 4 & 0.800 & 0.667 \\
+Qwen3-8B & SciER & clip\_vit\_b32 & specter & 4 & 0.800 & 0.667 \\
+Qwen3-8B & SciER & mpnet & specter & 4 & 1.000 & 1.000 \\
+Qwen3-8B & SciERC & clip\_vit\_b32 & mpnet & 7 & 0.429 & 0.333 \\
+Qwen3-8B & SciERC & clip\_vit\_b32 & specter & 7 & 1.000 & 1.000 \\
+Qwen3-8B & SciERC & mpnet & specter & 7 & 0.429 & 0.333 \\
+\bottomrule
+\end{tabular}

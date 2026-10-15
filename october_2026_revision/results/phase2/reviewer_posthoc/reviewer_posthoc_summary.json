@@ -1,0 +1,799 @@
+{
+  "n_prediction_rows": 5526,
+  "models": [
+    "Gemma-3-12B-IT",
+    "Mistral-7B-Instruct-v0.3",
+    "Qwen3-8B"
+  ],
+  "datasets": [
+    "EBM-NLP",
+    "SciER",
+    "SciERC"
+  ],
+  "conditions": [
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5",
+    "P6"
+  ],
+  "n_adjacent_transition_rows": 23025,
+  "encoders": [
+    "clip_vit_b32",
+    "mpnet",
+    "set_jaccard",
+    "specter",
+    "token_jaccard"
+  ],
+  "encoder_agreement": [
+    {
+      "encoder_a": "clip_vit_b32",
+      "encoder_b": "mpnet",
+      "n": 4605,
+      "spearman_rho": 0.973058067390221,
+      "spearman_p": 0.0,
+      "kendall_tau": 0.8722505348970018,
+      "kendall_p": 0.0,
+      "top10pct_jaccard": 0.7833655705996132,
+      "spearman_p_holm": 0.0,
+      "kendall_p_holm": 0.0
+    },
+    {
+      "encoder_a": "clip_vit_b32",
+      "encoder_b": "specter",
+      "n": 4605,
+      "spearman_rho": 0.9878329058374232,
+      "spearman_p": 0.0,
+      "kendall_tau": 0.920409209002844,
+      "kendall_p": 0.0,
+      "top10pct_jaccard": 0.9369747899159664,
+      "spearman_p_holm": 0.0,
+      "kendall_p_holm": 0.0
+    },
+    {
+      "encoder_a": "mpnet",
+      "encoder_b": "specter",
+      "n": 4605,
+      "spearman_rho": 0.9730616042491875,
+      "spearman_p": 0.0,
+      "kendall_tau": 0.8707629710743373,
+      "kendall_p": 0.0,
+      "top10pct_jaccard": 0.7799227799227799,
+      "spearman_p_holm": 0.0,
+      "kendall_p_holm": 0.0
+    }
+  ],
+  "psi_f1_correlations_model_abs_partial": [
+    {
+      "level": "model",
+      "encoder": "clip_vit_b32",
+      "target": "abs_delta_partial_f1",
+      "n": 1535,
+      "spearman_rho": 0.5313761545563611,
+      "p_value": 1.3649952256764714e-112,
+      "ci95_low": 0.48716028977421133,
+      "ci95_high": 0.5724933096804258,
+      "model_id": "Gemma-3-12B-IT",
+      "dataset": NaN,
+      "p_holm": 1.3649952256764714e-112
+    },
+    {
+      "level": "model",
+      "encoder": "mpnet",
+      "target": "abs_delta_partial_f1",
+      "n": 1535,
+      "spearman_rho": 0.5480523809448773,
+      "p_value": 4.627562968789849e-121,
+      "ci95_low": 0.5046208751990316,
+      "ci95_high": 0.5885196326175361,
+      "model_id": "Gemma-3-12B-IT",
+      "dataset": NaN,
+      "p_holm": 1.3882688906369546e-120
+    },
+    {
+      "level": "model",
+      "encoder": "set_jaccard",
+      "target": "abs_delta_partial_f1",
+      "n": 1535,
+      "spearman_rho": 0.5613741281335264,
+      "p_value": 3.5283426832840304e-128,
+      "ci95_low": 0.5199547384528368,
+      "ci95_high": 0.6006856191451062,
+      "model_id": "Gemma-3-12B-IT",
+      "dataset": NaN,
+      "p_holm": 1.4113370733136122e-127
+    },
+    {
+      "level": "model",
+      "encoder": "specter",
+      "target": "abs_delta_partial_f1",
+      "n": 1535,
+      "spearman_rho": 0.5373490371246893,
+      "p_value": 1.4323152506652301e-115,
+      "ci95_low": 0.4932966279609451,
+      "ci95_high": 0.5788343982034202,
+      "model_id": "Gemma-3-12B-IT",
+      "dataset": NaN,
+      "p_holm": 2.8646305013304603e-115
+    },
+    {
+      "level": "model",
+      "encoder": "token_jaccard",
+      "target": "abs_delta_partial_f1",
+      "n": 1535,
+      "spearman_rho": 0.5627762900395089,
+      "p_value": 6.017992650567022e-129,
+      "ci95_low": 0.5210043800819001,
+      "ci95_high": 0.6018203630368517,
+      "model_id": "Gemma-3-12B-IT",
+      "dataset": NaN,
+      "p_holm": 3.008996325283511e-128
+    },
+    {
+      "level": "model",
+      "encoder": "clip_vit_b32",
+      "target": "abs_delta_partial_f1",
+      "n": 1535,
+      "spearman_rho": 0.6701268121700773,
+      "p_value": 1.0790353624959071e-200,
+      "ci95_low": 0.6369064434718225,
+      "ci95_high": 0.7012605158001077,
+      "model_id": "Mistral-7B-Instruct-v0.3",
+      "dataset": NaN,
+      "p_holm": 8.632282899967257e-200
+    },
+    {
+      "level": "model",
+      "encoder": "mpnet",
+      "target": "abs_delta_partial_f1",
+      "n": 1535,
+      "spearman_rho": 0.6851859437855525,
+      "p_value": 2.864243469535523e-213,
+      "ci95_low": 0.6526120303243399,
+      "ci95_high": 0.7161625711364634,
+      "model_id": "Mistral-7B-Instruct-v0.3",
+      "dataset": NaN,
+      "p_holm": 2.864243469535523e-212
+    },
+    {
+      "level": "model",
+      "encoder": "set_jaccard",
+      "target": "abs_delta_partial_f1",
+      "n": 1535,
+      "spearman_rho": 0.6274906804927323,
+      "p_value": 8.253045249627494e-169,
+      "ci95_low": 0.592681571465995,
+      "ci95_high": 0.6600472899401426,
+      "model_id": "Mistral-7B-Instruct-v0.3",
+      "dataset": NaN,
+      "p_holm": 4.951827149776496e-168
+    },
+    {
+      "level": "model",
+      "encoder": "specter",
+      "target": "abs_delta_partial_f1",
+      "n": 1535,
+      "spearman_rho": 0.6673834072513841,
+      "p_value": 1.7561854516660685e-198,
+      "ci95_low": 0.633343675278688,
+      "ci95_high": 0.6986916469963619,
+      "model_id": "Mistral-7B-Instruct-v0.3",
+      "dataset": NaN,
+      "p_holm": 1.229329816166248e-197
+    },
+    {
+      "level": "model",
+      "encoder": "token_jaccard",
+      "target": "abs_delta_partial_f1",
+      "n": 1535,
+      "spearman_rho": 0.6809477787272586,
+      "p_value": 1.1830885922554663e-209,
+      "ci95_low": 0.6488077626900789,
+      "ci95_high": 0.7110889840404847,
+      "model_id": "Mistral-7B-Instruct-v0.3",
+      "dataset": NaN,
+      "p_holm": 1.0647797330299196e-208
+    },
+    {
+      "level": "model",
+      "encoder": "clip_vit_b32",
+      "target": "abs_delta_partial_f1",
+      "n": 1535,
+      "spearman_rho": 0.7238312898375865,
+      "p_value": 2.4136245261058017e-249,
+      "ci95_low": 0.6954516861725032,
+      "ci95_high": 0.7503743947514308,
+      "model_id": "Qwen3-8B",
+      "dataset": NaN,
+      "p_holm": 3.1377118839375422e-248
+    },
+    {
+      "level": "model",
+      "encoder": "mpnet",
+      "target": "abs_delta_partial_f1",
+      "n": 1535,
+      "spearman_rho": 0.7379865484424537,
+      "p_value": 3.814325209345696e-264,
+      "ci95_low": 0.7099207364759937,
+      "ci95_high": 0.7633596433291042,
+      "model_id": "Qwen3-8B",
+      "dataset": NaN,
+      "p_holm": 5.3400552930839745e-263
+    },
+    {
+      "level": "model",
+      "encoder": "set_jaccard",
+      "target": "abs_delta_partial_f1",
+      "n": 1535,
+      "spearman_rho": 0.7131571677186592,
+      "p_value": 8.817129434238235e-239,
+      "ci95_low": 0.6844224229603533,
+      "ci95_high": 0.7413584554451664,
+      "model_id": "Qwen3-8B",
+      "dataset": NaN,
+      "p_holm": 9.698842377662058e-238
+    },
+    {
+      "level": "model",
+      "encoder": "specter",
+      "target": "abs_delta_partial_f1",
+      "n": 1535,
+      "spearman_rho": 0.7184622433045307,
+      "p_value": 5.7157642588673026e-244,
+      "ci95_low": 0.6900199221661778,
+      "ci95_high": 0.7448830261484211,
+      "model_id": "Qwen3-8B",
+      "dataset": NaN,
+      "p_holm": 6.858917110640763e-243
+    },
+    {
+      "level": "model",
+      "encoder": "token_jaccard",
+      "target": "abs_delta_partial_f1",
+      "n": 1535,
+      "spearman_rho": 0.7526600690102607,
+      "p_value": 1.5367225612071003e-280,
+      "ci95_low": 0.7254441504729342,
+      "ci95_high": 0.778820317236497,
+      "model_id": "Qwen3-8B",
+      "dataset": NaN,
+      "p_holm": 2.3050838418106506e-279
+    }
+  ],
+  "practical_psi": [
+    {
+      "encoder": "clip_vit_b32",
+      "model_id": "Gemma-3-12B-IT",
+      "threshold_abs_delta_f1": 0.05,
+      "n": 1535,
+      "positive_rate": 0.5061889250814332,
+      "auroc": 0.7270547026483702,
+      "auprc": 0.7281592018854631
+    },
+    {
+      "encoder": "clip_vit_b32",
+      "model_id": "Gemma-3-12B-IT",
+      "threshold_abs_delta_f1": 0.1,
+      "n": 1535,
+      "positive_rate": 0.2899022801302932,
+      "auroc": 0.7539428924853107,
+      "auprc": 0.6034001472632049
+    },
+    {
+      "encoder": "clip_vit_b32",
+      "model_id": "Gemma-3-12B-IT",
+      "threshold_abs_delta_f1": 0.2,
+      "n": 1535,
+      "positive_rate": 0.10944625407166124,
+      "auroc": 0.8359938342564531,
+      "auprc": 0.5618056888457789
+    },
+    {
+      "encoder": "clip_vit_b32",
+      "model_id": "Mistral-7B-Instruct-v0.3",
+      "threshold_abs_delta_f1": 0.05,
+      "n": 1535,
+      "positive_rate": 0.47687296416938113,
+      "auroc": 0.816029710988166,
+      "auprc": 0.7673196903985218
+    },
+    {
+      "encoder": "clip_vit_b32",
+      "model_id": "Mistral-7B-Instruct-v0.3",
+      "threshold_abs_delta_f1": 0.1,
+      "n": 1535,
+      "positive_rate": 0.304885993485342,
+      "auroc": 0.7984794415206786,
+      "auprc": 0.6056334713698379
+    },
+    {
+      "encoder": "clip_vit_b32",
+      "model_id": "Mistral-7B-Instruct-v0.3",
+      "threshold_abs_delta_f1": 0.2,
+      "n": 1535,
+      "positive_rate": 0.14267100977198696,
+      "auroc": 0.8610532817032379,
+      "auprc": 0.4950103062953819
+    },
+    {
+      "encoder": "clip_vit_b32",
+      "model_id": "Qwen3-8B",
+      "threshold_abs_delta_f1": 0.05,
+      "n": 1535,
+      "positive_rate": 0.4358306188925081,
+      "auroc": 0.8399579531685292,
+      "auprc": 0.7762168982030996
+    },
+    {
+      "encoder": "clip_vit_b32",
+      "model_id": "Qwen3-8B",
+      "threshold_abs_delta_f1": 0.1,
+      "n": 1535,
+      "positive_rate": 0.2521172638436482,
+      "auroc": 0.8157102791958152,
+      "auprc": 0.6157747255516849
+    },
+    {
+      "encoder": "clip_vit_b32",
+      "model_id": "Qwen3-8B",
+      "threshold_abs_delta_f1": 0.2,
+      "n": 1535,
+      "positive_rate": 0.09381107491856677,
+      "auroc": 0.8670495846313604,
+      "auprc": 0.46778878209279817
+    },
+    {
+      "encoder": "mpnet",
+      "model_id": "Gemma-3-12B-IT",
+      "threshold_abs_delta_f1": 0.05,
+      "n": 1535,
+      "positive_rate": 0.5061889250814332,
+      "auroc": 0.7355526465025146,
+      "auprc": 0.7377677890568933
+    },
+    {
+      "encoder": "mpnet",
+      "model_id": "Gemma-3-12B-IT",
+      "threshold_abs_delta_f1": 0.1,
+      "n": 1535,
+      "positive_rate": 0.2899022801302932,
+      "auroc": 0.7625172662612102,
+      "auprc": 0.6160445886454131
+    },
+    {
+      "encoder": "mpnet",
+      "model_id": "Gemma-3-12B-IT",
+      "threshold_abs_delta_f1": 0.2,
+      "n": 1535,
+      "positive_rate": 0.10944625407166124,
+      "auroc": 0.8387196502595186,
+      "auprc": 0.5662103224451979
+    },
+    {
+      "encoder": "mpnet",
+      "model_id": "Mistral-7B-Instruct-v0.3",
+      "threshold_abs_delta_f1": 0.05,
+      "n": 1535,
+      "positive_rate": 0.47687296416938113,
+      "auroc": 0.8219365221947751,
+      "auprc": 0.7707092935468556
+    },
+    {
+      "encoder": "mpnet",
+      "model_id": "Mistral-7B-Instruct-v0.3",
+      "threshold_abs_delta_f1": 0.1,
+      "n": 1535,
+      "positive_rate": 0.304885993485342,
+      "auroc": 0.8062834931391634,
+      "auprc": 0.6094744706827058
+    },
+    {
+      "encoder": "mpnet",
+      "model_id": "Mistral-7B-Instruct-v0.3",
+      "threshold_abs_delta_f1": 0.2,
+      "n": 1535,
+      "positive_rate": 0.14267100977198696,
+      "auroc": 0.8695021581935019,
+      "auprc": 0.4937450641675987
+    },
+    {
+      "encoder": "mpnet",
+      "model_id": "Qwen3-8B",
+      "threshold_abs_delta_f1": 0.05,
+      "n": 1535,
+      "positive_rate": 0.4358306188925081,
+      "auroc": 0.8433211818680807,
+      "auprc": 0.7791669779111252
+    },
+    {
+      "encoder": "mpnet",
+      "model_id": "Qwen3-8B",
+      "threshold_abs_delta_f1": 0.1,
+      "n": 1535,
+      "positive_rate": 0.2521172638436482,
+      "auroc": 0.8231718571338538,
+      "auprc": 0.630808922948759
+    },
+    {
+      "encoder": "mpnet",
+      "model_id": "Qwen3-8B",
+      "threshold_abs_delta_f1": 0.2,
+      "n": 1535,
+      "positive_rate": 0.09381107491856677,
+      "auroc": 0.8801596573208722,
+      "auprc": 0.4702315758227678
+    },
+    {
+      "encoder": "set_jaccard",
+      "model_id": "Gemma-3-12B-IT",
+      "threshold_abs_delta_f1": 0.05,
+      "n": 1535,
+      "positive_rate": 0.5061889250814332,
+      "auroc": 0.748936271363712,
+      "auprc": 0.742739291175303
+    },
+    {
+      "encoder": "set_jaccard",
+      "model_id": "Gemma-3-12B-IT",
+      "threshold_abs_delta_f1": 0.1,
+      "n": 1535,
+      "positive_rate": 0.2899022801302932,
+      "auroc": 0.7702010102051335,
+      "auprc": 0.5931543437509126
+    },
+    {
+      "encoder": "set_jaccard",
+      "model_id": "Gemma-3-12B-IT",
+      "threshold_abs_delta_f1": 0.2,
+      "n": 1535,
+      "positive_rate": 0.10944625407166124,
+      "auroc": 0.8284455881840667,
+      "auprc": 0.4662197106326694
+    },
+    {
+      "encoder": "set_jaccard",
+      "model_id": "Mistral-7B-Instruct-v0.3",
+      "threshold_abs_delta_f1": 0.05,
+      "n": 1535,
+      "positive_rate": 0.47687296416938113,
+      "auroc": 0.80113083450721,
+      "auprc": 0.7299814582338744
+    },
+    {
+      "encoder": "set_jaccard",
+      "model_id": "Mistral-7B-Instruct-v0.3",
+      "threshold_abs_delta_f1": 0.1,
+      "n": 1535,
+      "positive_rate": 0.304885993485342,
+      "auroc": 0.7688522817388797,
+      "auprc": 0.5093762996958616
+    },
+    {
+      "encoder": "set_jaccard",
+      "model_id": "Mistral-7B-Instruct-v0.3",
+      "threshold_abs_delta_f1": 0.2,
+      "n": 1535,
+      "positive_rate": 0.14267100977198696,
+      "auroc": 0.7897947287338134,
+      "auprc": 0.30831937497782325
+    },
+    {
+      "encoder": "set_jaccard",
+      "model_id": "Qwen3-8B",
+      "threshold_abs_delta_f1": 0.05,
+      "n": 1535,
+      "positive_rate": 0.4358306188925081,
+      "auroc": 0.8378944479541006,
+      "auprc": 0.7507709017084998
+    },
+    {
+      "encoder": "set_jaccard",
+      "model_id": "Qwen3-8B",
+      "threshold_abs_delta_f1": 0.1,
+      "n": 1535,
+      "positive_rate": 0.2521172638436482,
+      "auroc": 0.8187061646363971,
+      "auprc": 0.5585675153136962
+    },
+    {
+      "encoder": "set_jaccard",
+      "model_id": "Qwen3-8B",
+      "threshold_abs_delta_f1": 0.2,
+      "n": 1535,
+      "positive_rate": 0.09381107491856677,
+      "auroc": 0.846952631999361,
+      "auprc": 0.31473698490167457
+    },
+    {
+      "encoder": "specter",
+      "model_id": "Gemma-3-12B-IT",
+      "threshold_abs_delta_f1": 0.05,
+      "n": 1535,
+      "positive_rate": 0.5061889250814332,
+      "auroc": 0.7305022700801065,
+      "auprc": 0.7299653734207143
+    },
+    {
+      "encoder": "specter",
+      "model_id": "Gemma-3-12B-IT",
+      "threshold_abs_delta_f1": 0.1,
+      "n": 1535,
+      "positive_rate": 0.2899022801302932,
+      "auroc": 0.7595722090506135,
+      "auprc": 0.608139230839227
+    },
+    {
+      "encoder": "specter",
+      "model_id": "Gemma-3-12B-IT",
+      "threshold_abs_delta_f1": 0.2,
+      "n": 1535,
+      "positive_rate": 0.10944625407166124,
+      "auroc": 0.8415848050998014,
+      "auprc": 0.5675786575186137
+    },
+    {
+      "encoder": "specter",
+      "model_id": "Mistral-7B-Instruct-v0.3",
+      "threshold_abs_delta_f1": 0.05,
+      "n": 1535,
+      "positive_rate": 0.47687296416938113,
+      "auroc": 0.8154912588721256,
+      "auprc": 0.7665367382807955
+    },
+    {
+      "encoder": "specter",
+      "model_id": "Mistral-7B-Instruct-v0.3",
+      "threshold_abs_delta_f1": 0.1,
+      "n": 1535,
+      "positive_rate": 0.304885993485342,
+      "auroc": 0.7971737598026258,
+      "auprc": 0.6047503035362646
+    },
+    {
+      "encoder": "specter",
+      "model_id": "Mistral-7B-Instruct-v0.3",
+      "threshold_abs_delta_f1": 0.2,
+      "n": 1535,
+      "positive_rate": 0.14267100977198696,
+      "auroc": 0.8610428724098209,
+      "auprc": 0.4965571468365134
+    },
+    {
+      "encoder": "specter",
+      "model_id": "Qwen3-8B",
+      "threshold_abs_delta_f1": 0.05,
+      "n": 1535,
+      "positive_rate": 0.4358306188925081,
+      "auroc": 0.8357757088067055,
+      "auprc": 0.774051520300161
+    },
+    {
+      "encoder": "specter",
+      "model_id": "Qwen3-8B",
+      "threshold_abs_delta_f1": 0.1,
+      "n": 1535,
+      "positive_rate": 0.2521172638436482,
+      "auroc": 0.815451431092384,
+      "auprc": 0.6186250632145049
+    },
+    {
+      "encoder": "specter",
+      "model_id": "Qwen3-8B",
+      "threshold_abs_delta_f1": 0.2,
+      "n": 1535,
+      "positive_rate": 0.09381107491856677,
+      "auroc": 0.8722117381579999,
+      "auprc": 0.47483439442316694
+    },
+    {
+      "encoder": "token_jaccard",
+      "model_id": "Gemma-3-12B-IT",
+      "threshold_abs_delta_f1": 0.05,
+      "n": 1535,
+      "positive_rate": 0.5061889250814332,
+      "auroc": 0.7449360404505524,
+      "auprc": 0.7448880607418504
+    },
+    {
+      "encoder": "token_jaccard",
+      "model_id": "Gemma-3-12B-IT",
+      "threshold_abs_delta_f1": 0.1,
+      "n": 1535,
+      "positive_rate": 0.2899022801302932,
+      "auroc": 0.7597824966498299,
+      "auprc": 0.5988653060437672
+    },
+    {
+      "encoder": "token_jaccard",
+      "model_id": "Gemma-3-12B-IT",
+      "threshold_abs_delta_f1": 0.2,
+      "n": 1535,
+      "positive_rate": 0.10944625407166124,
+      "auroc": 0.8372043404047793,
+      "auprc": 0.524136946818223
+    },
+    {
+      "encoder": "token_jaccard",
+      "model_id": "Mistral-7B-Instruct-v0.3",
+      "threshold_abs_delta_f1": 0.05,
+      "n": 1535,
+      "positive_rate": 0.47687296416938113,
+      "auroc": 0.8197980251651933,
+      "auprc": 0.763362454916819
+    },
+    {
+      "encoder": "token_jaccard",
+      "model_id": "Mistral-7B-Instruct-v0.3",
+      "threshold_abs_delta_f1": 0.1,
+      "n": 1535,
+      "positive_rate": 0.304885993485342,
+      "auroc": 0.8012319867989971,
+      "auprc": 0.5803123284179761
+    },
+    {
+      "encoder": "token_jaccard",
+      "model_id": "Mistral-7B-Instruct-v0.3",
+      "threshold_abs_delta_f1": 0.2,
+      "n": 1535,
+      "positive_rate": 0.14267100977198696,
+      "auroc": 0.8423876837240287,
+      "auprc": 0.40051160535597563
+    },
+    {
+      "encoder": "token_jaccard",
+      "model_id": "Qwen3-8B",
+      "threshold_abs_delta_f1": 0.05,
+      "n": 1535,
+      "positive_rate": 0.4358306188925081,
+      "auroc": 0.8489723036347381,
+      "auprc": 0.7785352524406062
+    },
+    {
+      "encoder": "token_jaccard",
+      "model_id": "Qwen3-8B",
+      "threshold_abs_delta_f1": 0.1,
+      "n": 1535,
+      "positive_rate": 0.2521172638436482,
+      "auroc": 0.8314392404721389,
+      "auprc": 0.6251737798548648
+    },
+    {
+      "encoder": "token_jaccard",
+      "model_id": "Qwen3-8B",
+      "threshold_abs_delta_f1": 0.2,
+      "n": 1535,
+      "positive_rate": 0.09381107491856677,
+      "auroc": 0.8707314881380301,
+      "auprc": 0.4146873867763714
+    }
+  ],
+  "semantic_vs_prosa": [
+    {
+      "encoder": "clip_vit_b32",
+      "model_id": "Gemma-3-12B-IT",
+      "n": 307,
+      "spearman_rho_semantic_psi_vs_prosa_pss": 0.49326138509890194,
+      "p_value": 3.142951728884372e-20,
+      "p_holm": 3.142951728884372e-19
+    },
+    {
+      "encoder": "clip_vit_b32",
+      "model_id": "Mistral-7B-Instruct-v0.3",
+      "n": 307,
+      "spearman_rho_semantic_psi_vs_prosa_pss": 0.4352536846360687,
+      "p_value": 1.270872740921106e-15,
+      "p_holm": 7.625236445526636e-15
+    },
+    {
+      "encoder": "clip_vit_b32",
+      "model_id": "Qwen3-8B",
+      "n": 307,
+      "spearman_rho_semantic_psi_vs_prosa_pss": 0.5036391372109745,
+      "p_value": 3.7737450465936415e-21,
+      "p_holm": 4.1511195512530056e-20
+    },
+    {
+      "encoder": "mpnet",
+      "model_id": "Gemma-3-12B-IT",
+      "n": 307,
+      "spearman_rho_semantic_psi_vs_prosa_pss": 0.5078223175559831,
+      "p_value": 1.5730222415305441e-21,
+      "p_holm": 2.0449289139897073e-20
+    },
+    {
+      "encoder": "mpnet",
+      "model_id": "Mistral-7B-Instruct-v0.3",
+      "n": 307,
+      "spearman_rho_semantic_psi_vs_prosa_pss": 0.3971088402752577,
+      "p_value": 4.867616282242392e-13,
+      "p_holm": 2.4338081411211962e-12
+    },
+    {
+      "encoder": "mpnet",
+      "model_id": "Qwen3-8B",
+      "n": 307,
+      "spearman_rho_semantic_psi_vs_prosa_pss": 0.5288671813912348,
+      "p_value": 1.5968626406247877e-23,
+      "p_holm": 2.3952939609371816e-22
+    },
+    {
+      "encoder": "set_jaccard",
+      "model_id": "Gemma-3-12B-IT",
+      "n": 307,
+      "spearman_rho_semantic_psi_vs_prosa_pss": 0.37816958726598093,
+      "p_value": 7.116659316714211e-12,
+      "p_holm": 2.8466637266856844e-11
+    },
+    {
+      "encoder": "set_jaccard",
+      "model_id": "Mistral-7B-Instruct-v0.3",
+      "n": 307,
+      "spearman_rho_semantic_psi_vs_prosa_pss": 0.01381318666621886,
+      "p_value": 0.8095157579700063,
+      "p_holm": 0.8095157579700063
+    },
+    {
+      "encoder": "set_jaccard",
+      "model_id": "Qwen3-8B",
+      "n": 307,
+      "spearman_rho_semantic_psi_vs_prosa_pss": 0.35083597485567775,
+      "p_value": 2.5452307388156373e-10,
+      "p_holm": 7.635692216446912e-10
+    },
+    {
+      "encoder": "specter",
+      "model_id": "Gemma-3-12B-IT",
+      "n": 307,
+      "spearman_rho_semantic_psi_vs_prosa_pss": 0.5076667919166483,
+      "p_value": 1.6253915201642557e-21,
+      "p_holm": 2.0449289139897073e-20
+    },
+    {
+      "encoder": "specter",
+      "model_id": "Mistral-7B-Instruct-v0.3",
+      "n": 307,
+      "spearman_rho_semantic_psi_vs_prosa_pss": 0.43828788649032857,
+      "p_value": 7.660478110844142e-16,
+      "p_holm": 5.3623346775909e-15
+    },
+    {
+      "encoder": "specter",
+      "model_id": "Qwen3-8B",
+      "n": 307,
+      "spearman_rho_semantic_psi_vs_prosa_pss": 0.512851998940403,
+      "p_value": 5.405214069166337e-22,
+      "p_holm": 7.567299696832872e-21
+    },
+    {
+      "encoder": "token_jaccard",
+      "model_id": "Gemma-3-12B-IT",
+      "n": 307,
+      "spearman_rho_semantic_psi_vs_prosa_pss": 0.45464499095462885,
+      "p_value": 4.57646991431319e-17,
+      "p_holm": 3.661175931450552e-16
+    },
+    {
+      "encoder": "token_jaccard",
+      "model_id": "Mistral-7B-Instruct-v0.3",
+      "n": 307,
+      "spearman_rho_semantic_psi_vs_prosa_pss": 0.18244262216724316,
+      "p_value": 0.001324578194070503,
+      "p_holm": 0.002649156388141006
+    },
+    {
+      "encoder": "token_jaccard",
+      "model_id": "Qwen3-8B",
+      "n": 307,
+      "spearman_rho_semantic_psi_vs_prosa_pss": 0.4712513580038962,
+      "p_value": 2.2341936665406733e-18,
+      "p_holm": 2.010774299886606e-17
+    }
+  ],
+  "posix_comparisons": [],
+  "notes": [
+    "No new LLM generations were used.",
+    "POSIX, when enabled, uses teacher-forced likelihood of already saved responses under P1-P6 prompts.",
+    "The stochastic decoding / seed request cannot be answered without new generations and is therefore not fabricated here."
+  ]
+}
