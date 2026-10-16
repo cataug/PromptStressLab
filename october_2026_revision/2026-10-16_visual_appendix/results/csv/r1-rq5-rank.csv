@@ -1,0 +1,10 @@
+Model,Dataset,tau_F1_schema,tau_F1_tokens,tau_F1_latency,tau_F1_PSI
+Gemma,EBM-NLP,-0.138,0.4667,0.4667,-0.3333
+Gemma,SciER,0.7877,-0.3333,-0.6,0.4667
+Gemma,SciERC,0.8944,-0.8667,-0.7333,0.3333
+Mistral,EBM-NLP,0.276,1.0,-1.0,0.4667
+Mistral,SciER,0.8281,0.3333,-0.0667,0.3333
+Mistral,SciERC,0.9661,-0.6,0.8667,0.4667
+Qwen,EBM-NLP,-0.0778,0.8667,-0.7333,0.6
+Qwen,SciER,0.5963,0.3333,0.4667,0.0667
+Qwen,SciERC,0.8667,-0.4667,0.0667,0.2

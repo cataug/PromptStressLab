@@ -1,0 +1,109 @@
+{
+  "files": [
+    {
+      "path": "code/build_appendix_visuals.py",
+      "bytes": 33282,
+      "sha256": "9d637fd29283be6696da1d343bb2542c6a6ce147f1a950f910b10b364fc85cfe"
+    },
+    {
+      "path": "code/style_appendix_v2.py",
+      "bytes": 9506,
+      "sha256": "12969ad447081c5dc8091e329eb5ddc7b242effd48cfc92902fb0b5134f9b04c"
+    },
+    {
+      "path": "figs/appendix_visuals/r1_ablations_full.pdf",
+      "bytes": 55575,
+      "sha256": "3f95bafefb12395537b275e9ae6eb84edaa1720e5c18848575651b49958194e3"
+    },
+    {
+      "path": "figs/appendix_visuals/r1_ablations_full.png",
+      "bytes": 270365,
+      "sha256": "84756c9f6d3319e94d3cf672d61b6fe6eae4f50f8e3d0ec8ebda8118109020ee"
+    },
+    {
+      "path": "figs/appendix_visuals/r1_condition_quality.pdf",
+      "bytes": 53216,
+      "sha256": "376fe4eccfb076335b426f2fdefc7f761618d61efc158ac0c751f045637e6df2"
+    },
+    {
+      "path": "figs/appendix_visuals/r1_condition_quality.png",
+      "bytes": 329902,
+      "sha256": "11897e2c75576e2f0df15f7a6eb94225794c455499dc53fe7bf8f14bd3c99928"
+    },
+    {
+      "path": "figs/appendix_visuals/r1_condition_tokens.pdf",
+      "bytes": 37863,
+      "sha256": "72aa4a3a658ac7214d043610c339605a6eff44b0aa0b276745b03d7f9f3afccd"
+    },
+    {
+      "path": "figs/appendix_visuals/r1_condition_tokens.png",
+      "bytes": 210749,
+      "sha256": "ba1fc4b023cce794de510f656898059291ea898476c5bb1ef5ac6720a31c4085"
+    },
+    {
+      "path": "figs/appendix_visuals/r1_idr_full.pdf",
+      "bytes": 54123,
+      "sha256": "124dcce82e3bc92114051d8ad3ed1ba6abf157cd3fbe2d4a6f943ed49b0653ff"
+    },
+    {
+      "path": "figs/appendix_visuals/r1_idr_full.png",
+      "bytes": 388422,
+      "sha256": "8ef93c966e97506ff8ef7dd4e794503f6be2ea85eccd3e6bda6ecc3a22f9c56f"
+    },
+    {
+      "path": "figs/appendix_visuals/r1_psi_jaccard_full.pdf",
+      "bytes": 23863,
+      "sha256": "7bb8a852fca668171b8107e652c5f68e34a5d986a12fdda236e4cd5be52494c9"
+    },
+    {
+      "path": "figs/appendix_visuals/r1_psi_jaccard_full.png",
+      "bytes": 188835,
+      "sha256": "293fbe4a28db3d9648e1471caefd6fe18520ccd370665a20aef56ebe53620da5"
+    },
+    {
+      "path": "figs/appendix_visuals/r1_rq5_rank.pdf",
+      "bytes": 40577,
+      "sha256": "f92df923a4148a9499d5a3496c0ded0817d6963da6e83f6aab02c5d88c5d9da5"
+    },
+    {
+      "path": "figs/appendix_visuals/r1_rq5_rank.png",
+      "bytes": 219067,
+      "sha256": "4cea4e71e161cb1f61fa3a80451280c65e3f8cad41c81293d39bc0ac8fbe8e8e"
+    },
+    {
+      "path": "PromptStressLab_visual_appendix.tex",
+      "bytes": 120043,
+      "sha256": "308d4b46cf9f8ae2f9946d7b4602154040ddbbb73129ccde4b89e6f691698f8a"
+    },
+    {
+      "path": "results/csv/r1-ablations-full.csv",
+      "bytes": 2460,
+      "sha256": "2b7d6fcbdd8e8eb80bfbd4931dc5d7eaeca29e5cbd0ce2b0835d9796a76d34e8"
+    },
+    {
+      "path": "results/csv/r1-condition-quality.csv",
+      "bytes": 891,
+      "sha256": "a91e7929ebfb659e7e73afc5b1a38e8db66d92962219891b1b0e20c411f92fa3"
+    },
+    {
+      "path": "results/csv/r1-condition-tokens.csv",
+      "bytes": 623,
+      "sha256": "2d3b32280dec6679c17876d638e08761c87448427ac7ff0d6d509154e9a55487"
+    },
+    {
+      "path": "results/csv/r1-idr-full.csv",
+      "bytes": 1792,
+      "sha256": "3251ddcf52e2a074080e68c4bf0e29591e1598ad0036669dd475d6c669a1ecc2"
+    },
+    {
+      "path": "results/csv/r1-psi-jaccard-full.csv",
+      "bytes": 1433,
+      "sha256": "5198425f1bc4fb6e6b47829b4a9f8b4551be9f32bf86ccc88e797b37941de417"
+    },
+    {
+      "path": "results/csv/r1-rq5-rank.csv",
+      "bytes": 432,
+      "sha256": "a4957772a850a95829f426e3053a73091a2fe87fc062eb6bbf2c2ef91de2f929"
+    }
+  ]
+}
